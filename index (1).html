@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asia Honeymoon 2026 · May 24 – June 12</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --vermillion: #C0392B;
+    --deep-red: #8B1A10;
+    --gold: #B8962E;
+    --gold-light: #D4AF5A;
+    --ink: #1C1410;
+    --ink-soft: #3D2B1F;
+    --paper: #F5EFE0;
+    --paper-dark: #EDE3CC;
+    --paper-mid: #F0E8D5;
+    --tatami: #C8B99A;
+    --moss: #4A6741;
+    --night-blue: #1A2535;
+    --cream: #FAF6ED;
+    --jade: #1A6B4A;
+    --sand: #C2A46E;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.6;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--ink);
+    border-bottom: 2px solid var(--vermillion);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  nav::-webkit-scrollbar { display: none; }
+
+  .nav-logo {
+    font-family: 'Shippori Mincho', serif;
+    color: var(--gold-light);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0.9rem 1.5rem 0.9rem 0;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    margin-right: 1rem;
+  }
+
+  nav a {
+    color: rgba(245,239,224,0.6);
+    text-decoration: none;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.9rem 1rem;
+    white-space: nowrap;
+    transition: color 0.2s;
+    font-weight: 400;
+  }
+  nav a:hover { color: var(--gold-light); }
+  nav a.active { color: var(--gold-light); }
+
+  /* HERO */
+  .hero {
+    background: var(--ink);
+    color: var(--paper);
+    text-align: center;
+    padding: 5rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '蜜月';
+    position: absolute;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 18rem;
+    color: rgba(192, 57, 43, 0.05);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    line-height: 1;
+  }
+
+  .hero-kana {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.4em;
+    color: var(--vermillion);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
+  .hero h1 {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+    position: relative;
+  }
+
+  .hero-subtitle {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--tatami);
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-meta-item {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(245,239,224,0.5);
+  }
+  .hero-meta-item strong {
+    display: block;
+    color: var(--gold-light);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    margin-top: 0.15rem;
+  }
+
+  /* MAIN LAYOUT */
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  section {
+    padding: 3.5rem 0 2rem;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--paper-dark);
+  }
+
+  .section-num {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    color: var(--vermillion);
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 400;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  /* TIMELINE */
+  .timeline {
+    position: relative;
+    padding-left: 2.5rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background: linear-gradient(180deg, var(--vermillion), var(--gold));
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 0.5rem;
+    width: 10px;
+    height: 10px;
+    background: var(--vermillion);
+    border-radius: 50%;
+    border: 2px solid var(--paper);
+    box-shadow: 0 0 0 3px var(--vermillion);
+  }
+
+  .timeline-dates {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--vermillion);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-location {
+    font-family: 'IM Fell English', serif;
+    font-size: 1.5rem;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-hotel {
+    font-size: 0.85rem;
+    color: var(--tatami);
+    font-style: italic;
+    margin-bottom: 0.75rem;
+  }
+
+  .timeline-highlights {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  /* CHECKLIST */
+  .checklist-section {
+    background: var(--cream);
+    border: 1px solid var(--paper-dark);
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .checklist-section h3 {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    color: var(--vermillion);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .checklist-section h4 {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    color: var(--ink);
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .checklist {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+
+  .checklist li {
+    padding: 0.4rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .checklist li::before {
+    content: '□';
+    position: absolute;
+    left: 0;
+    color: var(--vermillion);
+    font-size: 1rem;
+  }
+
+  .urgent {
+    color: var(--deep-red);
+    font-weight: 400;
+  }
+
+  .deadline {
+    font-size: 0.75rem;
+    color: var(--tatami);
+    display: block;
+    margin-top: 0.15rem;
+    font-style: italic;
+  }
+
+  /* CITY GUIDE LINKS */
+  .city-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .city-card {
+    background: var(--cream);
+    border: 1px solid var(--paper-dark);
+    border-radius: 4px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--ink);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .city-card::before {
+    content: attr(data-kanji);
+    position: absolute;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 5rem;
+    color: rgba(192, 57, 43, 0.04);
+    right: -0.5rem;
+    bottom: -1rem;
+    pointer-events: none;
+  }
+
+  .city-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(28, 20, 16, 0.15);
+    border-color: var(--vermillion);
+  }
+
+  .city-card-dates {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    color: var(--vermillion);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .city-card-name {
+    font-family: 'IM Fell English', serif;
+    font-size: 1.75rem;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+  }
+
+  .city-card-hotel {
+    font-size: 0.85rem;
+    color: var(--tatami);
+    font-style: italic;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--ink);
+    color: var(--tatami);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  footer span {
+    color: var(--gold-light);
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.9rem;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 640px) {
+    nav {
+      padding: 0 1rem;
+    }
+    .nav-logo {
+      font-size: 0.65rem;
+      padding-right: 1rem;
+    }
+    nav a {
+      font-size: 0.65rem;
+      padding: 0.9rem 0.75rem;
+    }
+    .timeline {
+      padding-left: 2rem;
+    }
+    .checklist-section {
+      padding: 1rem;
+    }
+  }
+
+  /* BACK TO TOP BUTTON */
+  .back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--vermillion);
+    color: var(--paper);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 90;
+  }
+
+  .back-to-top.visible {
+    opacity: 1;
+  }
+
+  .back-to-top:hover {
+    background: var(--deep-red);
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Asia 2026</div>
+  <a href="#overview">Overview</a>
+  <a href="#checklist">Checklist</a>
+  <a href="#phuket">Phuket</a>
+  <a href="#hongkong">Hong Kong</a>
+  <a href="#kyoto">Kyoto</a>
+  <a href="#tokyo">Tokyo</a>
+</nav>
+
+<div class="hero">
+  <span class="hero-kana">Honeymoon · May–June 2026</span>
+  <h1>Asia Journey</h1>
+  <p class="hero-subtitle">Twenty days across four cities</p>
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      Departure
+      <strong>May 24, 2026</strong>
+    </div>
+    <div class="hero-meta-item">
+      Return
+      <strong>June 12, 2026</strong>
+    </div>
+    <div class="hero-meta-item">
+      Cities
+      <strong>Phuket · HK · Kyoto · Tokyo</strong>
+    </div>
+  </div>
+</div>
+
+<!-- OVERVIEW SECTION -->
+<section id="overview">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○一</span>
+    <h2 class="section-title">Trip Overview & Timeline</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dates">May 24–29, 2026 · 5 Nights</div>
+      <div class="timeline-location">Phuket, Thailand</div>
+      <div class="timeline-hotel">The Shore at Katathani · Kata Noi Beach</div>
+      <div class="timeline-highlights">
+        Beach recovery • Khao Sok jungle overnight (May 27–28) • Old Town wander • Night markets • Couples spa sessions • Andaman sunsets
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dates">May 29–June 3, 2026 · 5 Nights</div>
+      <div class="timeline-location">Hong Kong</div>
+      <div class="timeline-hotel">Island Shangri-La · Admiralty</div>
+      <div class="timeline-highlights">
+        Victoria Peak day + night • Star Ferry crossings • Aqua Luna junk cruise • Hutong Peking duck • Macau day trip (Jun 1) • Temple Street Night Market • M+ Museum • Speakeasy crawl
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dates">June 3–6, 2026 · 3 Nights</div>
+      <div class="timeline-location">Kyoto, Japan</div>
+      <div class="timeline-hotel">Suiran Luxury Collection · Arashiyama</div>
+      <div class="timeline-highlights">
+        Arashiyama bamboo grove • Fushimi Inari hike • TeamLab Biovortex • Torisho Sai yakitori • Gion Duck Noodles • Three nightcap bars (Ishimaru Shoten, Bee's Knees, L'Escamoteur) • River terrace mornings
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dates">June 6–12, 2026 · 6 Nights</div>
+      <div class="timeline-location">Tokyo, Japan</div>
+      <div class="timeline-hotel">The Prince Sakura Tower · Shibuya</div>
+      <div class="timeline-highlights">
+        Tsukiji Market • Hakkoku omakase (Jun 8) • Yakiniku Jumbo Hanare • Bar Benfiddich • Shinjuku Golden Gai • Seirinkan pizza • Akihabara retro games • Mori Art Museum • Final ramen at Zundo-ya or Kunugiya • Departure Jun 12, 6pm
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CHECKLIST SECTION -->
+<section id="checklist" style="background: var(--paper-mid);">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○二</span>
+    <h2 class="section-title">Pre-Departure Checklist</h2>
+  </div>
+
+  <div class="checklist-section">
+    <h3>🔴 Critical Bookings — Do Immediately</h3>
+    <ul class="checklist">
+      <li class="urgent"><strong>Khao Sok 2D/1N overnight (May 27–28)</strong>
+        <span class="deadline">Book 4–6 weeks before departure · elephanthills.com or ourjunglehouse.com · Confirm Cheow Lan Lake package + 8am pickup from The Shore</span>
+      </li>
+      <li class="urgent"><strong>Hakkoku omakase (Tokyo, June 8 dinner)</strong>
+        <span class="deadline">Opens exactly 2 months before on omakase.in · Set reminder for April 8, 2026 · Miss the window = it's gone</span>
+      </li>
+      <li class="urgent"><strong>Koffee Mameya Kakeru (Tokyo, June 7 morning)</strong>
+        <span class="deadline">tablecheck.com · Book ASAP, very limited daily slots</span>
+      </li>
+      <li class="urgent"><strong>Hutong (Hong Kong, June 1 dinner)</strong>
+        <span class="deadline">hutong.com.hk or OpenTable · 4–6 weeks out · Mention honeymoon · The Peking duck anchor dinner</span>
+      </li>
+      <li class="urgent"><strong>Ho Lee Fook (Hong Kong, May 29 dinner)</strong>
+        <span class="deadline">holeefook.com.hk · 1–2 weeks out · Modern Cantonese, Causeway Bay</span>
+      </li>
+      <li class="urgent"><strong>Aqua Luna Junk Cruise (Hong Kong, May 29 evening)</strong>
+        <span class="deadline">Klook · 1–2 weeks out · 7:30 or 7:45pm sailing · Sells out on weekends</span>
+      </li>
+      <li class="urgent"><strong>Torisho Sai (Kyoto, June 3 dinner)</strong>
+        <span class="deadline">Michelin yakitori · Book ASAP via Tableall or Pocket Concierge</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="checklist-section">
+    <h3>🟡 Book 1–3 Weeks Before Departure</h3>
+    <ul class="checklist">
+      <li><strong>Yakiniku Jumbo Hanare (Tokyo, June 10 dinner)</strong>
+        <span class="deadline">Tableall.com or Pocket Concierge · 2–3 weeks out · Mention honeymoon</span>
+      </li>
+      <li><strong>S'accapau (Tokyo, June 11 dinner)</strong>
+        <span class="deadline">Ask Prince Sakura Tower concierge to call · Small Italian basement · Backup: Pizza Strada walk-in</span>
+      </li>
+      <li><strong>Cokuun (Tokyo, June 10 morning coffee)</strong>
+        <span class="deadline">Book 1–2 weeks ahead via website/Instagram · Confirm current location first</span>
+      </li>
+      <li><strong>Izakaya Cooking Class (Tokyo, June 7 evening)</strong>
+        <span class="deadline">Airbnb Experiences / Viator · 2–3 weeks out</span>
+      </li>
+      <li><strong>Gion Duck Noodles (Kyoto, June 4 dinner)</strong>
+        <span class="deadline">AutoReserve or arrive at 5pm · 9 seats, Tabelog Top West Japan</span>
+      </li>
+      <li><strong>Hikoniku Tocome (Kyoto, June 5 dinner)</strong>
+        <span class="deadline">Book 4–6 weeks out · Charcoal beef patties, Gion machiya</span>
+      </li>
+      <li><strong>Peak Tram (Hong Kong, May 30 morning)</strong>
+        <span class="deadline">thepeak.com.hk · Buy online to skip queue · Round-trip + Sky Terrace combo</span>
+      </li>
+      <li><strong>Macau Ferry (Hong Kong, June 1)</strong>
+        <span class="deadline">turbojet.com.hk · Round-trip, 9am departure</span>
+      </li>
+      <li><strong>Suay Restaurant (Phuket, May 28 if doing Old Town dinner)</strong>
+        <span class="deadline">suayrestaurant.com · 1 week out · Best sit-down dinner in Old Town</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="checklist-section">
+    <h3>📋 Documents & Digital Setup — Complete Before Departure</h3>
+    
+    <h4>Required Pre-Arrival Registration</h4>
+    <ul class="checklist">
+      <li class="urgent"><strong>TDAC — Thailand Digital Arrival Card</strong>
+        <span class="deadline">thaiPass.go.th · One per traveler · Complete before flying from NY · Required on arrival</span>
+      </li>
+      <li class="urgent"><strong>Visit Japan Web registration</strong>
+        <span class="deadline">vjw-lp.digital.go.jp · 2 weeks before arrival · Both travelers register individually · QR codes skip paper forms at immigration</span>
+      </li>
+    </ul>
+
+    <h4>eSIM & Connectivity</h4>
+    <ul class="checklist">
+      <li><strong>Thailand eSIM</strong>
+        <span class="deadline">Airalo (~$5–8 for Thailand) or True Move H SIM at HKT airport (~฿300–400)</span>
+      </li>
+      <li><strong>Hong Kong eSIM</strong>
+        <span class="deadline">Airalo or Nomad (~$5–8 for HK data) or 7-Eleven SIM at airport (~HK$50)</span>
+      </li>
+      <li><strong>Japan eSIM</strong>
+        <span class="deadline">Airalo (~$22/10GB) or MobiMatter (~$14/20GB NTT Docomo) · Install, don't activate until landing</span>
+      </li>
+    </ul>
+
+    <h4>Payments & Transit</h4>
+    <ul class="checklist">
+      <li><strong>Suica (Japan transit)</strong>
+        <span class="deadline">Add to Apple Wallet before departure · Load ¥3,000–5,000 on arrival · Works on all lines</span>
+      </li>
+      <li><strong>Notify credit cards</strong>
+        <span class="deadline">Alert cards for Thailand, Hong Kong, Japan travel May 24–June 12</span>
+      </li>
+      <li><strong>ATM plan</strong>
+        <span class="deadline">Thailand: ฿6,000–8,000 cash (Kasikorn/Bangkok Bank ATMs) · HK: HK$3,000–5,000 (HSBC/Hang Seng) · Japan: ¥50,000–80,000 (7-Eleven ATMs)</span>
+      </li>
+      <li><strong>Octopus Card (Hong Kong)</strong>
+        <span class="deadline">Pick up at MTR customer service on arrival · Load HK$200–300</span>
+      </li>
+    </ul>
+
+    <h4>Passport & Travel Insurance</h4>
+    <ul class="checklist">
+      <li><strong>Passport validity check</strong>
+        <span class="deadline">Must be valid 6+ months beyond June 12, 2026</span>
+      </li>
+      <li><strong>Passport copies</strong>
+        <span class="deadline">Photo ID pages + email to yourself · Needed for tax-free shopping in Japan</span>
+      </li>
+      <li><strong>Travel insurance</strong>
+        <span class="deadline">Confirm coverage for Thailand, Hong Kong, Japan · Medical + trip interruption</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="checklist-section">
+    <h3>🎒 Packing Essentials</h3>
+    
+    <h4>Documents (Carry-On Only)</h4>
+    <ul class="checklist">
+      <li>Passports (both)</li>
+      <li>Printed hotel confirmations (The Shore, Island Shangri-La, Suiran, Prince Sakura Tower)</li>
+      <li>Printed flight confirmations (all segments)</li>
+      <li>Credit cards (2+ backups)</li>
+      <li>Emergency contact list</li>
+    </ul>
+
+    <h4>Tech & Power</h4>
+    <ul class="checklist">
+      <li>Universal travel adapter (Type A/B/C for Thailand, Type G for HK, Type A/B for Japan)</li>
+      <li>Phone + charger</li>
+      <li>Camera + charger (if bringing)</li>
+      <li>Power bank (essential for Suica/Apple Pay in Japan)</li>
+      <li>Headphones</li>
+      <li>E-reader / iPad</li>
+    </ul>
+
+    <h4>Clothing — Tropical/Summer</h4>
+    <ul class="checklist">
+      <li>Light layers (27–34°C across all destinations)</li>
+      <li>Comfortable walking shoes (Fushimi Inari hike, Tsukiji, city walking)</li>
+      <li>Sandals / slides for beach (Phuket)</li>
+      <li>Swimwear (Phuket beach + Khao Sok lake)</li>
+      <li>Sun hat / cap</li>
+      <li>Sunglasses</li>
+      <li>Light rain jacket or packable umbrella (Tsuyu season in Japan, afternoon showers everywhere)</li>
+      <li>1–2 nicer outfits for upscale dinners (Hutong, Hakkoku, S'accapau)</li>
+    </ul>
+
+    <h4>Toiletries & Health</h4>
+    <ul class="checklist">
+      <li>Sunscreen (SPF 50+)</li>
+      <li>Insect repellent (Khao Sok jungle)</li>
+      <li>Motion sickness meds (Aqua Luna cruise, Macau ferry)</li>
+      <li>Personal meds (bring 1.5x duration in carry-on)</li>
+      <li>Basic first aid (band-aids, pain relievers)</li>
+      <li>Hand sanitizer</li>
+      <li>Lip balm</li>
+    </ul>
+
+    <h4>Nice-to-Haves</h4>
+    <ul class="checklist">
+      <li>Small daypack / tote for daily excursions</li>
+      <li>Waterproof phone case (Khao Sok, beach)</li>
+      <li>Notebook + pen (travel journal)</li>
+      <li>Ziploc bags (wet clothes, snacks)</li>
+      <li>Laundry detergent packets (5-night stretches)</li>
+      <li>Earplugs + eye mask (flights, time zone adjustment)</li>
+    </ul>
+  </div>
+
+  <div class="checklist-section">
+    <h3>✈️ Flight & Transfer Confirmations</h3>
+    <ul class="checklist">
+      <li><strong>May 24 departure</strong>
+        <span class="deadline">Confirm flight time from US → Phuket (HKT)</span>
+      </li>
+      <li><strong>May 29: Phuket → Hong Kong</strong>
+        <span class="deadline">Confirm airport transfer from The Shore night before · HKT ~45 min from Kata Noi · Allow 2.5 hrs at airport</span>
+      </li>
+      <li><strong>June 3: Hong Kong → Kyoto</strong>
+        <span class="deadline">10:55am flight HKG → confirm arrival transport to Suiran · Complimentary taxi from Kyoto Station — book 3+ days ahead at +81-75-872-0101</span>
+      </li>
+      <li><strong>June 6: Kyoto → Tokyo (Shinkansen)</strong>
+        <span class="deadline">~2h15m · Book reserved seats via Smart EX app or JR Ticket Office</span>
+      </li>
+      <li><strong>June 12 departure: Tokyo → US</strong>
+        <span class="deadline">6pm flight from Haneda (Terminal 3) · Leave Prince Sakura Tower by 3pm · Keikyu Line from Shibuya ~45 min (~¥600)</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="checklist-section">
+    <h3>📞 On-Arrival Tasks</h3>
+    
+    <h4>Phuket (May 24)</h4>
+    <ul class="checklist">
+      <li>Withdraw ฿6,000–8,000 cash at airport ATM</li>
+      <li>Activate Thailand eSIM</li>
+      <li>Book Spa Session 1 (May 25, 3pm) and Session 2 (May 28, 2:30pm) at Serenity Spa desk</li>
+      <li>Reserve Param Para dinner (May 25 or May 27) at front desk</li>
+      <li>Confirm Khao Sok pickup time 48 hrs before (May 25) — 8am May 27</li>
+    </ul>
+
+    <h4>Hong Kong (May 29)</h4>
+    <ul class="checklist">
+      <li>Withdraw HK$3,000–5,000 at HSBC/Hang Seng ATM</li>
+      <li>Pick up Octopus Card at MTR Admiralty station, load HK$200–300</li>
+      <li>Activate Hong Kong eSIM</li>
+    </ul>
+
+    <h4>Kyoto (June 3)</h4>
+    <ul class="checklist">
+      <li>Activate Japan eSIM</li>
+      <li>Confirm reserved Shinkansen seats to Tokyo (June 6)</li>
+    </ul>
+
+    <h4>Tokyo (June 6)</h4>
+    <ul class="checklist">
+      <li>Withdraw ¥50,000–80,000 at 7-Eleven ATM</li>
+      <li>Load Suica ¥3,000–5,000 via Apple Wallet</li>
+      <li>Confirm all Tokyo restaurant reservations with concierge</li>
+      <li>Confirm June 12 departure transport night before</li>
+    </ul>
+  </div>
+
+</div>
+</section>
+
+<!-- TRAVEL AGENT -->
+<section id="agent" style="background: linear-gradient(135deg, var(--vermillion) 0%, var(--deep-red) 100%);">
+<div class="container">
+  <div style="background: rgba(255,255,255,0.95); border-radius: 4px; padding: 2.5rem 2rem; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+    <h3 style="font-family: 'IM Fell English', serif; font-size: 1.75rem; color: var(--ink); margin-bottom: 1rem;">Need Additional Help or Recommendations?</h3>
+    <p style="font-size: 1.05rem; color: var(--ink-soft); line-height: 1.7; max-width: 600px; margin: 0 auto;">
+      Have your handsome husband ask the Claude travel agent he built using your itinerary.<br>
+      <span style="font-size: 0.85rem; color: var(--tatami); font-style: italic; display: block; margin-top: 0.75rem;">(He knows you won't download it.)</span>
+    </p>
+  </div>
+</div>
+</section>
+
+<!-- CITY GUIDES NAVIGATION -->
+<section id="guides">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○三</span>
+    <h2 class="section-title">City-by-City Guides</h2>
+  </div>
+
+  <p style="margin-bottom: 2rem; color: var(--ink-soft);">
+    Each destination has a complete standalone guide with detailed day-by-day itineraries, restaurant recommendations, addresses, and local logistics. Click any city below to view the full guide.
+  </p>
+
+  <div class="city-grid">
+    <a href="#phuket" class="city-card" data-kanji="ภูเก็ต">
+      <div class="city-card-dates">May 24–29, 2026</div>
+      <div class="city-card-name">Phuket</div>
+      <div class="city-card-hotel">The Shore at Katathani</div>
+    </a>
+
+    <a href="#hongkong" class="city-card" data-kanji="香港">
+      <div class="city-card-dates">May 29 – June 3, 2026</div>
+      <div class="city-card-name">Hong Kong</div>
+      <div class="city-card-hotel">Island Shangri-La</div>
+    </a>
+
+    <a href="#kyoto" class="city-card" data-kanji="京都">
+      <div class="city-card-dates">June 3–6, 2026</div>
+      <div class="city-card-name">Kyoto</div>
+      <div class="city-card-hotel">Suiran Luxury Collection</div>
+    </a>
+
+    <a href="#tokyo" class="city-card" data-kanji="東京">
+      <div class="city-card-dates">June 6–12, 2026</div>
+      <div class="city-card-name">Tokyo</div>
+      <div class="city-card-hotel">The Prince Sakura Tower</div>
+    </a>
+  </div>
+</div>
+</section>
+
+<!-- CITY GUIDE DIRECT ACCESS -->
+<section id="phuket" style="background: var(--paper-mid); padding-top: 4rem;">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">Phuket</span>
+    <h2 class="section-title">May 24–29, 2026</h2>
+  </div>
+  
+  <div style="background: var(--cream); border: 2px solid var(--sand); border-radius: 4px; padding: 3rem 2rem; text-align: center;">
+    <p style="font-size: 1.1rem; color: var(--ink-soft); margin-bottom: 1.5rem;">
+      Beach recovery • Khao Sok jungle overnight • Old Town wander • Night markets • Couples spa sessions
+    </p>
+    <a href="/phuket_honeymoon.html" style="display: inline-block; background: var(--sand); color: white; padding: 1rem 2.5rem; text-decoration: none; border-radius: 4px; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 400; transition: all 0.3s;">
+      Open Phuket Guide →
+    </a>
+    <p style="font-size: 0.75rem; color: var(--tatami); margin-top: 1rem; font-style: italic;">
+      Full day-by-day itinerary with restaurants, addresses, and logistics
+    </p>
+  </div>
+</div>
+</section>
+
+<section id="hongkong" style="padding-top: 4rem;">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">Hong Kong</span>
+    <h2 class="section-title">May 29 – June 3, 2026</h2>
+  </div>
+  
+  <div style="background: var(--cream); border: 2px solid var(--jade); border-radius: 4px; padding: 3rem 2rem; text-align: center;">
+    <p style="font-size: 1.1rem; color: var(--ink-soft); margin-bottom: 1.5rem;">
+      Victoria Peak • Star Ferry • Aqua Luna cruise • Hutong Peking duck • Macau day trip • Speakeasy crawl
+    </p>
+    <a href="/hongkong_honeymoon__1_.html" style="display: inline-block; background: var(--jade); color: white; padding: 1rem 2.5rem; text-decoration: none; border-radius: 4px; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 400; transition: all 0.3s;">
+      Open Hong Kong Guide →
+    </a>
+    <p style="font-size: 0.75rem; color: var(--tatami); margin-top: 1rem; font-style: italic;">
+      Complete 5-day itinerary with cha chaan teng guide and bar map
+    </p>
+  </div>
+</div>
+</section>
+
+<section id="kyoto" style="background: var(--paper-mid); padding-top: 4rem;">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">Kyoto</span>
+    <h2 class="section-title">June 3–6, 2026</h2>
+  </div>
+  
+  <div style="background: var(--cream); border: 2px solid var(--vermillion); border-radius: 4px; padding: 3rem 2rem; text-align: center;">
+    <p style="font-size: 1.1rem; color: var(--ink-soft); margin-bottom: 1.5rem;">
+      Arashiyama bamboo • Fushimi Inari • TeamLab Biovortex • Torisho Sai yakitori • Three signature bars
+    </p>
+    <a href="/kyoto_honeymoon_guide.html" style="display: inline-block; background: var(--vermillion); color: white; padding: 1rem 2.5rem; text-decoration: none; border-radius: 4px; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 400; transition: all 0.3s;">
+      Open Kyoto Guide →
+    </a>
+    <p style="font-size: 0.75rem; color: var(--tatami); margin-top: 1rem; font-style: italic;">
+      3-day riverside retreat with temple hikes and nightcap bars
+    </p>
+  </div>
+</div>
+</section>
+
+<section id="tokyo" style="padding-top: 4rem;">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">Tokyo</span>
+    <h2 class="section-title">June 6–12, 2026</h2>
+  </div>
+  
+  <div style="background: var(--cream); border: 2px solid var(--vermillion); border-radius: 4px; padding: 3rem 2rem; text-align: center;">
+    <p style="font-size: 1.1rem; color: var(--ink-soft); margin-bottom: 1.5rem;">
+      Tsukiji Market • Hakkoku omakase • Bar Benfiddich • Golden Gai • Seirinkan pizza • Retro gaming
+    </p>
+    <a href="/tokyo_honeymoon_v10.html" style="display: inline-block; background: var(--deep-red); color: white; padding: 1rem 2.5rem; text-decoration: none; border-radius: 4px; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 400; transition: all 0.3s;">
+      Open Tokyo Guide →
+    </a>
+    <p style="font-size: 0.75rem; color: var(--tatami); margin-top: 1rem; font-style: italic;">
+      6-day comprehensive guide with coffee, ramen, gyoza, and shopping maps
+    </p>
+  </div>
+</div>
+</section>
+
+<footer>
+  <span>蜜月</span> · Asia Honeymoon 2026 · May 24 – June 12 · Phuket · Hong Kong · Kyoto · Tokyo · <span>旅行</span>
+</footer>
+
+<a href="#" class="back-to-top" id="backToTop">↑</a>
+
+<script>
+// Smooth scroll for nav links
+document.querySelectorAll('nav a, .city-card').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  });
+});
+
+// Active nav state
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('nav a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (scrollY >= (sectionTop - 200)) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active');
+    }
+  });
+
+  // Back to top button
+  const backToTop = document.getElementById('backToTop');
+  if (scrollY > 500) {
+    backToTop.classList.add('visible');
+  } else {
+    backToTop.classList.remove('visible');
+  }
+});
+
+// Back to top functionality
+document.getElementById('backToTop').addEventListener('click', (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+</body>
+</html>

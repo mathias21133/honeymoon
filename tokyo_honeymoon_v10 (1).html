@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tokyo Honeymoon · June 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --vermillion: #C0392B;
+    --deep-red: #8B1A10;
+    --gold: #B8962E;
+    --gold-light: #D4AF5A;
+    --ink: #1C1410;
+    --ink-soft: #3D2B1F;
+    --paper: #F5EFE0;
+    --paper-dark: #EDE3CC;
+    --paper-mid: #F0E8D5;
+    --tatami: #C8B99A;
+    --moss: #4A6741;
+    --night-blue: #1A2535;
+    --cream: #FAF6ED;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.6;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--ink);
+    border-bottom: 2px solid var(--vermillion);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  nav::-webkit-scrollbar { display: none; }
+
+  .nav-logo {
+    font-family: 'Shippori Mincho', serif;
+    color: var(--gold-light);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0.9rem 1.5rem 0.9rem 0;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    margin-right: 1rem;
+  }
+
+  nav a {
+    color: rgba(245,239,224,0.6);
+    text-decoration: none;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.9rem 1rem;
+    white-space: nowrap;
+    transition: color 0.2s;
+    font-weight: 400;
+  }
+  nav a:hover { color: var(--gold-light); }
+
+  /* HERO */
+  .hero {
+    background: var(--ink);
+    color: var(--paper);
+    text-align: center;
+    padding: 5rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '東京';
+    position: absolute;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 20rem;
+    color: rgba(192, 57, 43, 0.06);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    line-height: 1;
+  }
+
+  .hero-kana {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.4em;
+    color: var(--vermillion);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
+  .hero h1 {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-subtitle {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--tatami);
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-meta-item {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(245,239,224,0.5);
+  }
+  .hero-meta-item strong {
+    display: block;
+    color: var(--gold-light);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    margin-top: 0.15rem;
+  }
+
+  /* MAIN LAYOUT */
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  section { padding: 3.5rem 0 2rem; }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--tatami);
+  }
+
+  .section-num {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.7rem;
+    color: var(--vermillion);
+    letter-spacing: 0.2em;
+  }
+
+  .section-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+  }
+
+  /* OVERVIEW TABLE */
+  .overview-grid {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+  }
+  .overview-grid thead tr {
+    background: var(--ink);
+  }
+  .overview-grid thead th {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    padding: 0.6rem 0.9rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  .overview-grid tbody tr {
+    border-bottom: 1px solid var(--paper-dark);
+  }
+  .overview-grid tbody tr:hover td { background: var(--paper-mid); }
+  .overview-grid td {
+    padding: 0.7rem 0.9rem;
+    vertical-align: top;
+    color: var(--ink-soft);
+  }
+  .overview-grid td:first-child {
+    font-family: 'Shippori Mincho', serif;
+    color: var(--vermillion);
+    font-weight: 700;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+  .overview-grid td:nth-child(2) {
+    color: var(--tatami);
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+  .overview-grid td:nth-child(3) {
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  /* BOOKINGS */
+  .bookings-grid { display: grid; gap: 0.75rem; }
+
+  .booking-card {
+    background: var(--cream);
+    border: 1px solid var(--paper-dark);
+    border-left: 3px solid var(--vermillion);
+    padding: 1rem 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.25rem 1rem;
+    align-items: start;
+  }
+  .booking-card.urgent { border-left-color: var(--vermillion); }
+  .booking-card.moderate { border-left-color: var(--gold); }
+  .booking-card.buy-now { border-left-color: var(--deep-red); background: #FFF8F7; }
+
+  .booking-name {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .booking-badge {
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .badge-urgent { background: var(--vermillion); color: white; }
+  .badge-moderate { background: var(--gold); color: white; }
+  .badge-now { background: var(--deep-red); color: white; }
+  .badge-new { background: var(--moss); color: white; }
+
+  .booking-detail {
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    grid-column: 1 / -1;
+    margin-top: 0.1rem;
+  }
+  .booking-link {
+    font-size: 0.75rem;
+    color: var(--vermillion);
+    letter-spacing: 0.05em;
+    grid-column: 1 / -1;
+  }
+
+  /* DAY CARDS */
+  .day-card {
+    margin-bottom: 3rem;
+    background: var(--cream);
+    border: 1px solid var(--paper-dark);
+    overflow: hidden;
+  }
+
+  .day-header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 1.25rem 1.75rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .day-number {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--vermillion);
+  }
+
+  .day-title {
+    font-family: 'IM Fell English', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    flex: 1;
+  }
+
+  .day-date {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: rgba(245,239,224,0.4);
+    text-transform: uppercase;
+  }
+
+  .day-body { padding: 0; }
+
+  /* TIMELINE */
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    border-bottom: 1px solid var(--paper-dark);
+    transition: background 0.15s;
+  }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-item:hover { background: var(--paper-mid); }
+
+  .timeline-time {
+    padding: 1rem 1rem 1rem 1.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    color: var(--tatami);
+    font-weight: 500;
+    border-right: 1px solid var(--paper-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-top: 1.1rem;
+  }
+
+  .item-icon { font-size: 1.1rem; line-height: 1; }
+
+  .timeline-content { padding: 1rem 1.5rem 1rem 1.25rem; }
+
+  .item-type {
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+  }
+
+  .type-coffee { color: #8B6914; }
+  .type-food { color: var(--vermillion); }
+  .type-activity { color: #5B6FA6; }
+  .type-bar { color: #7B3F6E; }
+  .type-transit { color: var(--tatami); }
+  .type-market { color: var(--moss); }
+  .type-note { color: var(--tatami); }
+
+  .item-name {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .star-badge {
+    font-size: 0.55rem;
+    background: var(--vermillion);
+    color: white;
+    padding: 0.15rem 0.4rem;
+    letter-spacing: 0.1em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .kissaten-badge {
+    font-size: 0.55rem;
+    background: #8B6914;
+    color: white;
+    padding: 0.15rem 0.4rem;
+    letter-spacing: 0.1em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .new-badge {
+    font-size: 0.55rem;
+    background: var(--moss);
+    color: white;
+    padding: 0.15rem 0.4rem;
+    letter-spacing: 0.1em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .book-badge {
+    font-size: 0.55rem;
+    background: var(--deep-red);
+    color: white;
+    padding: 0.15rem 0.4rem;
+    letter-spacing: 0.1em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .item-desc {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  .item-detail {
+    font-size: 0.75rem;
+    color: var(--tatami);
+    margin-top: 0.4rem;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .item-note {
+    font-size: 0.75rem;
+    background: var(--paper-dark);
+    border-left: 2px solid var(--gold);
+    padding: 0.4rem 0.7rem;
+    margin-top: 0.5rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  .timeline-item.bar-item {
+    background: linear-gradient(to right, rgba(123,63,110,0.04), transparent);
+  }
+  .timeline-item.coffee-item {
+    background: linear-gradient(to right, rgba(139,105,20,0.04), transparent);
+  }
+  .timeline-item.light-item {
+    background: linear-gradient(to right, rgba(74,103,65,0.04), transparent);
+  }
+
+  /* SECTION BAND */
+  .time-band {
+    background: var(--paper-dark);
+    padding: 0.4rem 1.5rem;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--tatami);
+    border-bottom: 1px solid var(--paper-dark);
+  }
+
+  /* HOTEL NOTE */
+  .hotel-note {
+    background: var(--cream);
+    border: 1px solid var(--paper-dark);
+    border-top: 3px solid var(--gold);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .hotel-note h4 {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .hotel-option {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--paper-dark);
+  }
+  .hotel-option:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .hotel-option strong {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.95rem;
+    color: var(--ink);
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+  .hotel-option p { font-size: 0.82rem; color: var(--ink-soft); }
+
+  /* FLAGS NOTE */
+  .flags-block {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 1.5rem 1.75rem;
+    margin: 1.5rem 0;
+  }
+  .flags-block h4 {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    color: var(--gold-light);
+    margin-bottom: 0.75rem;
+  }
+  .flags-list { list-style: none; display: grid; gap: 0.5rem; }
+  .flags-list li {
+    font-size: 0.8rem;
+    color: rgba(245,239,224,0.75);
+    padding-left: 1rem;
+    position: relative;
+    line-height: 1.5;
+  }
+  .flags-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--vermillion);
+    font-size: 0.7rem;
+  }
+
+  /* RAIN NOTE */
+  .rain-note {
+    background: var(--paper-dark);
+    border: 1px solid var(--tatami);
+    border-left: 3px solid var(--gold);
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    margin: 1rem 0;
+  }
+
+  /* REFERENCE TABLES */
+  .ref-section { margin-bottom: 2.5rem; }
+  .ref-section h3 {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--paper-dark);
+  }
+
+  .ref-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    margin: 0.5rem 0;
+  }
+  .ref-table th {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--tatami);
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--paper-dark);
+    font-weight: 600;
+  }
+  .ref-table td {
+    padding: 0.65rem 0.75rem;
+    border-bottom: 1px solid var(--paper-dark);
+    color: var(--ink-soft);
+    vertical-align: top;
+  }
+  .ref-table tr:last-child td { border-bottom: none; }
+  .ref-table tr:hover td { background: var(--paper-mid); }
+  .ref-table td:first-child {
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  /* TRACKER TABLES */
+  .tracker-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    margin-bottom: 1rem;
+  }
+  .tracker-table thead tr { background: var(--ink); }
+  .tracker-table thead th {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    padding: 0.6rem 0.9rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  .tracker-table td {
+    padding: 0.7rem 0.9rem;
+    border-bottom: 1px solid var(--paper-dark);
+    vertical-align: top;
+    color: var(--ink-soft);
+  }
+  .tracker-table tr:last-child td { border-bottom: none; }
+  .tracker-table tr:hover td { background: var(--paper-mid); }
+  .tracker-table td:first-child {
+    font-family: 'Shippori Mincho', serif;
+    color: var(--vermillion);
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  .tracker-table td:nth-child(3) {
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  /* WEIRD TABLE */
+  .weird-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+  }
+  .weird-table thead tr { background: var(--night-blue); }
+  .weird-table thead th {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    padding: 0.6rem 0.9rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  .weird-table td {
+    padding: 0.7rem 0.9rem;
+    border-bottom: 1px solid var(--paper-dark);
+    vertical-align: top;
+    color: var(--ink-soft);
+  }
+  .weird-table tr:first-child td { background: #FFFBF0; }
+  .weird-table tr:hover td { background: var(--paper-mid); }
+  .weird-table td:first-child { font-weight: 500; color: var(--ink); }
+
+  /* DIVIDER */
+  .mon-divider {
+    text-align: center;
+    margin: 2rem 0;
+    position: relative;
+  }
+  .mon-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--paper-dark);
+  }
+  .mon-divider span {
+    position: relative;
+    background: var(--paper);
+    padding: 0 1rem;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.2rem;
+    color: var(--tatami);
+  }
+
+  .addr {
+    display: inline-block;
+    font-size: 0.7rem;
+    color: var(--tatami);
+    margin-top: 0.2rem;
+  }
+
+  footer {
+    background: var(--ink);
+    color: rgba(245,239,224,0.4);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    margin-top: 3rem;
+  }
+  footer span { color: var(--vermillion); }
+
+  @media (max-width: 600px) {
+    .timeline-item { grid-template-columns: 60px 1fr; }
+    .timeline-time { padding: 1rem 0.5rem 1rem 0.75rem; }
+    .hero::before { font-size: 10rem; }
+    .day-header { gap: 0.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">東京 · Honeymoon</div>
+  <a href="#bookings">Book Now</a>
+  <a href="#day1">Jun 6</a>
+  <a href="#day2">Jun 7</a>
+  <a href="#day3">Jun 8</a>
+  <a href="#day4">Jun 9</a>
+  <a href="#day5">Jun 10</a>
+  <a href="#day6">Jun 11</a>
+  <a href="#day7">Jun 12</a>
+  <a href="#trackers">Trackers</a>
+  <a href="#reference">Reference</a>
+  <a href="#priorities">Priorities</a>
+</nav>
+
+<div class="hero">
+  <span class="hero-kana">東京 蜜月旅行 · Honeymoon</span>
+  <h1>Tokyo, June 2026</h1>
+  <p class="hero-subtitle">The Prince Sakura Tower · Takanawa · 7 Days · Arriving from Izu</p>
+  <div class="hero-meta">
+    <div class="hero-meta-item">Arrival<strong>June 6, Midday</strong></div>
+    <div class="hero-meta-item">From<strong>Izu Peninsula</strong></div>
+    <div class="hero-meta-item">Base<strong>Shibuya / Shinjuku</strong></div>
+    <div class="hero-meta-item">Departure<strong>June 12 · 6pm Haneda</strong></div>
+    <div class="hero-meta-item">Season<strong>Tsuyu · Rainy</strong></div>
+  </div>
+</div>
+
+<!-- HOTEL -->
+<section id="hotel">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○〇</span>
+    <h2 class="section-title">Hotel — Two Options</h2>
+  </div>
+
+  <div class="hotel-note">
+    <h4>The Prince Sakura Tower Tokyo, Autograph Collection · Takanawa</h4>
+    <div class="hotel-option">
+      <strong>Location + Transit</strong>
+      <p>Takanawa, just south of Shinagawa Station. Shibuya is 6 min on the Yamanote Line. Shinjuku is ~20 min. Haneda is 45 min on the Keikyu Line directly from Shinagawa — the best possible base for a stress-free Day 7 departure. The hotel sits in the quieter Takanawa garden district rather than in the middle of the action, which for a honeymoon base is a feature, not a bug.</p>
+    </div>
+    <div class="hotel-option">
+      <strong>Coffee Note</strong>
+      <p>The Takanawa area has no specialty coffee from your list within walking distance — the nearest serious option is Onibus Coffee in Nakameguro, one stop away (~7 min). On early mornings (Day 4 Tsukiji), Blue Bottle Coffee inside Shinagawa Station is the practical first coffee. On all other days, coffee comes after the first train — always first stop before any activity.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- BOOKINGS -->
+<section id="bookings">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○一</span>
+    <h2 class="section-title">Reservations — Book Before You Land</h2>
+  </div>
+
+  <div class="bookings-grid">
+
+    <div class="booking-card buy-now">
+      <div class="booking-name">Yakiniku Jumbo Hanare — Day 5 Dinner</div>
+      <span class="booking-badge badge-now">2–3 Weeks</span>
+      <div class="booking-detail">The anchor dinner. Wagyu grilled at your table, intimate setting. The honeymoon dinner. Mention honeymoon when booking.</div>
+      <div class="booking-link">Tableall.com or Pocket Concierge</div>
+    </div>
+
+    <div class="booking-card buy-now">
+      <div class="booking-name">Hakkoku — Day 3 Dinner (Sushi Night)</div>
+      <span class="booking-badge badge-now">2 Months Ahead</span>
+      <div class="booking-detail">À la carte Jiro-caliber sushi in Ginza. Chef Hiroyuki Sato. Red-vinegar rice, prime Tsukiji tuna. Slots open exactly 2 months out — set a calendar reminder. ~¥28–40k/person.</div>
+      <div class="booking-link">omakase.in — slots open exactly 2 months before date</div>
+    </div>
+
+    <div class="booking-card buy-now">
+      <div class="booking-name">Koffee Mameya Kakeru — Day 2 Morning</div>
+      <span class="booking-badge badge-now">Book ASAP</span>
+      <div class="booking-detail">Omakase coffee counter, Kiyosumi-Shirakawa. Seated tasting course with paired sweets. Very limited daily slots — disappears fast. NOT the Omotesando bean shop.</div>
+      <div class="booking-link">tablecheck.com</div>
+    </div>
+
+    <div class="booking-card moderate">
+      <div class="booking-name">S'accapau — Day 6 Dinner (Italian, Nishi-Azabu)</div>
+      <span class="booking-badge badge-moderate">Ask Concierge</span>
+      <div class="booking-detail">Small Italian basement in Nishi-Azabu — intimate, completely different from the rest of the trip. Ask hotel concierge to call. Not a hard reservation but worth asking ahead. Backup: Pizza Strada, Azabujuban (no reservation, 10 min walk from Roppongi Hills).</div>
+      <div class="booking-link">Ask hotel concierge · Backup: Pizza Strada, 3-6-2 Azabujuban (walk-in)</div>
+    </div>
+
+    <div class="booking-card moderate">
+      <div class="booking-name">Izakaya Cooking Class — Day 2 Evening</div>
+      <span class="booking-badge badge-moderate">2–3 Weeks</span>
+      <div class="booking-detail">Small-plates izakaya cooking with drinks. Hands-on, social, delicious. Day 2 anchor evening.</div>
+      <div class="booking-link">Airbnb Experiences / Viator</div>
+    </div>
+
+    <div class="booking-card moderate">
+      <div class="booking-name">Cokuun — Day 5 Morning</div>
+      <span class="booking-badge badge-moderate">1–2 Weeks</span>
+      <div class="booking-detail">Omakase coffee — different style from Mameya Kakeru, equally special. Check current location before booking.</div>
+      <div class="booking-link">Website / Instagram — check current location first</div>
+    </div>
+
+    <div class="booking-card moderate">
+      <div class="booking-name">Harutaka — If Doing Big Sushi Instead of Hakkoku</div>
+      <span class="booking-badge badge-moderate">4–6 Weeks</span>
+      <div class="booking-detail">Tokyo's sole 3-Michelin-star sushi. Phone-only reservations. ¥60–70k/person. Ask hotel concierge to call on your behalf — they speak Japanese.</div>
+      <div class="booking-link">Phone only — ask hotel concierge to call</div>
+    </div>
+
+  </div>
+
+  <div class="rain-note">
+    ☔ <strong>Tsuyu note:</strong> June is Tokyo's rainy season — rain 3–4 days out of 7, humidity 80%+, temps 22–28°C. The city runs fully in rain. Indoor days (coffee, ramen, museums, covered markets) are completely unaffected. Pack a light rain jacket or pick up a ¥500 konbini umbrella on arrival.
+  </div>
+</div>
+</section>
+
+<!-- ITINERARY -->
+<section id="itinerary">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○二</span>
+    <h2 class="section-title">At a Glance</h2>
+  </div>
+
+  <table class="overview-grid">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Date</th>
+        <th>Anchor</th>
+        <th>Vibe</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Day 1</td><td>Sat Jun 6</td><td>Shibuya / Harajuku</td><td>Arrival, Chatei Hatou, crossing, Gyukatsu dinner, canal walk</td></tr>
+      <tr><td>Day 2</td><td>Sun Jun 7</td><td>Kiyosumi → Asakusa → Akihabara</td><td>Coffee omakase, temple, knives, retro gaming, cooking class</td></tr>
+      <tr><td>Day 3</td><td>Mon Jun 8</td><td>Ueno → Omotesando → Nakameguro → Ginza</td><td>Market breakfast, shopping, canal coffee, Hakkoku sushi dinner</td></tr>
+      <tr><td>Day 4</td><td>Tue Jun 9</td><td>Tsukiji → Ginza → Shimokitazawa</td><td>Market, Kissaten #2, Seirinkan pizza lunch, Daco pastry, vintage afternoon — light evening</td></tr>
+      <tr><td>Day 5</td><td>Wed Jun 10</td><td>Shinjuku</td><td>Premiere Mai, Cokuun, Philly Tokyo, Benfiddich, Yakiniku Jumbo Hanare</td></tr>
+      <tr><td>Day 6</td><td>Thu Jun 11</td><td>Roppongi / Azabu</td><td>Fuglen coffee, Nankai Jimbocho lunch, Mori Art Museum, S'accapau (concierge) or Pizza Strada, Trader Vic's</td></tr>
+      <tr><td>Day 7</td><td>Fri Jun 12</td><td>Shibuya → Haneda</td><td>Farewell kissaten, last crossing, depart</td></tr>
+    </tbody>
+  </table>
+</div>
+</section>
+
+<!-- DAY BY DAY -->
+<section id="days">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○三</span>
+    <h2 class="section-title">Day-by-Day</h2>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="day-card" id="day1">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day One · Saturday</div>
+        <div class="day-title">Arrival · Shibuya · Harajuku</div>
+      </div>
+      <div class="day-date">June 6</div>
+    </div>
+    <div class="day-body">
+
+      <div class="time-band">Afternoon</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🚆</span>12:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Arrival</div>
+          <div class="item-name">Arrive from Izu → Check In</div>
+          <div class="item-desc">Check in at The Prince Sakura Tower. Drop bags, freshen up. Shibuya is 6 min on the Yamanote — no need to rush.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>1:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · Kissaten #1 · First Stop</div>
+          <div class="item-name">Chatei Hatou <span class="kissaten-badge">Kissaten</span></div>
+          <div class="item-desc">Train to Shibuya (6 min), walk straight here before anything else. Dark wood, jazz, siphon coffee — one of Tokyo's last great old-school kissaten. Order the siphon and settle in. This is your first real Tokyo moment.</div>
+          <div class="item-detail">1-15-19 Shibuya · Opens 9am · No reservation needed · 6 min from hotel by Yamanote</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🛍</span>2:15pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Walk</div>
+          <div class="item-name">Shibuya / Harajuku</div>
+          <div class="item-desc">Miyashita Park, Kith Tokyo, Human Made. Takeshita St for the energy, Omotesando Ave for the calm. Swing by Komehyo Shibuya for secondhand luxury — Margiela, Prada, Hermès at real discounts.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🥟</span>4:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Snack</div>
+          <div class="item-name">Harajuku Gyoza Ru <span class="star-badge">★</span></div>
+          <div class="item-desc">Pan-fried gyoza near Takeshita. Queue, cheap, crispy outside, juicy inside.</div>
+          <div class="item-detail">Takeshita St area · Walk in</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🚦</span>5:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Signature</div>
+          <div class="item-name">Shibuya Crossing <span class="star-badge">★</span></div>
+          <div class="item-desc">Do it now, before you're tired. Stand in the middle. Come back at night for the neon version — a completely different experience.</div>
+        </div>
+      </div>
+
+      <div class="time-band">Evening</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🥩</span>7:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Dinner</div>
+          <div class="item-name">Gyukatsu Ichinisan <span class="star-badge">★</span></div>
+          <div class="item-desc">Wagyu beef cutlet on your own personal hot stone — you cook it to your exact doneness. Perfect first dinner. Arrive at opening — fills in 20 min. No reservation.</div>
+          <div class="item-note">Arrive at opening or expect a queue. Worth it.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item light-item">
+        <div class="timeline-time"><span class="item-icon">🌊</span>8:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Evening Walk</div>
+          <div class="item-name">Nakameguro Canal</div>
+          <div class="item-desc">Walk the canal after dinner. Onibus Coffee if still open. Grab Milkland Hokkaido soft serve — pure Hokkaido dairy, simple and perfect. Low key, beautiful. Night one done right.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day-card" id="day2">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Two · Sunday</div>
+        <div class="day-title">Kiyosumi → Asakusa → Akihabara</div>
+      </div>
+      <div class="day-date">June 7</div>
+    </div>
+    <div class="day-body">
+
+      <div class="time-band">Morning</div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>9:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · Omakase</div>
+          <div class="item-name">Koffee Mameya Kakeru <span class="book-badge">Book Ahead</span></div>
+          <div class="item-desc">Omakase coffee counter in Kiyosumi-Shirakawa. Seated tasting course with paired sweets. ~35 min from Shibuya by train. This is the real experience — not the Omotesando bean shop.</div>
+          <div class="item-detail">2-16-14 Hirano, Koto City · Book via TableCheck · ~35 min from Shibuya</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">⛩</span>10:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Temple</div>
+          <div class="item-name">Asakusa — Senso-ji</div>
+          <div class="item-desc">Japan's oldest temple. Walk Nakamise-dori for snacks — ningyo-yaki, roasted skewers, traditional sweets. Arrive before noon to beat the tour groups.</div>
+        </div>
+      </div>
+
+      <div class="time-band">Afternoon</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍜</span>12:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Lunch · Ramen #1</div>
+          <div class="item-name">Chuka Soba</div>
+          <div class="item-desc">Clean shoyu ramen — chicken and soy base, no fish. Light, refined. The right introduction to Tokyo-style ramen. Don't go heavy — cooking class is tonight.</div>
+          <div class="item-detail">Shinjuku/Akihabara area · Walk in</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🔪</span>1:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-market">Market</div>
+          <div class="item-name">Kappabashi Street <span class="star-badge">★</span></div>
+          <div class="item-desc">The district where restaurants buy their gear. Knives, ceramics, lacquerware. Kama-Asa Shoten — family-run since 1908 — is the standout knife shop. Budget 30–45 min, longer if you find the rabbit hole.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>3:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · 2</div>
+          <div class="item-name">Glitch Coffee</div>
+          <div class="item-desc">Third-wave specialty in Akihabara. Good stop between Kappabashi and the gaming deep-dive.</div>
+          <div class="item-detail">3-9-14 Sotokanda, Chiyoda City</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🕹</span>3:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Weird Tokyo</div>
+          <div class="item-name">Super Potato + Akihabara <span class="star-badge">★</span></div>
+          <div class="item-desc">Super Potato is 6 floors of retro games with a working rooftop arcade — original cabinet boards, not emulators. The top floor is the weird one. Smoke-friendly.</div>
+          <div class="item-detail">1-11-2 Sotokanda, Chiyoda City</div>
+        </div>
+      </div>
+
+      <div class="time-band">Evening</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍱</span>6:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Evening Activity</div>
+          <div class="item-name">Izakaya Cooking Class <span class="book-badge">Book Ahead</span></div>
+          <div class="item-desc">Small-plates izakaya cooking with drinks. Hands-on, social, delicious. Book 2–3 weeks ahead via Airbnb Experiences.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day-card" id="day3">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Three · Monday</div>
+        <div class="day-title">Ueno → Omotesando → Nakameguro → Ginza</div>
+      </div>
+      <div class="day-date">June 8</div>
+    </div>
+    <div class="day-body">
+
+      <div class="time-band">Morning</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🐙</span>8:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-market">Market Breakfast</div>
+          <div class="item-name">Ameyoko Market <span class="star-badge">★</span></div>
+          <div class="item-desc">Open-air market under the Yamanote tracks. Graze for breakfast — octopus, dried fish, fruit, snacks. Best urban market in Tokyo. Arrive before 10am for peak energy.</div>
+          <div class="item-detail">Ueno · Under the elevated tracks</div>
+        </div>
+      </div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>9:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · 1</div>
+          <div class="item-name">Mermaid Coffee — Ueno area</div>
+          <div class="item-desc">Specialty near Ueno before heading west. Then Yamanote Line toward Harajuku / Omotesando.</div>
+        </div>
+      </div>
+
+      <div class="time-band">Afternoon</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🛍</span>11:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Shopping</div>
+          <div class="item-name">Omotesando + Iyoshi Cola</div>
+          <div class="item-desc">Batoner knitwear, Union Tokyo, Omotesando Hills. Try Iyoshi Cola — Japanese craft cola, original and seasonal flavors. Worth seeking out.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍜</span>12:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Optional Lunch</div>
+          <div class="item-name">Ramen Jazzy Beats <span class="new-badge">Bonus Bowl</span></div>
+          <div class="item-desc">Under the Nakameguro elevated tracks — same atmospheric energy you love. Only if saving appetite — Hakkoku is a big dinner tonight.</div>
+          <div class="item-detail">3-5-25 Kamimeguro, under the tracks</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">👗</span>2:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Shopping</div>
+          <div class="item-name">Daikanyama + Komehyo</div>
+          <div class="item-desc">Walk toward Daikanyama. Komehyo Shibuya is the best secondhand luxury in Tokyo — Jil Sander, Margiela, Prada, Hermès at real discounts. Local secret.</div>
+        </div>
+      </div>
+
+      <div class="time-band">Evening</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍩</span>3:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Dessert</div>
+          <div class="item-name">I'm Donut? — Nakameguro</div>
+          <div class="item-desc">You're already here — the original location is 10 seconds from Nakameguro Station east exit. Go at 3:30pm, well before the ~4pm sellout. Pistachio cream, custard, framboise. Get 2–3 flavors and eat them on the canal.</div>
+          <div class="item-detail">1-22-10 Kamimeguro, Meguro-ku · Opens 9am · Sells out ~4pm · Cash and PayPay only</div>
+          <div class="item-note">Opens until 7pm but sells out around 4pm — don't leave this later than 3:30pm.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>4:15pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · 2</div>
+          <div class="item-name">Onibus Coffee — Canal</div>
+          <div class="item-desc">Single origin pour-over on the Nakameguro canal. Donuts + canal + pour-over — the ideal late afternoon before heading to Ginza for Hakkoku.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍣</span>7:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Dinner · Sushi Night</div>
+          <div class="item-name">Hakkoku <span class="star-badge">★★ Jiro-Caliber</span> <span class="book-badge">Book Ahead</span></div>
+          <div class="item-desc">À la carte (okonomi) — you order exactly what you want, piece by piece. No locked-in omakase course. Chef Hiroyuki Sato uses bold red-vinegar rice, sources only the best tuna from Tsukiji. The tossaki — rare cut from the neck of the tuna — is the signature order. English spoken.</div>
+          <div class="item-detail">3F La Paix Bldg, 6-7-6 Ginza · Book via omakase.in · Slots open 2 months ahead · ~¥28,000–40,000/person</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍩</span>9:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Dessert</div>
+          <div class="item-name">I'm Donut?</div>
+          <div class="item-desc">The legendary chewy ring donut in Daikanyama — short taxi from Ginza. Very different from any Western donut. The perfect way to end the sushi night.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day-card" id="day4">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Four · Tuesday</div>
+        <div class="day-title">Tsukiji → Ginza → Shimokitazawa</div>
+      </div>
+      <div class="day-date">June 9</div>
+    </div>
+    <div class="day-body">
+
+      <div class="time-band">Morning</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🐟</span>8:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-market">Market Breakfast</div>
+          <div class="item-name">Tsukiji Outer Market <span class="star-badge">★</span></div>
+          <div class="item-desc">Best street food in Tokyo: fresh tuna, uni, tamagoyaki egg bun from Tsukiji Shoro Honten, oysters, sea urchin on toast. Arrive 8am — beat the tour groups. Note: the wholesale fish auction moved to Toyosu in 2018. Tsukiji is the street food market — the right call for your style.</div>
+          <div class="item-detail">Tsukiji, Chuo City · 8am ideal</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🥐</span>9:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Pastry Stop</div>
+          <div class="item-name">Daco — Kagurazaka <span class="new-badge">Detour Worth It</span></div>
+          <div class="item-desc">Old-world French-Japanese bakery in Kagurazaka — proper croissants, viennoiseries, Japanese-inflected pastries. Natural stop between Tsukiji and Ginza. Walk the cobbled streets while you eat.</div>
+          <div class="item-detail">6 Chome-67-1 Kagurazaka, Shinjuku City · ~15 min from Tsukiji by train</div>
+        </div>
+      </div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>11:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · Kissaten #2</div>
+          <div class="item-name">Café de l'Ambre <span class="kissaten-badge">Kissaten</span></div>
+          <div class="item-desc">Ginza's Showa-era legend. Hand-drip, aged beans, opened 1948. No wi-fi, no Instagram. A quiet hour here feels different from everywhere else in Tokyo.</div>
+          <div class="item-detail">8-10-15 Ginza · Opens 11am</div>
+        </div>
+      </div>
+
+      <div class="time-band">Afternoon</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">✏️</span>11:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Browse</div>
+          <div class="item-name">Itoya — Ginza</div>
+          <div class="item-desc">12 floors of pens, notebooks, and design supplies. Lose 45 minutes in here easily.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🥐</span>12:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Pastry Stop</div>
+          <div class="item-name">Daco — Kagurazaka <span class="new-badge">Detour Worth It</span></div>
+          <div class="item-desc">Old-world French-Japanese bakery in Kagurazaka — one of Tokyo's most charming neighborhoods, with a centuries-old French-Japanese bakery culture. Proper croissants, viennoiseries, Japanese-inflected pastries. A natural stop between Ginza and Shimokitazawa. Walk through the cobbled streets while you're there.</div>
+          <div class="item-detail">6 Chome-67-1 Kagurazaka, Shinjuku City · ~15 min from Ginza by train</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍕</span>1:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Lunch — No Reservation · Not Dinner Service</div>
+          <div class="item-name">Seirinkan Pizza <span class="star-badge">★ Inventor</span></div>
+          <div class="item-desc">Tokyo Neapolitan — this restaurant invented the style. Margherita and bianca only. No reservations. Fills in 10–15 min of opening. Be there when they open.</div>
+          <div class="item-detail">Nakameguro · Fills immediately at open</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">👘</span>3:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Wander</div>
+          <div class="item-name">Shimokitazawa — Vintage + Hekkelun</div>
+          <div class="item-desc">Walk the streets, browse vintage. Hekkelun for flan — Showa-era energy, hand-written menus. The flan is the reason to go.</div>
+          <div class="item-detail">Shimokitazawa · ~20 min from Nakameguro by train</div>
+        </div>
+      </div>
+
+      <div class="time-band">Evening — Keep It Light</div>
+
+      <div class="timeline-item light-item">
+        <div class="timeline-time"><span class="item-icon">🌙</span>7:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-note">Easy Night</div>
+          <div class="item-name">Rest + Light Drinks</div>
+          <div class="item-desc">Big Shinjuku day tomorrow — Benfiddich + Yakiniku Jumbo Hanare. Nakameguro canal bars (A9 Ebisu, Banten Ebisu) for drinks and small plates, or Harajuku Gyoza Ru if you haven't yet.</div>
+          <div class="item-note">This is the breathing day. Don't overdo it. Tomorrow is the main event.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="day-card" id="day5">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Five · Wednesday</div>
+        <div class="day-title">Shinjuku — The Big Night</div>
+      </div>
+      <div class="day-date">June 10</div>
+    </div>
+    <div class="day-body">
+
+      <div class="time-band">Morning</div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>8:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · Omakase · First Stop</div>
+          <div class="item-name">Cokuun <span class="book-badge">Book Ahead</span></div>
+          <div class="item-desc">Omakase coffee first — different style from Mameya Kakeru, equally special. Check current location before booking — it moves. Book 1–2 weeks ahead.</div>
+          <div class="item-detail">Shibuya/Shinjuku area · Book 1–2 weeks ahead · First stop before breakfast</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍳</span>10:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Breakfast</div>
+          <div class="item-name">Premiere Mai <span class="star-badge">★</span></div>
+          <div class="item-desc">Full breakfast on the 2nd floor, Shinjuku area. Small plates, easy to miss, go early. One of the best breakfasts in Tokyo.</div>
+          <div class="item-detail">2nd floor, Shinjuku area · No reservation · Go early, fills fast</div>
+        </div>
+      </div>
+
+      <div class="time-band">Afternoon</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🥩</span>12:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Lunch</div>
+          <div class="item-name">Philly Tokyo <span class="star-badge">★</span></div>
+          <div class="item-desc">Tokyo's best cheesesteak. Not ironic — a serious operation. Get the original. This is one of those only-in-Tokyo things where something foreign becomes more refined than the original.</div>
+          <div class="item-detail">Shibuya/Shinjuku area</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🏮</span>2:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Scout</div>
+          <div class="item-name">Shinjuku in Daylight — Scout Golden Gai</div>
+          <div class="item-desc">Walk Shinjuku in daylight. Scout Golden Gai. Visit Omoide Yokocho to pick your stall for after dinner — finding one you like before it fills is the move.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item bar-item">
+        <div class="timeline-time"><span class="item-icon">🍸</span>6:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-bar">Bar · Arrive at Open</div>
+          <div class="item-name">Bar Benfiddich <span class="star-badge">★★ One of Asia's Best</span></div>
+          <div class="item-desc">One of the best bars in Asia. One man, homemade botanicals, farm-to-glass. Tiny — fills within the hour of opening. No reservation. Opens 6pm — be there at open. Have two drinks, then head to dinner.</div>
+          <div class="item-detail">Shinjuku · No reservation · Opens 6pm — arrive at open</div>
+        </div>
+      </div>
+
+      <div class="time-band">Evening — The Main Event</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🥩</span>7:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Dinner · The Honeymoon Dinner</div>
+          <div class="item-name">Yakiniku Jumbo Hanare <span class="star-badge">★★</span> <span class="book-badge">Book Ahead</span></div>
+          <div class="item-desc">Wagyu grilled at your table, intimate setting. The anchor of the trip. You're already in Shinjuku — perfectly positioned. Book 2–3 weeks ahead via Tableall. Mention honeymoon.</div>
+          <div class="item-detail">Shinjuku area · Book via Tableall · Mention honeymoon</div>
+        </div>
+      </div>
+
+      <div class="timeline-item bar-item">
+        <div class="timeline-time"><span class="item-icon">🏮</span>10:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-bar">Late Night</div>
+          <div class="item-name">Golden Gai / Omoide Yokocho <span class="star-badge">★</span></div>
+          <div class="item-desc">200+ micro bars. Walk in and let it happen. Or Omoide Yokocho for smoky skewers on tiny stools — the most old-school Shinjuku experience. Night is yours.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍜</span>Late</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Late Night Udon — Optional</div>
+          <div class="item-name">Kunugiya — Shinjuku</div>
+          <div class="item-desc">Hand-pulled udon, open kitchen, fast-moving. You're already in Shinjuku — this is walking distance from Golden Gai. Mentaiko, hot or cold. Cashless only via ticket machine outside. The right way to end a long Shinjuku night.</div>
+          <div class="item-detail">1-7-2 Shinjuku, Shinjuku City · Cashless only</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="day-card" id="day6">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Six · Thursday</div>
+        <div class="day-title">Roppongi / Azabu — Art + Teppanyaki</div>
+      </div>
+      <div class="day-date">June 11</div>
+    </div>
+    <div class="day-body">
+
+      <div class="time-band">Morning — Slow Start After Day 5</div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>10:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · First Stop</div>
+          <div class="item-name">Fuglen — Tomigaya</div>
+          <div class="item-desc">Sleep in after Day 5. Fuglen is the right pace for this morning — Norwegian-Japanese, design-forward, unhurried. Tomigaya is between the hotel and Roppongi, so it fits the day's arc naturally. Alternatively Bongen in Daikanyama if you want to start from the canal direction.</div>
+          <div class="item-detail">1-16-11 Tomigaya, Shibuya City · Walk in</div>
+        </div>
+      </div>
+
+      <div class="time-band">Afternoon</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🥟</span>12:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Light Lunch</div>
+          <div class="item-name">GYOPAO Gyoza — Roppongi</div>
+          <div class="item-desc">Soup gyoza in broth — the only place in Tokyo doing this style. Chaotic, fun, light. Good transition into the Roppongi afternoon without getting heavy before dinner.</div>
+          <div class="item-detail">Roppongi · Multiple locations</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🎨</span>2:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Museum</div>
+          <div class="item-name">Mori Art Museum <span class="star-badge">★</span></div>
+          <div class="item-desc">Contemporary art + city views from the 52nd floor of Roppongi Hills. Easy transition into the evening — you're already in Roppongi.</div>
+          <div class="item-detail">6-10-1 Roppongi, Minato City · Roppongi Hills, 52nd floor</div>
+        </div>
+      </div>
+
+      <div class="time-band">Evening</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍝</span>7:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Dinner · Ask Concierge</div>
+          <div class="item-name">S'accapau <span class="star-badge">★ Italian</span> <span class="book-badge">Concierge</span></div>
+          <div class="item-desc">Small Italian basement in Nishi-Azabu — intimate, completely different register from every other dinner on the trip. After sushi, wagyu, and yakitori, a quiet Italian is the right gear change. Ask the hotel concierge to book; it's a small spot, not a hard reservation, but worth the ask. 10 min taxi from Roppongi Hills.</div>
+          <div class="item-detail">1-12-4 Nishiazabu, Minato City (B1) · ~10 min taxi from Mori Art Museum</div>
+          <div class="item-note">Backup if concierge can't get it: Pizza Strada, Azabujuban — 10 min walk from Roppongi Hills, Neapolitan pizza, no reservation needed. Same neighborhood, zero friction. Address: 3-6-2 Azabujuban, Minato City.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item bar-item">
+        <div class="timeline-time"><span class="item-icon">🍹</span>9:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-bar">After-Dinner Drinks</div>
+          <div class="item-name">Trader Vic's <span class="new-badge">Tiki</span></div>
+          <div class="item-desc">Absurd tropical cocktails in Roppongi. You're already in the neighborhood. Completely committed to the tiki theme — the perfect decompression after a refined kaiseki dinner. Walk in.</div>
+          <div class="item-detail">Roppongi Hills area · Walk in</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY 7 -->
+  <div class="day-card" id="day7">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Seven · Friday</div>
+        <div class="day-title">Final Morning · Shibuya → Haneda</div>
+      </div>
+      <div class="day-date">June 12</div>
+    </div>
+    <div class="day-body">
+
+      <div class="time-band">Morning</div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>9:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · Kissaten #1 Reprise</div>
+          <div class="item-name">Chatei Hatou — Farewell <span class="kissaten-badge">Kissaten</span></div>
+          <div class="item-desc">The right way to end a Tokyo trip. Siphon coffee, dark wood, jazz. Same bar as Day 1 — you'll feel differently about it now. This is the goodbye.</div>
+          <div class="item-detail">1-15-19 Shibuya · Opens 9am · 5 min from most Shibuya hotels</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🚦</span>10:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Final Walk</div>
+          <div class="item-name">Shibuya Crossing — Last Time</div>
+          <div class="item-desc">Morning Shibuya is quieter. Do the crossing one more time. Grab a 7-Eleven egg salad sandwich if you need something small. This is the goodbye.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🧳</span>10:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Checkout</div>
+          <div class="item-name">Hotel Checkout</div>
+          <div class="item-desc">Leave luggage with concierge if you want one last wander through Shibuya. Last lunch: Hirokiya Shibuya (wagyu rice bowl, walkable) or Bam bi Coffee for soufflé pancakes.</div>
+        </div>
+      </div>
+
+      <div class="time-band">Afternoon · Hard Deadline</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">✈️</span>3:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Depart</div>
+          <div class="item-name">Leave for Haneda — Hard Deadline <span class="star-badge">6pm Flight</span></div>
+          <div class="item-desc">6pm international flight. Allow 3 hours at the airport. Do not cut this close.</div>
+          <div class="item-detail">Keikyu Line from Shinagawa ~30 min (~¥600) · Terminal 3 (international) — closer from Prince Sakura than from Shibuya</div>
+          <div class="item-note">⚠ Leave hotel no later than 3pm. Keikyu Line from Shibuya to Haneda T3 ~45 min.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- TRACKERS -->
+<section id="trackers">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○四</span>
+    <h2 class="section-title">Trackers</h2>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍜 Ramen Tracker — 3 Bowls, 3 Styles · No Fish Broth</h3>
+    <table class="tracker-table">
+      <thead>
+        <tr><th>#</th><th>Day / When</th><th>Restaurant</th><th>Style + Why</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Day 2 · lunch</td><td>Chuka Soba</td><td>Shoyu — light chicken/soy, no fish. Tokyo's cleanest style. The right first bowl.</td></tr>
+        <tr><td>2</td><td>Day 4 · optional lunch</td><td>Ramen Kamo to Negi</td><td>Duck broth — rich, unusual. Slot after Daco + Café de l'Ambre if appetite allows. Skip if going straight to Seirinkan pizza.</td></tr>
+        <tr><td>3</td><td>Day 5 · late night</td><td>Kunugiya (Shinjuku) or Zundo-ya</td><td>Kunugiya: hand-pulled udon, mentaiko, open kitchen — walking distance from Golden Gai. Zundo-ya: tonkotsu pork bone, 24hrs, if you want ramen instead. Your call on the night.</td></tr>
+        <tr><td>+</td><td>Day 3 · optional</td><td>Ramen Jazzy Beats</td><td>Bonus. Under Nakameguro tracks. Great atmosphere — only if Hakkoku appetite is saved.</td></tr>
+        <tr><td>+</td><td>Flexible</td><td>Sakurai Chuka Sobaten</td><td>Tsukemen (dipping noodles). Completely different — noodles dipped in concentrated broth. Confirm location + broth before going.</td></tr>
+        <tr><td>+</td><td>Day 5 late or standalone</td><td>Tsujita Dipping Noodles</td><td>Confirmed fish-free tsukemen, Minami-Ikebukuro. Best as a standalone mission or Day 5 late-night swap for Zundo-ya if you want tsukemen over tonkotsu.</td></tr>
+        <tr><td>+</td><td>Day 5 late or standalone</td><td>Tsujita Dipping Noodles</td><td>Confirmed fish-free tsukemen. Minami-Ikebukuro — best as a standalone mission or Day 5 late-night swap for Zundo-ya if you want tsukemen over tonkotsu.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>☕ Coffee Tracker — 2/Day Minimum · 2 Kissaten</h3>
+    <table class="tracker-table">
+      <thead>
+        <tr><th>Day</th><th>When</th><th>Name</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Afternoon</td><td>Chatei Hatou ★ Kissaten #1</td><td>Siphon, dark wood, jazz. Shibuya. First proper Tokyo moment.</td></tr>
+        <tr><td>1</td><td>Evening</td><td>Onibus Coffee</td><td>Canalside pour-over. Nakameguro canal walk after dinner.</td></tr>
+        <tr><td>2</td><td>Morning</td><td>Koffee Mameya Kakeru ★ BOOK</td><td>Omakase counter — book via TableCheck. Kiyosumi.</td></tr>
+        <tr><td>2</td><td>Afternoon</td><td>Glitch Coffee</td><td>Third-wave specialty. Akihabara.</td></tr>
+        <tr><td>3</td><td>Morning</td><td>Mermaid / Ueno area</td><td>Specialty near Ueno before heading west.</td></tr>
+        <tr><td>3</td><td>Afternoon</td><td>Onibus Coffee (again)</td><td>Worth repeating on the canal before Hakkoku.</td></tr>
+        <tr><td>4</td><td>Morning</td><td>Café de l'Ambre ★ Kissaten #2</td><td>Ginza legend. Opened 1948. Opens 11am.</td></tr>
+        <tr><td>5</td><td>Morning</td><td>Cokuun ★ BOOK</td><td>Omakase coffee. Book 1–2 weeks ahead.</td></tr>
+        <tr><td>5</td><td>Afternoon</td><td>Fuglen (Tomigaya)</td><td>Norwegian-Japanese. Best pour-over before the Shinjuku night.</td></tr>
+        <tr><td>6</td><td>Morning</td><td>Specialty near Roppongi/Azabu</td><td>Explore Azabu Juban or Daikanyama en route.</td></tr>
+        <tr><td>7</td><td>Morning</td><td>Chatei Hatou ★ Kissaten #1 Reprise</td><td>The farewell. Same bar. Opens 9am.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🎳 Your One Weird Night — Best Slotted Day 3 or 4</h3>
+    <table class="weird-table">
+      <thead>
+        <tr><th>Option</th><th>Location</th><th>What It Is</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Round1 Stadium ★ Top Pick</td>
+          <td>Ikebukuro · 30 min Yamanote</td>
+          <td>Multi-floor complex: bowling, billiards, batting cages, darts, arcade, karaoke. Walk in, go late. Can't be replicated anywhere else.</td>
+          <td>Open</td>
+        </tr>
+        <tr>
+          <td>Alcatraz ER · Runner-up</td>
+          <td>Shibuya · Walk in</td>
+          <td>Prison-themed bar — cells, nurse uniforms, locked-in table service. Zero planning needed. Perfect if you want weird bar over weird activity.</td>
+          <td>Open</td>
+        </tr>
+        <tr>
+          <td>Samurai Restaurant</td>
+          <td>Shinjuku Kabukicho</td>
+          <td>Neon samurai show-dinner — dancers, drums, laser beams. Touristy but genuinely wild.</td>
+          <td>Open</td>
+        </tr>
+        <tr>
+          <td>Vampire Cafe Ginza</td>
+          <td>Ginza</td>
+          <td>Gothic vampire-themed fine dining. Coffin bowls, blood-red décor. Surprisingly good food.</td>
+          <td>Open</td>
+        </tr>
+        <tr>
+          <td>Natsuge Museum Arcade</td>
+          <td>Takadanobaba</td>
+          <td>ALL original arcade boards (not emulators). Tiny, cult, local. The real weird one for gaming culture.</td>
+          <td>Fri/Sat/Sun only</td>
+        </tr>
+        <tr>
+          <td>Muscle Girl Bar</td>
+          <td>Ikebukuro</td>
+          <td>Bodybuilder women serve drinks and arm-wrestle you. Very Ikebukuro.</td>
+          <td>Open</td>
+        </tr>
+      <tr>
+          <td>Cadota (fries) — if doing Round1</td>
+          <td>Toshima City (Nagasaki area)</td>
+          <td>On your list. Only routes naturally on the Ikebukuro/Round1 weird night — same area. Grab fries before or after bowling.</td>
+          <td>Check hours</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</section>
+
+<!-- OPEN QUESTIONS -->
+<section id="flags">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○五</span>
+    <h2 class="section-title">Open Questions + Not Yet Locked In</h2>
+  </div>
+
+  <div class="flags-block">
+    <h4>Things That Still Need a Decision</h4>
+    <ul class="flags-list">
+      <li><strong>Teppanyaki (Azabudai Nakamura vs Ginza Ukai-Tei)</strong> — Azabudai Nakamura is the recommendation (live seafood, chef counter performance, Kobe wagyu). Day 6 is the natural home. Book via tableall.com 3–4 weeks out.</li>
+      <li><strong>Sushi (Hakkoku vs Harutaka)</strong> — Hakkoku is the pick for your style (à la carte, Jiro-caliber, English spoken, omakase.in). Harutaka if you want the full omakase experience at ¥60–70k/person — phone-only, ask hotel concierge to call.</li>
+      <li><strong>Museum of Narratives</strong> — Flagged from your spreadsheet. Confirm location — potentially fits Day 6 alongside Mori Art Museum if Roppongi-adjacent.</li>
+      <li><strong>Baseball Game</strong> — Flagged from your spreadsheet. Tokyo Giants likely have home games at Tokyo Dome in June. Check npb.jp — could slot into Day 4 or Day 6 as an afternoon option. Easy Yamanote access.</li>
+      <li><strong>Sumo Wrestling</strong> — Nagoya Basho is mid-July, not June. No tournament in Tokyo during your dates. Arashio Stable in Nihonbashi sometimes allows morning practice viewing — worth asking hotel concierge if interested.</li>
+      <li><strong>Tsukiji vs Toyosu</strong> — Not competing. Tsukiji Outer Market is a morning street food crawl (your style — Day 4). Toyosu is where the wholesale auction moved in 2018 — only worth the 5am pilgrimage for the tuna auction (book months ahead). Skip Toyosu unless you want to do the auction specifically.</li>
+      <li><strong>Halal Wagyu Stand Shibuya</strong> — 北田ビル, 29-3 Udagawacho, Shibuya — right in the heart of Shibuya, easy late-night slot on Day 1 or any Shibuya-base evening.</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!-- REFERENCE -->
+<section id="reference">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○六</span>
+    <h2 class="section-title">Complete Reference</h2>
+  </div>
+
+  <div class="ref-section">
+    <h3>☕ Coffee & Kissaten</h3>
+    <table class="ref-table">
+      <tr><td>Chatei Hatou ★ Kissaten #1 · Shibuya</td><td>Siphon coffee, dark wood, jazz. One of Tokyo's last great old masters. Opens 9am. 1-15-19 Shibuya.</td></tr>
+      <tr><td>Koffee Mameya Kakeru ★ BOOK · Kiyosumi</td><td>Omakase coffee counter — seated tasting with paired sweets. ~35 min from Shibuya. Book via TableCheck. 2-16-14 Hirano, Koto City.</td></tr>
+      <tr><td>Café de l'Ambre ★ Kissaten #2 · Ginza</td><td>Hand-drip, aged beans, opened 1948. No wi-fi, no Instagram. Opens 11am. 8-10-15 Ginza.</td></tr>
+      <tr><td>Cokuun ★ BOOK · Shibuya/Shinjuku</td><td>Omakase coffee — different from Mameya, equally special. Book 1–2 weeks ahead. Check current location.</td></tr>
+      <tr><td>Onibus Coffee ★ · Nakameguro canal</td><td>Single origin pour-over, canalside. Walk in. Worth repeating.</td></tr>
+      <tr><td>Glitch Coffee ★ · Akihabara</td><td>Third-wave specialty. Best in Akihabara. 3-9-14 Sotokanda.</td></tr>
+      <tr><td>Fuglen Coffee · Tomigaya</td><td>Norwegian-Japanese specialty, design-forward. Walk in. Near Yoyogi.</td></tr>
+      <tr><td>Bongen · Nakameguro / Daikanyama</td><td>Third-wave specialty in the Daikanyama area.</td></tr>
+      <tr><td>Bam bi Coffee · Shibuya</td><td>Soufflé pancakes + coffee. Good slow morning or last breakfast option.</td></tr>
+      <tr><td>Mermaid Coffee · Multiple</td><td>Specialty coffee. Good Ueno-area option for Day 3 morning.</td></tr>
+      <tr><td>Hekkelun · Shimokitazawa</td><td>Café + flan — the flan is the reason to go. Showa-era energy, hand-written menus.</td></tr>
+      <tr><td>Nadoya no Katte · Shibuya</td><td>Garden café. Calm mid-afternoon stop — garden setting in Shibuya.</td></tr>
+      <tr><td>Yodicoro · TBC</td><td>Specialty coffee — confirm current location before going.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍜 Ramen & Noodles — No Fish Broth</h3>
+    <table class="ref-table">
+      <tr><td>Chuka Soba ★ Ramen #1 · Akihabara area</td><td>Shoyu — light chicken/soy. Day 2 lunch. Tokyo's cleanest style.</td></tr>
+      <tr><td>Ramen Kamo to Negi ★ Ramen #2 · Ginza area</td><td>Duck broth — rich, unusual. Day 4 optional lunch — after Daco + Café de l'Ambre if appetite allows, before Seirinkan pizza. Not breakfast ramen.</td></tr>
+      <tr><td>Zundo-ya · 2-39-3 Kabukicho</td><td>Pure tonkotsu pork bone, no fish. 24hrs. Thick, creamy, garlicky. Day 5 late-night alternate to Kunugiya if you want tonkotsu ramen over udon.</td></tr>
+      <tr><td>Ramen Jazzy Beats · Nakameguro (under tracks)</td><td>Bonus bowl Day 3. Great atmosphere. Only if saving appetite for Hakkoku.</td></tr>
+      <tr><td>Sakurai Chuka Sobaten · TBC</td><td>Tsukemen (dipping noodles) — noodles dipped in concentrated broth. Completely different style.</td></tr>
+      <tr><td>Ganso Aburadou · Ramen Yokocho</td><td>Oil-based abura ramen — no broth at all. Very different texture. Adventurous option.</td></tr>
+      <tr><td>Tsujita Dipping Noodles · Minami-Ikebukuro</td><td>Classic Tokyo tsukemen — concentrated dipping broth, no fish.</td></tr>
+      <tr><td>Kaneko Hannosuke Udon · Coredo Muromachi 2</td><td>Upscale udon, tempura-topped. Beautiful covered market building.</td></tr>
+      <tr><td>Godaime Hanayama Udon · Ginza</td><td>Famous for thick hand-cut wide udon.</td></tr>
+      <tr><td>Ramen Matsui · 4-25-10 Yotsuya, Shinjuku City</td><td>Backup / swap option for Ramen #1.</td></tr>
+      <tr><td>Sen · 1-24-8 Nishiikebukuro, Toshima City</td><td>West Ikebukuro — backup noodle option.</td></tr>
+      <tr><td>Kunugiya ★ Day 5 Late Night · 1-7-2 Shinjuku</td><td>Hand-pulled udon, open kitchen, fast-moving. Mentaiko, hot or cold. Cashless only via ticket machine outside. Walking distance from Golden Gai — the late-night noodle option after the big Shinjuku night.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍣 Sushi</h3>
+    <table class="ref-table">
+      <tr><td>Hakkoku ★★ BOOK · 3F La Paix Bldg, 6-7-6 Ginza</td><td>À la carte (okonomi) — order exactly what you want. Jiro-caliber quality. Book via omakase.in 2 months ahead. ~¥28–40k/person.</td></tr>
+      <tr><td>Harutaka ★★ BOOK WAY AHEAD · 8-3-1 Ginza, 6F</td><td>Tokyo's sole 3-Michelin-star sushi. Phone-only, 4–6 weeks out. ¥60–70k/person. Hotel concierge call.</td></tr>
+      <tr><td>Udatsu Sushi ★ Michelin 1-Star · 2-48-10 Kamimeguro</td><td>Hay-smoked fatty tuna, herb-laced sushi. Artistic, easier to book than Harutaka.</td></tr>
+      <tr><td>Sushisho Masa · 1-6-1 Azabujuban</td><td>7-seat counter. Apprentices explain each piece in English. 30+ piece seasonal course.</td></tr>
+      <tr><td>Kyubey · 8-7-6 Ginza</td><td>Ginza classic. Walk in at 11:30am for same-day counter seat. Order the live prawn raw.</td></tr>
+      <tr><td>Tsukiji Outer Market stalls · Tsukiji</td><td>Street sushi — fresh tuna, uni, oyster, tamagoyaki. Arrive 8am. Day 4 morning.</td></tr>
+      <tr><td>Sushi Rinda · Meguro</td><td>English-speaking chef, trained in Canada. Known for otoro and playful hand rolls. ~¥29k lunch.</td></tr>
+      <tr><td>Ginza Saisho · Ginza</td><td>Intimate 7-seat omakase. Classical Edomae with original touches.</td></tr>
+      <tr><td>Kanesaka · Ginza</td><td>2 Michelin stars. Traditional Edomae. Lunch ¥20–30k, dinner ¥50–60k. Book 2+ weeks out.</td></tr>
+      <tr><td>Shibuya Sushi Lab · 3-10 Udagawacho, Shibuya</td><td>Mid-range omakase near hotel. Affordable for quality. Good casual option.</td></tr>
+      <tr><td>Daiwa Sushi · Toyosu Market</td><td>Opens 5am, closes mid-morning. 7-piece set + miso. Only worth it if you want the full Toyosu 5am experience.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍢 Yakitori</h3>
+    <table class="ref-table">
+      <tr><td>Yakitori Sei · Nakameguro</td><td>Counter yakitori, order by skewer. Excellent — pairs with the Nakameguro canal walk. Good Day 3 or 4 evening option.</td></tr>
+      <tr><td>Sekaino Yamachan · 5-24-13 Shiba, Minato City</td><td>Izakaya-style yakitori. Known for tebasaki (crispy chicken wings). Lively, affordable. Close to the hotel.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🔥 Teppanyaki</h3>
+    <table class="ref-table">
+      <tr><td>ORca · 3-12-11 Shinjuku (B1)</td><td>Underground basement teppanyaki, Shinjuku. Modern — if you want teppanyaki and don't mind returning to Shinjuku on Day 6.</td></tr>
+      <tr><td>Ginmeisui · Ginza</td><td>Teppanyaki, Ginza. More traditional.</td></tr>
+      <tr><td>Ginza Ukai-Tei · 5-15-8 Ginza</td><td>Michelin-starred teppan — dedicated chef per table, live abalone + wagyu, French influence. Lunch ¥16,500 / Dinner ¥34,500.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🥩 Steak, Wagyu & Yakiniku</h3>
+    <table class="ref-table">
+      <tr><td>Yakiniku Jumbo Hanare ★★ BOOK · Shinjuku area</td><td>Wagyu grilled at table — THE dinner. Book via Tableall, mention honeymoon.</td></tr>
+      <tr><td>Gyukatsu Ichinisan ★ · Multiple near Shibuya</td><td>Wagyu cutlet on personal hot stone. Arrive at opening — fills in 20 min.</td></tr>
+      <tr><td>Hirokiya Shibuya · Shibuya</td><td>Wagyu rice bowls. Walkable from hotel. Great value, counter.</td></tr>
+      <tr><td>Halal Wagyu Stand Shibuya · Udagawacho</td><td>北田ビル, 29-3 Udagawacho, Shibuya — right in the heart of Shibuya.</td></tr>
+      <tr><td>Yakiniku Kapo Note · TBC</td><td>Yakiniku. On your list — confirm location. Note: back-to-back wagyu if used on Day 6 after Day 5 Yakiniku Jumbo Hanare.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍱 Fine Dining &amp; Kaiseki</h3>
+    <table class="ref-table">
+      <tr><td>Chiso Konya · TBC — reservation required</td><td>Kaiseki — traditional multi-course. On your list.</td></tr>
+      <tr><td>Yuu Yoyogi Uehara · Yoyogi Uehara</td><td>Intimate kaiseki. Reservation required. Day 6 fallback if both S'accapau and Pizza Strada fall through.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍡 Signature Eats & Snacks</h3>
+    <table class="ref-table">
+      <tr><td>Iyoshi Cola ★ · Omotesando / Ginza</td><td>Japanese craft cola. Try both original and seasonal flavors. Worth seeking out.</td></tr>
+      <tr><td>Milkland Hokkaido ★ · Nakameguro canal</td><td>Pure Hokkaido soft serve on the canal. Rich dairy, simple and perfect. Day 1 or 3 evening.</td></tr>
+      <tr><td>Kitsuneya · 4-9-12 Tsukiji, Chuo City</td><td>Gyudon (beef bowl). Inside Tsukiji Outer Market. Day 4 morning alongside the stall grazing.</td></tr>
+      <tr><td>Age.3 · Shibuya</td><td>Fried sandwiches (katsu sando-adjacent). Late-night snack in Shibuya.</td></tr>
+      <tr><td>Chermside · TBC</td><td>Wagyu sando. On your list — confirm location.</td></tr>
+      <tr><td>Rare Tendon Ginza · Ginza</td><td>Rare tempura rice bowl — fish and veg, not heavy. Counter, exceptional quality. Good Ginza lunch option.</td></tr>
+      <tr><td>Nankai Jimbocho ★ Day 6 Lunch · Jimbocho</td><td>Black curry katsu — dark, rich, almost Indian-Japanese hybrid. Day 6 lunch en route from hotel to Roppongi. ¥1,000–1,500, counter, 20 min.</td></tr>
+      <tr><td>Imo Pippi · Multiple locations</td><td>Crème brûlée sweet potato. Unique Tokyo snack.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🥐 Bakeries & Sweets</h3>
+    <table class="ref-table">
+      <tr><td>I'm Donut? ★ Day 3 Afternoon · Nakameguro</td><td>Brioche nama donut — pistachio cream, custard, framboise. Nakameguro location: 1-22-10 Kamimeguro (opens 9am, sells out ~4pm). Go by 3:30pm. Cash and PayPay only. Also: Harajuku (10am–8pm), Shibuya + Omotesando (11am–8pm) — all sell out well before closing.</td></tr>
+      <tr><td>Daco ★ Day 4 Morning · 6 Chome-67-1 Kagurazaka</td><td>Old-world French-Japanese bakery. Day 4 morning pastry stop between Tsukiji and Ginza. Proper croissants, viennoiseries, Japanese-inflected pastries.</td></tr>
+      <tr><td>Pacquet · TBC</td><td>On your original spreadsheet — confirm location.</td></tr>
+      <tr><td>Bam bi Coffee · Shibuya area</td><td>Soufflé pancakes + coffee. Good slow morning or last breakfast option.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🥟 Dumplings & Gyoza</h3>
+    <table class="ref-table">
+      <tr><td>Harajuku Gyoza Ru ★ · Takeshita St</td><td>Pan-fried gyoza. Queue, cheap, perfect. Day 1 afternoon.</td></tr>
+      <tr><td>GYOPAO Gyoza ★ · Roppongi</td><td>Only place in Tokyo with soup gyoza in broth. #1 TripAdvisor Japan. Chaotic, fun.</td></tr>
+      <tr><td>Din Tai Fung · Takashimaya Times Square, Shinjuku 12F</td><td>Classic XLB soup dumplings. Chain but excellent — no queue anxiety.</td></tr>
+      <tr><td>Tenryu Gyoza · Ginza</td><td>Famous oversized gyoza — twice normal size.</td></tr>
+      <tr><td>Shinjuku Kakekomi Gyoza · Kabukicho</td><td>24/7 gyoza. Edo Five Rings multi-colored dumplings are the move. Good late night.</td></tr>
+      <tr><td>Chao Chao Gyoza · TBC</td><td>On your original list — confirm location.</td></tr>
+      <tr><td>Hakata Yaki Shoronpo · TBC</td><td>On your original list — confirm location.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍕 Pizza</h3>
+    <table class="ref-table">
+      <tr><td>Seirinkan ★ No Reservation · Nakameguro</td><td>Tokyo Neapolitan — the inventor of the style. Margherita + bianca only. Arrive at open. Day 4 lunch — opens at lunch, fills in 10–15 min. Not a dinner service.</td></tr>
+      <tr><td>Pizza Studio Tamaki · TBC</td><td>Highly rated Neapolitan.</td></tr>
+      <tr><td>Pizza Strada ★ Day 6 Backup · 3-6-2 Azabujuban</td><td>Neapolitan. Azabujuban — 10 min walk from Roppongi Hills. No reservation needed. Day 6 backup if S'accapau unavailable.</td></tr>
+      <tr><td>Marumo · 1-11-13 Ebisuminami, Shibuya</td><td>Ebisu — walkable from Shibuya hotel.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🌍 Non-Japanese</h3>
+    <table class="ref-table">
+      <tr><td>Philly Tokyo ★ · Shibuya/Shinjuku area</td><td>Tokyo's best cheesesteak. Get the original. Day 5 lunch.</td></tr>
+      <tr><td>Erick South Yaesu · Yaesu / Tokyo Station</td><td>South Indian (not generic Indian). Masala dosa and tiffin sets — genuinely excellent.</td></tr>
+      <tr><td>JUSTA BURGER · Nihonbashi</td><td>Burger in Nihonbashi area.</td></tr>
+      <tr><td>Lil Woody's · TBC</td><td>Burger — confirm location.</td></tr>
+      <tr><td>Wagyu to Worldwide · TBC</td><td>Burger.</td></tr>
+      <tr><td>Smash Burger Bisco · TBC</td><td>Smash burger.</td></tr>
+      <tr><td>Mucho · 2-7-3 Marunouchi, Tokyo Building 2F</td><td>Mexican.</td></tr>
+      <tr><td>S'accapau ★ Day 6 Dinner · 1-12-4 Nishiazabu (B1)</td><td>Italian. Intimate Nishi-Azabu basement. Day 6 primary dinner — ask concierge to book. ~10 min taxi from Mori Art Museum / Roppongi Hills.</td></tr>
+      <tr><td>Los Tacos Azules · 1-17-9 Kamiuma, Setagaya City</td><td>Tacos. Off the beaten path — Setagaya. Worth the trip if you want it.</td></tr>
+      <tr><td>Laekker · TBC</td><td>On your original spreadsheet — confirm location.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍸 Bars & Nightlife</h3>
+    <table class="ref-table">
+      <tr><td>Bar Benfiddich ★★ Arrive at Open · Shinjuku</td><td>Farm-to-glass craft cocktails — one man, homemade botanicals. One of the best bars in Asia. Opens 6pm — arrive at open. Day 5.</td></tr>
+      <tr><td>Golden Gai ★ · Shinjuku</td><td>200+ micro bars, labyrinth alley. Day 5 night. Just walk in.</td></tr>
+      <tr><td>Omoide Yokocho (Piss Alley) ★ · Shinjuku</td><td>Smoky skewer stalls, tiny wooden stools. Old-school Shinjuku. Day 5 night.</td></tr>
+      <tr><td>Magura / Enoki / Tight ★ · Shinjuku</td><td>More local alternative to Golden Gai. Less touristy, same energy.</td></tr>
+      <tr><td>Trader Vic's · Roppongi</td><td>Tiki bar. Absurd tropical cocktails. Day 6 after teppanyaki.</td></tr>
+      <tr><td>A9 Ebisu · Ebisu</td><td>Refined craft cocktail. Near Ebisu station.</td></tr>
+      <tr><td>Banten Ebisu · Ebisu</td><td>Cocktail bar near hotel base.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🛍 Shopping</h3>
+    <table class="ref-table">
+      <tr><td>Kith Tokyo · Miyashita Park, Shibuya</td><td>Kith flagship + Kith Treats cereal bar. Tokyo-only drops. Designed by Snarkitecture.</td></tr>
+      <tr><td>Human Made · 1-11-6 Jingumae, Harajuku</td><td>NIGO's brand — Japan exclusives. Post-BAPE.</td></tr>
+      <tr><td>BAPE Store · Harajuku</td><td>Original Bathing Ape flagship. Tokyo-specific colorways.</td></tr>
+      <tr><td>Batoner · Omotesando</td><td>Premium knitwear. Japanese-made sweaters. Extremely well crafted.</td></tr>
+      <tr><td>Conz Denim · Shibuya</td><td>Japanese selvedge denim.</td></tr>
+      <tr><td>Komehyo Shibuya · Shibuya</td><td>Best secondhand luxury — Jil Sander, Margiela, Prada, Hermès at real discounts. Men's + women's.</td></tr>
+      <tr><td>Laila Tokio · Shibuya</td><td>Tokyo's answer to Aritzia — elevated basics, Japanese quality.</td></tr>
+      <tr><td>Kama-Asa Shoten ★ · Kappabashi Street</td><td>The best knife shop in Japan. Family-run since 1908.</td></tr>
+      <tr><td>Itoya · Ginza</td><td>12-floor stationery store. Pens, notebooks, design supplies.</td></tr>
+      <tr><td>Tokyo City Flea Market · Oi Racecourse, Shinagawa</td><td>300–500 vendors nearly every weekend. Vintage clothing, watches, antiques. ~20 min from Shibuya. Check tokyocityfleamarket.com.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🏛 Museums & Attractions</h3>
+    <table class="ref-table">
+      <tr><td>Mori Art Museum · Roppongi Hills, 52nd floor</td><td>Contemporary art + city views. Day 6. Worth it for the views alone.</td></tr>
+      <tr><td>Museum of Narratives · TBC</td><td>On your spreadsheet — confirm location. Potential Day 6 add if near Roppongi.</td></tr>
+      <tr><td>Tokyo International Forum · Marunouchi</td><td>Architecture / views — free, quick walk-through near Tokyo Station.</td></tr>
+      <tr><td>Ghibli Museum · Mitaka</td><td>Online lottery — books months ahead. Skip if not already arranged.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>📋 Practical Notes</h3>
+    <table class="ref-table">
+      <tr><td>Money</td><td>Withdraw ¥50,000–80,000 cash at 7-Eleven ATM on arrival. Cards work almost everywhere except small ramen shops, some izakayas, Tsukiji stalls.</td></tr>
+      <tr><td>Transit (Suica)</td><td>Add Suica to Apple Wallet. Works on all lines including Yamanote. Load ¥3,000–5,000. Keep a power bank — dead phone = no transit.</td></tr>
+      <tr><td>eSIM</td><td>Buy before departure — Airalo (~$22/10GB) or MobiMatter (~$14/20GB on NTT Docomo). Install, don't activate until landing.</td></tr>
+      <tr><td>Entry / Visit Japan Web</td><td>Register 2 weeks before arrival at vjw-lp.digital.go.jp. Free, official. QR codes at immigration — skips paper forms. Both travelers register individually.</td></tr>
+      <tr><td>Tax-Free Shopping</td><td>10% back on purchases over ¥5,000 per store. Must carry actual passport — copies don't work. Worth doing on knife / clothing days.</td></tr>
+      <tr><td>Departure</td><td>6pm flight June 12. Leave hotel by 3pm. Keikyu Line from Shibuya ~45 min (~¥600). Haneda Terminal 3 (international).</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>📍 Address Cheat Sheet</h3>
+    <table class="ref-table">
+      <thead><tr><th>Venue</th><th>Address</th></tr></thead>
+      <tr><td>Chatei Hatou</td><td>1-15-19 Shibuya, Shibuya City</td></tr>
+      <tr><td>Koffee Mameya Kakeru</td><td>2-16-14 Hirano, Koto City</td></tr>
+      <tr><td>Café de l'Ambre</td><td>8-10-15 Ginza, Chuo City</td></tr>
+      <tr><td>Hakkoku</td><td>3F La Paix Bldg, 6-7-6 Ginza</td></tr>
+      <tr><td>Azabudai Nakamura</td><td>Azabudai/Roppongi area (confirm via booking)</td></tr>
+      <tr><td>Yakiniku Jumbo Hanare</td><td>Shinjuku area (confirm via booking)</td></tr>
+      <tr><td>Bar Benfiddich</td><td>Shinjuku (confirm current address)</td></tr>
+      <tr><td>Seirinkan Pizza</td><td>Nakameguro area</td></tr>
+      <tr><td>Zundo-ya</td><td>2-39-3 Kabukicho, Shinjuku</td></tr>
+      <tr><td>Super Potato Akihabara</td><td>1-11-2 Sotokanda, Chiyoda City</td></tr>
+      <tr><td>Mori Art Museum</td><td>6-10-1 Roppongi, Minato City</td></tr>
+      <tr><td>Tsukiji Outer Market</td><td>Tsukiji, Chuo City</td></tr>
+      <tr><td>Halal Wagyu Stand Shibuya</td><td>北田ビル, 29-3 Udagawacho, Shibuya, Tokyo 150-0042</td></tr>
+      <tr><td>Haneda Airport (International)</td><td>Terminal 3 · Keikyu Line from Shibuya ~45 min</td></tr>
+    </table>
+  </div>
+
+</div>
+</section>
+
+<section id="priorities">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○七</span>
+    <h2 class="section-title">Priority Flags — Decisions Still Needed</h2>
+  </div>
+
+  <div class="flags-block">
+    <h4>🔴 Book Immediately</h4>
+    <ul class="flags-list">
+      <li><strong>Hakkoku (Day 3 dinner)</strong> — omakase.in, slots open exactly 2 months before June 8. Set a reminder now. Miss this window and it's gone.</li>
+      <li><strong>Yakiniku Jumbo Hanare (Day 5 dinner)</strong> — Tableall.com or Pocket Concierge. 2–3 weeks out. Mention honeymoon.</li>
+      <li><strong>Koffee Mameya Kakeru (Day 2 morning)</strong> — tablecheck.com. Book ASAP — very limited daily slots.</li>
+    </ul>
+  </div>
+
+  <div class="flags-block" style="margin-top:1rem;">
+    <h4>🟡 Book Soon</h4>
+    <ul class="flags-list">
+      <li><strong>S'accapau (Day 6 dinner)</strong> — Ask hotel concierge to call. Small Italian basement, Nishi-Azabu. If they can't get it: Pizza Strada, 3-6-2 Azabujuban, walk in.</li>
+      <li><strong>Cokuun (Day 5 morning coffee)</strong> — Book 1–2 weeks ahead via their website/Instagram. Confirm current location first.</li>
+      <li><strong>Izakaya Cooking Class (Day 2 evening)</strong> — Airbnb Experiences / Viator. 2–3 weeks out.</li>
+      <li><strong>Harutaka (if doing big sushi instead of Hakkoku)</strong> — Phone only, 4–6 weeks out. Ask hotel concierge to call. ¥60–70k/person.</li>
+    </ul>
+  </div>
+
+  <div class="flags-block" style="margin-top:1rem;">
+    <h4>🟢 Routing Still To Confirm</h4>
+    <ul class="flags-list">
+      <li><strong>Kunugiya udon (Day 5 late night)</strong> — 1-7-2 Shinjuku, walking distance from Golden Gai. Cashless only. Replaces Zundo-ya as late-night noodle option — lighter, different. Swap back to Zundo-ya if you want tonkotsu instead.</li>
+      <li><strong>Duck ramen (Kamo to Negi)</strong> — Pulled from Day 4 morning. Now optional lunch after Daco + Café de l'Ambre if appetite allows, before Seirinkan pizza. Can be skipped entirely — Ramen #2 slot is flexible.</li>
+      <li><strong>I'm Donut? (Day 3 afternoon)</strong> — Nakameguro location, 10 sec from station exit. Go by 3:30pm — sells out ~4pm. Cash and PayPay only. Confirmed removed from Day 1.</li>
+      <li><strong>Tsujita vs Sakurai Chuka Sobaten (tsukemen)</strong> — Tsujita confirmed fish-free, Minami-Ikebukuro. Sakurai location/broth unconfirmed. Neither is in the itinerary yet — best as a standalone mission or Day 5 late swap for Kunugiya if you want tsukemen over udon.</li>
+      <li><strong>Godaime Hanayama wide udon</strong> — Ginza, weekday dinner 17:30–21:30. Queue can be 90 min+. If you want this, go at 5:30pm sharp on Day 4 or Day 6 before Trader Vic's. Not currently in the itinerary.</li>
+    </ul>
+  </div>
+
+</div>
+</section>
+
+<!-- TRAVEL AGENT -->
+<section style="background: linear-gradient(135deg, var(--vermillion) 0%, var(--deep-red) 100%); padding: 3rem 0;">
+<div class="container">
+  <div style="background: rgba(255,255,255,0.95); border-radius: 4px; padding: 2.5rem 2rem; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+    <h3 style="font-family: 'IM Fell English', serif; font-size: 1.75rem; color: var(--ink); margin-bottom: 1rem;">Need Additional Help or Recommendations?</h3>
+    <p style="font-size: 1.05rem; color: var(--ink-soft); line-height: 1.7; max-width: 600px; margin: 0 auto;">
+      Have your handsome husband ask the Claude travel agent he built using your itinerary.<br>
+      <span style="font-size: 0.85rem; color: var(--tatami); font-style: italic; display: block; margin-top: 0.75rem;">(He knows you won't download it.)</span>
+    </p>
+  </div>
+</div>
+</section>
+
+<footer>
+  <span>東京</span> · Honeymoon Itinerary · June 6–12, 2026 · The Prince Sakura Tower · <span>蜜月</span>
+</footer>
+
+</body>
+</html>

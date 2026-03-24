@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kyoto Honeymoon · June 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --vermillion: #C0392B;
+    --deep-red: #8B1A10;
+    --gold: #B8962E;
+    --gold-light: #D4AF5A;
+    --ink: #1C1410;
+    --ink-soft: #3D2B1F;
+    --paper: #F5EFE0;
+    --paper-dark: #EDE3CC;
+    --paper-mid: #F0E8D5;
+    --tatami: #C8B99A;
+    --moss: #4A6741;
+    --night-blue: #1A2535;
+    --cream: #FAF6ED;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  /* Aged paper texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.6;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--ink);
+    border-bottom: 2px solid var(--vermillion);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  nav::-webkit-scrollbar { display: none; }
+
+  .nav-logo {
+    font-family: 'Shippori Mincho', serif;
+    color: var(--gold-light);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0.9rem 1.5rem 0.9rem 0;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    margin-right: 1rem;
+  }
+
+  nav a {
+    color: rgba(245,239,224,0.6);
+    text-decoration: none;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.9rem 1rem;
+    white-space: nowrap;
+    transition: color 0.2s;
+    font-weight: 400;
+  }
+  nav a:hover { color: var(--gold-light); }
+
+  /* HERO */
+  .hero {
+    background: var(--ink);
+    color: var(--paper);
+    text-align: center;
+    padding: 5rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '京都';
+    position: absolute;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 20rem;
+    color: rgba(192, 57, 43, 0.06);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    line-height: 1;
+  }
+
+  .hero-kana {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.4em;
+    color: var(--vermillion);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
+  .hero h1 {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-subtitle {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--tatami);
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-meta-item {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(245,239,224,0.5);
+  }
+  .hero-meta-item strong {
+    display: block;
+    color: var(--gold-light);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    margin-top: 0.15rem;
+  }
+
+  /* MAIN LAYOUT */
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* SECTION */
+  section {
+    padding: 3.5rem 0 2rem;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--tatami);
+  }
+
+  .section-num {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.7rem;
+    color: var(--vermillion);
+    letter-spacing: 0.2em;
+  }
+
+  .section-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+  }
+
+  /* BOOKINGS TABLE */
+  .bookings-grid {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .booking-card {
+    background: var(--cream);
+    border: 1px solid var(--paper-dark);
+    border-left: 3px solid var(--vermillion);
+    padding: 1rem 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.25rem 1rem;
+    align-items: start;
+  }
+
+  .booking-card.urgent { border-left-color: var(--vermillion); }
+  .booking-card.moderate { border-left-color: var(--gold); }
+  .booking-card.buy-now { border-left-color: var(--deep-red); background: #FFF8F7; }
+
+  .booking-name {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .booking-badge {
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .badge-urgent { background: var(--vermillion); color: white; }
+  .badge-moderate { background: var(--gold); color: white; }
+  .badge-now { background: var(--deep-red); color: white; }
+  .badge-new { background: var(--moss); color: white; }
+
+  .booking-detail {
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    grid-column: 1 / -1;
+    margin-top: 0.1rem;
+  }
+
+  .booking-link {
+    font-size: 0.75rem;
+    color: var(--vermillion);
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 0.05em;
+    grid-column: 1 / -1;
+  }
+
+  /* DAY CARDS */
+  .day-card {
+    margin-bottom: 3rem;
+    background: var(--cream);
+    border: 1px solid var(--paper-dark);
+    overflow: hidden;
+  }
+
+  .day-header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 1.25rem 1.75rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .day-number {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--vermillion);
+  }
+
+  .day-title {
+    font-family: 'IM Fell English', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    flex: 1;
+  }
+
+  .day-date {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: rgba(245,239,224,0.4);
+    text-transform: uppercase;
+  }
+
+  .day-body { padding: 0; }
+
+  /* TIMELINE ITEMS */
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    border-bottom: 1px solid var(--paper-dark);
+    transition: background 0.15s;
+  }
+
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-item:hover { background: var(--paper-mid); }
+
+  .timeline-time {
+    padding: 1rem 1rem 1rem 1.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    color: var(--tatami);
+    font-weight: 500;
+    border-right: 1px solid var(--paper-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-top: 1.1rem;
+  }
+
+  .item-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+
+  .timeline-content {
+    padding: 1rem 1.5rem 1rem 1.25rem;
+  }
+
+  .item-type {
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+  }
+
+  .type-coffee { color: #8B6914; }
+  .type-food { color: var(--vermillion); }
+  .type-temple { color: var(--moss); }
+  .type-activity { color: #5B6FA6; }
+  .type-bar { color: #7B3F6E; }
+  .type-spa { color: #9E7B5A; }
+  .type-transit { color: var(--tatami); }
+
+  .item-name {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .star-badge {
+    font-size: 0.55rem;
+    background: var(--vermillion);
+    color: white;
+    padding: 0.15rem 0.4rem;
+    letter-spacing: 0.1em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .new-badge {
+    font-size: 0.55rem;
+    background: var(--moss);
+    color: white;
+    padding: 0.15rem 0.4rem;
+    letter-spacing: 0.1em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .item-desc {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  .item-detail {
+    font-size: 0.75rem;
+    color: var(--tatami);
+    margin-top: 0.4rem;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .item-note {
+    font-size: 0.75rem;
+    background: var(--paper-dark);
+    border-left: 2px solid var(--gold);
+    padding: 0.4rem 0.7rem;
+    margin-top: 0.5rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  /* SPA BLOCK */
+  .timeline-item.spa-block .timeline-time { color: #9E7B5A; }
+  .timeline-item.spa-block {
+    background: linear-gradient(to right, rgba(158,123,90,0.04), transparent);
+  }
+
+  /* BAR ITEM */
+  .timeline-item.bar-item {
+    background: linear-gradient(to right, rgba(123,63,110,0.04), transparent);
+  }
+
+  /* COFFEE INDICATOR */
+  .coffee-count {
+    display: inline-flex;
+    gap: 2px;
+    margin-left: 0.5rem;
+  }
+  .coffee-dot {
+    width: 5px;
+    height: 5px;
+    background: #8B6914;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  /* TABLES */
+  .ref-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    margin: 1rem 0;
+  }
+
+  .ref-table th {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--tatami);
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--paper-dark);
+    font-weight: 600;
+  }
+
+  .ref-table td {
+    padding: 0.65rem 0.75rem;
+    border-bottom: 1px solid var(--paper-dark);
+    color: var(--ink-soft);
+    vertical-align: top;
+  }
+
+  .ref-table tr:last-child td { border-bottom: none; }
+  .ref-table tr:hover td { background: var(--paper-mid); }
+
+  .ref-table td:first-child {
+    font-weight: 500;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+
+  /* TIPS BLOCK */
+  .tips-block {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 1.5rem 1.75rem;
+    margin: 1.5rem 0;
+  }
+
+  .tips-block h4 {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    color: var(--gold-light);
+    margin-bottom: 0.75rem;
+  }
+
+  .tips-list {
+    list-style: none;
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .tips-list li {
+    font-size: 0.8rem;
+    color: rgba(245,239,224,0.75);
+    padding-left: 1rem;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .tips-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--vermillion);
+    font-size: 0.7rem;
+  }
+
+  /* RAIN WARNING */
+  .rain-note {
+    background: var(--paper-dark);
+    border: 1px solid var(--tatami);
+    border-left: 3px solid var(--gold);
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    margin: 1rem 0;
+  }
+
+  /* DIVIDER */
+  .mon-divider {
+    text-align: center;
+    margin: 2rem 0;
+    position: relative;
+  }
+  .mon-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--paper-dark);
+  }
+  .mon-divider span {
+    position: relative;
+    background: var(--paper);
+    padding: 0 1rem;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.2rem;
+    color: var(--tatami);
+  }
+
+  /* ADDRESS PILL */
+  .addr {
+    display: inline-block;
+    font-size: 0.7rem;
+    color: var(--tatami);
+    margin-top: 0.2rem;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--ink);
+    color: rgba(245,239,224,0.4);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    margin-top: 3rem;
+  }
+
+  footer span {
+    color: var(--vermillion);
+  }
+
+  @media (max-width: 600px) {
+    .timeline-item {
+      grid-template-columns: 60px 1fr;
+    }
+    .timeline-time {
+      padding: 1rem 0.5rem 1rem 0.75rem;
+    }
+    .hero::before { font-size: 10rem; }
+    .day-header { gap: 0.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">嵐山 · Kyoto</div>
+  <a href="#bookings">Bookings</a>
+  <a href="#day3">June 3</a>
+  <a href="#day4">June 4</a>
+  <a href="#day5">June 5</a>
+  <a href="#day6">June 6</a>
+  <a href="#reference">Reference</a>
+</nav>
+
+<div class="hero">
+  <span class="hero-kana">京都 蜜月旅行 · Honeymoon</span>
+  <h1>Kyoto, June 2026</h1>
+  <p class="hero-subtitle">Arashiyama · 3½ Days · Suiran Luxury Collection</p>
+  <div class="hero-meta">
+    <div class="hero-meta-item">Arrival<strong>June 3, Evening</strong></div>
+    <div class="hero-meta-item">Hotel<strong>Suiran, Arashiyama</strong></div>
+    <div class="hero-meta-item">Departure<strong>June 6, Morning</strong></div>
+    <div class="hero-meta-item">Season<strong>Tsuyu · Rainy</strong></div>
+    <div class="hero-meta-item">To Tokyo<strong>Shinkansen ~2h15</strong></div>
+  </div>
+</div>
+
+<!-- BOOKINGS -->
+<section id="bookings">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○一</span>
+    <h2 class="section-title">Reservations — Book Now</h2>
+  </div>
+
+  <div class="bookings-grid">
+
+    <div class="booking-card buy-now">
+      <div class="booking-name">Torisho Sai — June 3 Dinner</div>
+      <span class="booking-badge badge-now">Book ASAP</span>
+      <div class="booking-detail">Michelin-selected yakitori. Hinai-jidori charcoal omakase. ~¥10,000–15,000/person.</div>
+      <div class="booking-link">torisho-sai.com/en/reserve</div>
+    </div>
+
+    <div class="booking-card moderate">
+      <div class="booking-name">Gion Duck Noodles — June 4 Dinner</div>
+      <span class="booking-badge badge-moderate">Up to 90 days out</span>
+      <div class="booking-detail">9-seat duck ramen. Book via AutoReserve or arrive at 5pm opening.</div>
+      <div class="booking-link">AutoReserve app/site — non-refundable booking fee</div>
+    </div>
+
+    <div class="booking-card moderate">
+      <div class="booking-name">Hozugawa River Cruise — June 4 Morning</div>
+      <span class="booking-badge badge-new">New · Book Now</span>
+      <div class="booking-detail">¥6,000/person. 9am or 10am slot. Boards at Kameoka, arrives Arashiyama. Book online — can cancel day-of if tsuyu rain cancels service.</div>
+      <div class="booking-link">hozugawakudari.jp or Klook</div>
+    </div>
+
+    <div class="booking-card urgent">
+      <div class="booking-name">Hikoniku Tocome — June 5 Dinner</div>
+      <span class="booking-badge badge-urgent">4–6 Weeks Out</span>
+      <div class="booking-detail">Charcoal beef patties. ¥1,000 seat fee. OR arrive 9am day-of for walk-up list.</div>
+      <div class="booking-link">hikinikutocome.com/en/visit/kyoto/</div>
+    </div>
+
+    <div class="booking-card buy-now">
+      <div class="booking-name">TeamLab Biovortex — June 5, 3:30pm</div>
+      <span class="booking-badge badge-now">Buy Now</span>
+      <div class="booking-detail">Japan's largest TeamLab. ¥3,600–4,200. Choose Entrance Pass, 3:30pm slot, June 5. Changeable up to 3 times (up to 2hrs before).</div>
+      <div class="booking-link">teamlab.art/e/kyoto/ or Klook</div>
+    </div>
+
+    <div class="booking-card moderate">
+      <div class="booking-name">Suiran Spa — Private Open-Air Bath</div>
+      <span class="booking-badge badge-moderate">Reserve at Check-in</span>
+      <div class="booking-detail">¥3,850/45 min. Two private open-air baths in secluded Japanese garden. Book for evenings after dinner. 3pm–11:45pm or 6am–11:45am.</div>
+      <div class="booking-link">Reserve at front desk on arrival</div>
+    </div>
+
+    <div class="booking-card moderate">
+      <div class="booking-name">Suiran Arrival Transfer</div>
+      <span class="booking-badge badge-urgent">3+ Days Before</span>
+      <div class="booking-detail">Complimentary 1-way taxi from Kyoto Station. Must notify hotel at least 3 days prior to arrival. Request via hotel email or phone.</div>
+      <div class="booking-link">+81-75-872-0101 · suirankyoto.com</div>
+    </div>
+
+  </div>
+
+  <div class="rain-note">
+    ☔ <strong>Tsuyu note:</strong> June is rainy season. The Hozugawa cruise operates in light rain (tents deployed) but cancels if water levels are too high — check hozugawakudari.jp the morning of. Have % Arabica + bamboo grove as a backup. Konbini umbrellas ¥500.
+  </div>
+</div>
+</section>
+
+<!-- DAY 3 -->
+<section id="day3">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○二</span>
+    <h2 class="section-title">Day-by-Day Itinerary</h2>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day One · Sunday</div>
+        <div class="day-title">Arrival · Arashiyama · Pontocho</div>
+      </div>
+      <div class="day-date">June 3</div>
+    </div>
+    <div class="day-body">
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">✈</span>Evening</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Arrival</div>
+          <div class="item-name">Arrive Kyoto Station → Suiran</div>
+          <div class="item-desc">Pre-booked complimentary hotel taxi from Kyoto Station (book 3+ days ahead). ~30-min drive to Arashiyama. Check in, change, breathe.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item spa-block">
+        <div class="timeline-time"><span class="item-icon">♨</span>~5:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-spa">Spa · Suiran</div>
+          <div class="item-name">Onsen & Arrival Wind-Down</div>
+          <div class="item-desc">Use your in-room onsen (if booked) or reserve the private open-air spa bath at front desk. 45 min in the garden bath — the perfect arrival ritual. Gardens lit at dusk.</div>
+          <div class="item-note">Reserve the private spa bath at check-in for this slot or a later return window after dinner.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>~6pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · 1 of 2</div>
+          <div class="item-name">% Arabica Arashiyama <span class="new-badge">Home Base</span></div>
+          <div class="item-desc">8-minute walk from Suiran. Best-located Arabica in the world — beside the bamboo grove as dusk settles. First Kyoto coffee. Opens until late in summer.</div>
+          <div class="item-detail">3-47 Sagatenryuji Susukinobaba-cho, Ukyo-ku</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🎋</span>~6:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-temple">Explore</div>
+          <div class="item-name">Arashiyama at Dusk</div>
+          <div class="item-desc">Togetsukyo Bridge, riverside path, Tenryuji temple gate. Day-trippers are gone. This neighbourhood is yours now — you're staying here. 30 min gentle wander before heading into town for dinner.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍢</span>~8pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Dinner · ⭐ Reservation Required</div>
+          <div class="item-name">Torisho Sai <span class="star-badge">Michelin Selected</span></div>
+          <div class="item-desc">Hinai-jidori chicken — one of Japan's top 3 premium breeds (Akita Prefecture), aged 3 days, charcoal-grilled omakase. Opened Oct 2024, Michelin-selected 3 months later. ~¥10,000–15,000/person.</div>
+          <div class="item-detail">237 Daimonjicho, Nakagyo-ku (near Nijo Castle) · Taxi from Suiran ~25–30 min</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🏮</span>~10pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">After Dinner</div>
+          <div class="item-name">Pontocho Alley</div>
+          <div class="item-desc">500m lantern-lit corridor, Shijo to Sanjo. June = kawayuka platforms over the Kamogawa River. Best after dark. Walk the full length, duck into sub-alleys.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item bar-item">
+        <div class="timeline-time"><span class="item-icon">🍹</span>~10:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-bar">Nightcap · Night 1</div>
+          <div class="item-name">Ishimaru Shoten <span class="star-badge">Tiki</span></div>
+          <div class="item-desc">Tiny tiki bar in a Pontocho sub-alley. 15 people max. Handmade lamps, Polynesian art, guitars on the wall. Beer, sake, shochu, simple snacks. Walk-in only — arrive by 10pm if you want seats.</div>
+          <div class="item-detail">13 Kiyamachi-Dori Shijo-Agaru, Nakagyo-ku · Note: smoking allowed inside</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🚕</span>Late</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Return</div>
+          <div class="item-name">Taxi back to Suiran</div>
+          <div class="item-desc">~30 min, ¥3,000–4,000. Ask hotel for a trusted taxi number on arrival. Or flag from Shijo-Kawaramachi. Late-night taxis available but can be slow on weekends.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day-card" id="day4">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Two · Monday</div>
+        <div class="day-title">River Cruise · Kijuro · Gion · Fushimi Inari</div>
+      </div>
+      <div class="day-date">June 4</div>
+    </div>
+    <div class="day-body">
+
+      <div class="timeline-item spa-block">
+        <div class="timeline-time"><span class="item-icon">♨</span>7am</div>
+        <div class="timeline-content">
+          <div class="item-type type-spa">Spa · Morning Ritual</div>
+          <div class="item-name">Onsen · In-room or Private Bath</div>
+          <div class="item-desc">Private bath hours from 6am. Soak before the day begins. If your room has an outdoor bath, use it now — mornings in the Arashiyama garden are still and cool before the heat builds.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>7:45am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · 1 of 3</div>
+          <div class="item-name">% Arabica Arashiyama</div>
+          <div class="item-desc">Opens 8am. Grab coffee and a pastry before heading to the station. 8-min walk from Suiran. The bamboo grove at 8am is as quiet as it gets.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🚂</span>8:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Transit to Kameoka</div>
+          <div class="item-name">Sagano Romantic Train <span class="new-badge">Scenic Route</span></div>
+          <div class="item-desc">Take the retro Sagano Romantic Train from Torokko Saga Station (adjacent to JR Saga-Arashiyama) to Torokko Kameoka. 25 min through the Hozu gorge in an open-air carriage. Then bus or 10-min walk to the cruise pier.</div>
+          <div class="item-detail">¥880 each way. Check sagano-kanko.co.jp for times — departs roughly hourly.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🛶</span>9am / 10am</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Activity · ⭐ Pre-booked</div>
+          <div class="item-name">Hozugawa River Cruise <span class="star-badge">2 Hours</span></div>
+          <div class="item-desc">16km downstream from Kameoka to Arashiyama through the Hozu gorge. Traditional wooden flat-bottomed boat, 3–5 boatmen using bamboo poles and oars. Rapids, 200-million-year-old rock formations, kingfishers, herons. Commentary en route. Arrives at Arashiyama — steps from Togetsukyo Bridge, 10 min walk to Suiran.</div>
+          <div class="item-detail">¥6,000/person · Book: hozugawakudari.jp or Klook · Operates in light rain (tents deployed)</div>
+          <div class="item-note">⚠ Cancelled if water levels too high. Check the morning of. Backup: bamboo grove + % Arabica morning + move to central Kyoto early.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🥩</span>11:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Lunch · Walk-in</div>
+          <div class="item-name">Arashiyama Kijuro <span class="new-badge">New</span></div>
+          <div class="item-desc">Walk off the boat and 10 min to Kijuro. Wagyu rice bowls with a beautiful Japanese garden view through floor-to-ceiling windows. Order the wagyu loin steak bowl hitsumabushi-style (plain → condiments → dashi ochazuke, three rounds). Add the Kyoto yudofu set (+¥660). Local Tanba sake pairs perfectly. No reservations — arrive before noon to avoid a queue.</div>
+          <div class="item-detail">18-27 Sagatenryuji Kitatsukurimichi-cho, Ukyo-ku · 11am–8:30pm · 3-min walk from Keifuku Arashiyama Station</div>
+        </div>
+      </div>
+
+      <div class="timeline-item spa-block">
+        <div class="timeline-time"><span class="item-icon">♨</span>1:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-spa">Spa · Afternoon Rest</div>
+          <div class="item-name">Suiran — Rest & Onsen Block</div>
+          <div class="item-desc">Walk back to Suiran (10 min). 2-hour rest. This is essential — June humidity is punishing and you have a full evening ahead. Nap, in-room onsen, Café Hassui terrace if you want afternoon light by the river.</div>
+          <div class="item-note">Café Hassui: riverside terrace, light meals + afternoon tea. 11am–5pm.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>4pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · 2 of 3</div>
+          <div class="item-name">Taxi to Gion · Kissamaster or Kurasu</div>
+          <div class="item-desc">Taxi to central Kyoto (~30 min). Coffee break before the evening begins. Kissamaster has a garden setting; Kurasu is a Kyoto-based specialty roaster with multiple locations.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">⛩</span>4:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-temple">Wander</div>
+          <div class="item-name">Gion — Shirakawa Canal & Hanamikoji</div>
+          <div class="item-desc">Wander Shirakawa Canal (weeping willows, stone lanterns), then south down Hanamikoji Street — the main geisha road. Late afternoon light is ideal. Maiko sightings most likely 5–6pm heading to engagements. 1.5 hours.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🦆</span>6pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Dinner · ⭐ Reservation Required</div>
+          <div class="item-name">Gion Duck Noodles <span class="star-badge">Tabelog Top</span></div>
+          <div class="item-desc">9 seats. Kishu duck (Wakayama), German rye noodles, French-influenced broth. Menu is emoji-only — staff explain everything. Order ramen + tsukemen (dipping noodles), mix of loin + thigh cuts. One of Tabelog's top West Japan ramen shops.</div>
+          <div class="item-detail">329 Yasaka Kita-machi, Higashiyama-ku · Narrow alley, look for duck + noodle sign · Book via AutoReserve or arrive at 5pm opening</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">⛩</span>7:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-temple">Optional · Sunset</div>
+          <div class="item-name">Fushimi Inari — Sunset Hike</div>
+          <div class="item-desc">Arrive ~1 hour before sunset. Hike to Yotsutsuji overlook (30–45 min) — city panorama at twilight. Descend through Senbon Torii (thousand gates) after dark, lantern-lit. Much quieter than daytime. Don't do the full loop — steep uneven steps in the dark.</div>
+          <div class="item-detail">Free, open 24/7 · Keihan Line Gion-Shijo → Fushimi-Inari (~10 min) · Wild boar active at night — stay on main path</div>
+          <div class="item-note">This is optional — if Day 4 feels full, skip it and head straight to Bee's Knees. The river cruise + Kijuro + Gion is already a beautiful day.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>~9pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · 3 of 3</div>
+          <div class="item-name">Late Coffee — Kawaramachi area</div>
+          <div class="item-desc">Several third-wave coffee spots in the Kawaramachi–Sanjo area stay open late. Ask the hotel concierge for current picks — the specialty coffee scene moves fast in Kyoto.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item bar-item">
+        <div class="timeline-time"><span class="item-icon">🍸</span>~9:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-bar">Nightcap · Night 2</div>
+          <div class="item-name">Bee's Knees <span class="star-badge">Asia's 50 Best</span></div>
+          <div class="item-desc">Kyoto's finest speakeasy — Prohibition-era aesthetic, 90s hip-hop soundtrack, yellow door marked only with bee signage. Four-time Asia's 50 Best Bars. Twists on Roaring Twenties classics and house originals. Order the Truffle Bee's Knees or ask for a bespoke seasonal creation. Sit at the bar if you can.</div>
+          <div class="item-detail">434-2 Tachibanacho, Shimogyo Ward · Hidden on Kiyamachi Street — look for the yellow door</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="day-card" id="day5">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Three · Tuesday</div>
+        <div class="day-title">Nishiki · TeamLab · Hikoniku · Speakeasy</div>
+      </div>
+      <div class="day-date">June 5</div>
+    </div>
+    <div class="day-body">
+
+      <div class="timeline-item spa-block">
+        <div class="timeline-time"><span class="item-icon">♨</span>7am</div>
+        <div class="timeline-content">
+          <div class="item-type type-spa">Spa · Morning Ritual</div>
+          <div class="item-name">Onsen · Slow Start</div>
+          <div class="item-desc">Private bath from 6am. Today is a late start — you have nothing until 10am, so take your time. In-room bath, breakfast at Kyo-Suiran (kaiseki-French fusion) if you want a proper hotel breakfast morning.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>8am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · 1 of 3</div>
+          <div class="item-name">% Arabica Arashiyama</div>
+          <div class="item-desc">Morning ritual. 8-min walk from Suiran. Bamboo grove is empty at this hour — worth a slow walk through before heading to the station.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🚆</span>9:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Transit to Central</div>
+          <div class="item-name">JR Sagano Line → Kyoto Station</div>
+          <div class="item-desc">15-min walk to Saga-Arashiyama Station, then 17-min train to Kyoto Station. Taxi is also fine (~20 min, ¥2,000–2,500).</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>10am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · 2 of 3</div>
+          <div class="item-name">Inoda Coffee</div>
+          <div class="item-desc">Kyoto institution since 1940. Suited staff, coffee poured tableside, Japanese-style breakfast. A civilised and very Kyoto way to start the central city day. Opens 7am.</div>
+          <div class="item-detail">140 Donocho, Nakagyo-ku (near Nishiki Market)</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🦞</span>11am</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Graze</div>
+          <div class="item-name">Nishiki Market</div>
+          <div class="item-desc">Kyoto's kitchen — 400m covered street. Graze: pickled vegetables, tofu skewers, tako tamago (octopus in egg), fresh mochi. 1.5 hours. Overlap with nearby shopping on Shijo-Kawaramachi.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🛍</span>12:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Shopping</div>
+          <div class="item-name">Kawaramachi + Gion Boutiques</div>
+          <div class="item-desc">JAM Kyoto (curated vintage), 45R (premium Japanese denim), FASCINATE KYOTO (Japanese fashion). Shijo-Kawaramachi is compact and walkable. 1.5 hours.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>2pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · 3 of 3</div>
+          <div class="item-name">Weekenders Coffee</div>
+          <div class="item-desc">Third-wave specialty roaster, modern aesthetic. Good quick stop before heading to TeamLab. Multiple Kyoto locations.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🚆</span>3pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Transit to TeamLab</div>
+          <div class="item-name">Kyoto Station → TeamLab Biovortex</div>
+          <div class="item-desc">7-min walk from Kyoto Station Hachijo East Exit (south side). Or taxi directly from wherever you are (~¥1,500–2,000). Arrive 20 min early — they start letting people in before the official slot.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">✨</span>3:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Activity · ⭐ Pre-booked</div>
+          <div class="item-name">TeamLab Biovortex Kyoto <span class="star-badge">Japan's Largest</span></div>
+          <div class="item-desc">Opened Oct 2025. 50+ interactive installations, 4 floors, 10,000 sq metres. Darker and more meditative than Tokyo locations — fits Kyoto perfectly. Forest of Resonating Lamps (made for Kyoto, colours shift with the seasons), Athletics Forest, Massless Amorphous Sculpture (bubble room), Morphing Continuum. Plan 2.5–3 hours.</div>
+          <div class="item-detail">21-5 Higashiiwamotocho, Higashi-kujo Higashi, Minami-ku · ¥3,600–4,200 · Wear white/light colours — projections interact. Flat closed-toe shoes for Athletics Forest. Free lockers. No re-entry.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🥩</span>~7pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Dinner · ⭐ Reservation Required</div>
+          <div class="item-name">Hikoniku Tocome <span class="star-badge">Gion</span></div>
+          <div class="item-desc">Old Gion machiya building. One menu: 3 charcoal-grilled beef patties (90g each), unlimited Fukushima rice, miso soup, raw egg, grated daikon + ponzu. Three eating stages: plain → daikon/ponzu → raw egg over rice. ~¥1,800–2,800/person. Taxi from TeamLab ~10 min.</div>
+          <div class="item-detail">363 Kiyomotocho, Higashiyama-ku · Book 4–6 weeks out (¥1,000 seat fee) or arrive 9am day-of for walk-up list</div>
+        </div>
+      </div>
+
+      <div class="timeline-item bar-item">
+        <div class="timeline-time"><span class="item-icon">🎩</span>~9pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-bar">Nightcap · Night 3</div>
+          <div class="item-name">L'Escamoteur <span class="star-badge">Speakeasy</span></div>
+          <div class="item-desc">The most theatrical bar in Kyoto. Owner-bartender Christophe is a French magician — cocktails arrive under bell jars of smoke, served with a top-hat flourish. Steampunk-French attic above the Takase canal, entered via a narrow staircase lit by Edison bulbs. Bathroom behind a hidden bookcase. No menu — tell him your spirit and mood. Drinks like the Charlie Chaplin and L'Antidote. Candlelit. Intimate. Genuinely unforgettable.</div>
+          <div class="item-detail">15 Benzaitencho, Higashiyama Ward · Look for the narrow brick building on the Takase canal · Walk-in</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="day-card" id="day6">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Four · Wednesday</div>
+        <div class="day-title">Final Morning · Arashiyama · Departure</div>
+      </div>
+      <div class="day-date">June 6</div>
+    </div>
+    <div class="day-body">
+
+      <div class="timeline-item spa-block">
+        <div class="timeline-time"><span class="item-icon">♨</span>Early</div>
+        <div class="timeline-content">
+          <div class="item-type type-spa">Spa · Final Morning</div>
+          <div class="item-name">Last Onsen Soak</div>
+          <div class="item-desc">Private bath opens 6am. Your last morning in the Arashiyama garden. Take it slowly — there's nothing to rush to until checkout.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>8am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · 1 of 2</div>
+          <div class="item-name">% Arabica Arashiyama</div>
+          <div class="item-desc">One last time. Opens 8am. Morning light through the bamboo. The city is still quiet.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🎋</span>8:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-temple">Final Wander</div>
+          <div class="item-name">Bamboo Grove + Riverside</div>
+          <div class="item-desc">Last walk through the bamboo grove at its quietest. Togetsukyo Bridge in the morning mist. 40-min slow stroll back to Suiran.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🧳</span>~10am</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Checkout</div>
+          <div class="item-name">Suiran Checkout</div>
+          <div class="item-desc">Standard checkout. Hotel can arrange complimentary drop to Saga-Arashiyama Station or Keifuku Station. Taxi to Kyoto Station is ~20–25 min, ¥2,000–2,500.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>~11am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · 2 of 2</div>
+          <div class="item-name">Here Kyoto — Final Stop</div>
+          <div class="item-desc">Highly-rated specialty coffee near Kyoto Station. Good final Kyoto stop before boarding. Clean, focused, excellent espresso.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🚄</span>Midday</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Departure</div>
+          <div class="item-name">Shinkansen → Tokyo</div>
+          <div class="item-desc">~2h15m. Book reserved seats in advance (smart EX app or JR Ticket Office). Grab ekiben (station bento) for the train.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- REFERENCE -->
+<section id="reference">
+<div class="container">
+
+  <div class="section-header">
+    <span class="section-num">○三</span>
+    <h2 class="section-title">Reference</h2>
+  </div>
+
+  <!-- TEAMLAB CALLOUT -->
+  <div class="tips-block" style="margin-bottom: 2rem;">
+    <h4>TeamLab Biovortex vs. Tokyo — Why Kyoto Wins</h4>
+    <ul class="tips-list">
+      <li>Japan's largest TeamLab installation (Oct 2025). 50+ artworks, 4 floors, 10,000 sq metres.</li>
+      <li>Darker, moodier, more meditative than Planets/Borderless in Tokyo. Thematically unified around nature, life cycles, impermanence — fits Kyoto perfectly.</li>
+      <li>Less crowded than Tokyo locations. No fixed route — explore freely like Borderless.</li>
+      <li>Includes the Athletics Forest (interactive/physical floor) AND new Kyoto-exclusive installations.</li>
+      <li>Forest of Resonating Lamps has a Kyoto-specific colour palette that changes with the seasons.</li>
+      <li>The Tokyo museums are brighter, more spectacle-focused. Biovortex is the artistically stronger experience.</li>
+    </ul>
+  </div>
+
+  <h3 style="font-family:'Shippori Mincho',serif; font-size:1rem; letter-spacing:0.1em; color:var(--ink); margin-bottom:1rem;">Hozugawa River Cruise</h3>
+  <table class="ref-table" style="margin-bottom:2rem;">
+    <tr><td>Route</td><td>Kameoka → Arashiyama. 16km downstream through the Hozu Gorge. Arrives near Togetsukyo Bridge.</td></tr>
+    <tr><td>Duration</td><td>~2 hours</td></tr>
+    <tr><td>Price</td><td>¥6,000/person. Book: hozugawakudari.jp or Klook</td></tr>
+    <tr><td>Hours</td><td>9am–3pm (March–December), hourly departures</td></tr>
+    <tr><td>Getting there</td><td>Sagano Romantic Train: Torokko Saga → Torokko Kameoka (25 min, ¥880) + bus/walk to pier. OR: JR Sagano Line → Kameoka (20 min, ¥410) + 8-min walk.</td></tr>
+    <tr><td>Rain policy</td><td>Operates in light rain (tents deployed). Cancelled if water level too high. Check hozugawakudari.jp morning-of.</td></tr>
+  </table>
+
+  <h3 style="font-family:'Shippori Mincho',serif; font-size:1rem; letter-spacing:0.1em; color:var(--ink); margin-bottom:1rem;">Fushimi Inari — Insider Tips</h3>
+  <table class="ref-table" style="margin-bottom:2rem;">
+    <tr><td>Timing</td><td>Arrive ~6:30–7pm (1 hr before sunset in June). Hike to Yotsutsuji crossroads overlook (30–45 min). Watch sunset. Descend through Senbon Torii after dark — lanterns light the path.</td></tr>
+    <tr><td>Route</td><td>Up to Yotsutsuji and back only. Don't do the full mountain loop after dark — steep, uneven steps.</td></tr>
+    <tr><td>Crowds</td><td>Evenings are dramatically quieter than midday. Thins out further 1 hour after sunset.</td></tr>
+    <tr><td>Access</td><td>Keihan Line Gion-Shijo → Fushimi-Inari (5 stops, ~10 min). Free, open 24/7.</td></tr>
+    <tr><td>Bring</td><td>Comfortable shoes, water (shops close after sunset), phone for flashlight</td></tr>
+    <tr><td>Wildlife</td><td>Wild boar active at night — stay on the main path</td></tr>
+  </table>
+
+  <h3 style="font-family:'Shippori Mincho',serif; font-size:1rem; letter-spacing:0.1em; color:var(--ink); margin-bottom:1rem;">Coffee Guide</h3>
+  <table class="ref-table" style="margin-bottom:2rem;">
+    <thead><tr><th>Café</th><th>Vibe</th><th>Notes</th></tr></thead>
+    <tr><td>% Arabica Arashiyama</td><td>Scenic, iconic</td><td>8-min walk from Suiran. Opens 8am. Your home base café — used all 3 days.</td></tr>
+    <tr><td>Café Hassui (Suiran)</td><td>Riverside terrace</td><td>At the hotel. Waterside, Japanese afternoon tea. 11am–5pm.</td></tr>
+    <tr><td>Inoda Coffee</td><td>Historic, traditional</td><td>Kyoto institution since 1940. Suited staff, tableside pour. Opens 7am.</td></tr>
+    <tr><td>Weekenders Coffee</td><td>Third-wave, modern</td><td>Specialty coffee, multiple locations. Good afternoon stop.</td></tr>
+    <tr><td>Kissamaster</td><td>Relaxed, garden</td><td>Garden setting, good Gion-area afternoon break.</td></tr>
+    <tr><td>Here Kyoto</td><td>Highly-rated</td><td>Near Kyoto Station. Final morning departure stop.</td></tr>
+  </table>
+
+  <h3 style="font-family:'Shippori Mincho',serif; font-size:1rem; letter-spacing:0.1em; color:var(--ink); margin-bottom:1rem;">Nightcaps — All 3 Nights</h3>
+  <table class="ref-table" style="margin-bottom:2rem;">
+    <thead><tr><th>Night</th><th>Bar</th><th>Vibe</th></tr></thead>
+    <tr><td>June 3</td><td>Ishimaru Shoten</td><td>Tiki bar in a Pontocho sub-alley. 15 people. Handmade lamps, shochu, smoke. Walk-in only. Smoking inside.</td></tr>
+    <tr><td>June 4</td><td>Bee's Knees</td><td>Prohibition speakeasy — yellow door on Kiyamachi. Asia's 50 Best Bars. 90s hip-hop. Craft cocktails. Truffle Bee's Knees.</td></tr>
+    <tr><td>June 5</td><td>L'Escamoteur</td><td>French magician bartender. Steampunk attic on Takase canal. Smoke, bell jars, hidden bookcase bathroom. No menu — describe your spirit and mood. Theatrical and intimate.</td></tr>
+  </table>
+
+  <h3 style="font-family:'Shippori Mincho',serif; font-size:1rem; letter-spacing:0.1em; color:var(--ink); margin-bottom:1rem;">Logistics</h3>
+  <table class="ref-table" style="margin-bottom:2rem;">
+    <thead><tr><th>Topic</th><th>Info</th></tr></thead>
+    <tr><td>Cash</td><td>Carry ¥20,000–30,000. 7-Eleven ATMs everywhere.</td></tr>
+    <tr><td>Suiran → Central Kyoto</td><td>~30 min taxi (¥3,000–4,000). JR Sagano Line: Saga-Arashiyama → Kyoto Station 17 min (¥240) + 15-min walk to station.</td></tr>
+    <tr><td>Arrival transfer</td><td>Complimentary taxi from Kyoto Station — book 3+ days in advance. +81-75-872-0101</td></tr>
+    <tr><td>Departure</td><td>Hotel drop to Saga-Arashiyama Station, or taxi to Kyoto Station (~20–25 min, ¥2,000–2,500)</td></tr>
+    <tr><td>TeamLab transit</td><td>7-min walk from Kyoto Station Hachijo East Exit. Or direct taxi from Suiran ~20 min.</td></tr>
+    <tr><td>Fushimi Inari transit</td><td>Keihan Line → Fushimi-Inari from Gion-Shijo. ~10 min, ¥230.</td></tr>
+    <tr><td>Tax-free shopping</td><td>Passport required every time. ¥5,000+ per store = 10% back.</td></tr>
+    <tr><td>Rain</td><td>Tsuyu season. Umbrella essential. Konbini sells ¥500 umbrellas.</td></tr>
+    <tr><td>Shinkansen to Tokyo</td><td>~2h15m. Book reserved seats via smart EX app or JR Ticket Office.</td></tr>
+  </table>
+
+  <!-- FULL LONGLIST -->
+  <h3 style="font-family:'Shippori Mincho',serif; font-size:1rem; letter-spacing:0.1em; color:var(--ink); margin-bottom:0.5rem; margin-top:2rem;">Full Eats & Drinks Longlist</h3>
+  <p style="font-size:0.78rem; color:var(--tatami); margin-bottom:1rem; font-style:italic;">Everything on the radar — starred items are in the itinerary. Rest are reserves or alternates.</p>
+
+  <table class="ref-table" style="margin-bottom:0.5rem;">
+    <thead><tr><th colspan="2">☕ Coffee</th></tr></thead>
+    <tr><td>% Arabica Arashiyama ⭐</td><td>Home base. Bamboo grove location. Opens 8am.</td></tr>
+    <tr><td>Café Hassui (Suiran) ⭐</td><td>Riverside terrace at hotel. 11am–5pm.</td></tr>
+    <tr><td>Inoda Coffee ⭐</td><td>Kyoto institution since 1940. Japanese breakfast. Opens 7am.</td></tr>
+    <tr><td>Weekenders Coffee ⭐</td><td>Third-wave specialty. Multiple locations. Day 5 afternoon stop.</td></tr>
+    <tr><td>Kissamaster ⭐</td><td>Garden setting. Good Gion-area break.</td></tr>
+    <tr><td>Here Kyoto ⭐</td><td>Highly-rated. Near Kyoto Station. Day 6 departure stop.</td></tr>
+    <tr><td>Coffee to Kanele</td><td>Neighbourhood specialty. Good reserve option.</td></tr>
+    <tr><td>Cafe Kozen</td><td>Traditional kissaten atmosphere.</td></tr>
+    <tr><td>Ninenzaka Cafe Garakuta</td><td>Traditional machiya building near Ninenzaka. Pancakes + coffee.</td></tr>
+    <tr><td>Smart Coffee</td><td>Old-school Kyoto kissaten. Famous French toast.</td></tr>
+    <tr><td>Kurasu</td><td>Kyoto-based specialty roaster. Multiple locations.</td></tr>
+  </table>
+
+  <table class="ref-table" style="margin-bottom:0.5rem;">
+    <thead><tr><th colspan="2">🍳 Breakfast / Bakeries</th></tr></thead>
+    <tr><td>Tom Sawyer</td><td>Bakery. Good morning grab-and-go in central Kyoto.</td></tr>
+    <tr><td>La Bac a Sable</td><td>French-style bakery. Pastries and bread.</td></tr>
+    <tr><td>Miyako</td><td>Classic Kyoto bakery.</td></tr>
+    <tr><td>Petit Mec Imadegawa</td><td>Beloved neighbourhood bakery. Worth the detour.</td></tr>
+  </table>
+
+  <table class="ref-table" style="margin-bottom:0.5rem;">
+    <thead><tr><th colspan="2">🍜 Ramen / Noodles</th></tr></thead>
+    <tr><td>Gion Duck Noodles ⭐</td><td>9 seats. Kishu duck, German rye noodles, French-influenced broth. Tabelog Top West Japan. Book via AutoReserve or arrive 5pm.</td></tr>
+    <tr><td>Men-ya Inoichi</td><td>Highly rated backup ramen. Refined broth, good for non-adventurous eaters. Solid fallback if Duck Noodles doesn't work out.</td></tr>
+  </table>
+
+  <table class="ref-table" style="margin-bottom:0.5rem;">
+    <thead><tr><th colspan="2">🍣 Sushi</th></tr></thead>
+    <tr><td>Sushi Azabu</td><td>Upscale omakase. Book via Tableall if interested. Worth considering if you want a fine-dining sushi night.</td></tr>
+  </table>
+
+  <table class="ref-table" style="margin-bottom:0.5rem;">
+    <thead><tr><th colspan="2">🍢 Yakitori</th></tr></thead>
+    <tr><td>Torisho Sai ⭐</td><td>Michelin-selected. Hinai-jidori charcoal omakase. June 3 dinner. Book ASAP.</td></tr>
+  </table>
+
+  <table class="ref-table" style="margin-bottom:0.5rem;">
+    <thead><tr><th colspan="2">🥟 Dumplings / Gyoza</th></tr></thead>
+    <tr><td>Matoi Gyoza</td><td>Nishiki area. Good casual lunch or snack.</td></tr>
+    <tr><td>Nishiki Gyoza</td><td>Inside Nishiki Market. Walk-and-eat friendly.</td></tr>
+    <tr><td>Gyoza Kaku</td><td>Local favourite. Downtown.</td></tr>
+    <tr><td>Chao Chao Gyoza</td><td>Casual chain but genuinely good. Multiple locations.</td></tr>
+  </table>
+
+  <table class="ref-table" style="margin-bottom:0.5rem;">
+    <thead><tr><th colspan="2">🍶 Izakaya</th></tr></thead>
+    <tr><td>Onikai</td><td>Izakaya. Good for a casual evening drinks + food session.</td></tr>
+    <tr><td>Good Morning Record Bar</td><td>Music bar / izakaya vibe. Worth a look if you want something low-key.</td></tr>
+  </table>
+
+  <table class="ref-table" style="margin-bottom:0.5rem;">
+    <thead><tr><th colspan="2">🍱 Katsu / Fried / Tempura</th></tr></thead>
+    <tr><td>Katsukura Shijo Termachi</td><td>Solid tonkatsu chain, Nishiki area. Reliable, unpretentious. Good if you just want a quick satisfying lunch.</td></tr>
+    <tr><td>Tendon Makino Kyoto</td><td>Tempura over rice. Good value, very Kyoto.</td></tr>
+    <tr><td>Mao All Kumamoto</td><td>Kumamoto-style fried chicken. Casual and fun.</td></tr>
+  </table>
+
+  <table class="ref-table" style="margin-bottom:0.5rem;">
+    <thead><tr><th colspan="2">🥩 Steak / Beef</th></tr></thead>
+    <tr><td>Arashiyama Kijuro ⭐</td><td>Wagyu rice bowls in Japanese garden. Walk-in. Open until 8:30pm. Best at lunch. Day 4.</td></tr>
+    <tr><td>Hikoniku Tocome ⭐</td><td>Charcoal beef patties, Gion machiya. Book 4–6 weeks out. Day 5 dinner.</td></tr>
+    <tr><td>Teppanyaki Kanzan (Suiran)</td><td>Premium beef + seafood grilled at counter. Better than kaiseki for picky eaters. Reserve at hotel.</td></tr>
+  </table>
+
+  <table class="ref-table" style="margin-bottom:0.5rem;">
+    <thead><tr><th colspan="2">🍽 Fine Dining / Signature</th></tr></thead>
+    <tr><td>Kyo-Suiran Kaiseki (Suiran)</td><td>French-kaiseki fusion in a 100-year-old Meiji villa. 8–10 courses. Outstanding reviews — but not ideal if you're a picky eater. Consider Teppanyaki Kanzan instead.</td></tr>
+    <tr><td>Torisho Sai ⭐</td><td>See Yakitori above.</td></tr>
+    <tr><td>Gion Duck Noodles ⭐</td><td>See Ramen above.</td></tr>
+  </table>
+
+  <table class="ref-table" style="margin-bottom:0.5rem;">
+    <thead><tr><th colspan="2">🍩 Dessert</th></tr></thead>
+    <tr><td>Koe Donuts</td><td>Creative matcha/seasonal donuts, Kawaramachi-Sanjo. Good late-night sugar hit.</td></tr>
+  </table>
+
+  <table class="ref-table" style="margin-bottom:0.5rem;">
+    <thead><tr><th colspan="2">🍸 Bars / Nightlife</th></tr></thead>
+    <tr><td>Ishimaru Shoten ⭐</td><td>Night 1. Tiki bar, Pontocho sub-alley. 15 people. Walk-in only.</td></tr>
+    <tr><td>Bee's Knees ⭐</td><td>Night 2. Prohibition speakeasy, Kiyamachi. Asia's 50 Best Bars. Yellow door.</td></tr>
+    <tr><td>L'Escamoteur ⭐</td><td>Night 3. Steampunk French magician bar, Takase canal attic. No menu.</td></tr>
+    <tr><td>Good Morning Record Bar</td><td>Music bar, vinyl, casual. Good if you want something low-key and local.</td></tr>
+    <tr><td>Pontocho Alley</td><td>500m corridor. June = kawayuka platforms over Kamogawa. Best after 7pm.</td></tr>
+  </table>
+
+  <table class="ref-table" style="margin-bottom:2rem;">
+    <thead><tr><th colspan="2">🛍 Shopping</th></tr></thead>
+    <tr><td>JAM Kyoto</td><td>Curated vintage/secondhand, American + Japanese.</td></tr>
+    <tr><td>FASCINATE KYOTO</td><td>Japanese fashion boutique.</td></tr>
+    <tr><td>45R Kyoto</td><td>Premium Japanese denim + casualwear, made in Japan.</td></tr>
+    <tr><td>EDWIN Kyoto Sanjo</td><td>Japanese denim, one of Japan's original denim brands.</td></tr>
+    <tr><td>BIG TIME</td><td>Vintage + streetwear.</td></tr>
+  </table>
+
+  <h3 style="font-family:'Shippori Mincho',serif; font-size:1rem; letter-spacing:0.1em; color:var(--ink); margin-bottom:1rem;">Address Cheat Sheet</h3>
+  <table class="ref-table">
+    <thead><tr><th>Venue</th><th>Address</th></tr></thead>
+    <tr><td>Suiran Hotel</td><td>12 Susukinobaba-cho, Saga-Tenryuji, Ukyo-ku</td></tr>
+    <tr><td>Torisho Sai</td><td>237 Daimonjicho, Nakagyo-ku</td></tr>
+    <tr><td>Gion Duck Noodles</td><td>329 Yasaka Kita-machi, Higashiyama-ku</td></tr>
+    <tr><td>Arashiyama Kijuro</td><td>18-27 Sagatenryuji Kitatsukurimichi-cho, Ukyo-ku</td></tr>
+    <tr><td>Hikoniku Tocome</td><td>363 Kiyomotocho, Higashiyama-ku</td></tr>
+    <tr><td>TeamLab Biovortex</td><td>21-5 Higashiiwamotocho, Higashi-kujo Higashi, Minami-ku</td></tr>
+    <tr><td>Hozugawa Cruise Pier</td><td>Kameoka — 8-min walk from JR Kameoka Station</td></tr>
+    <tr><td>Fushimi Inari</td><td>68 Fukakusa Yabunouchicho, Fushimi-ku</td></tr>
+    <tr><td>% Arabica Arashiyama</td><td>3-47 Sagatenryuji Susukinobaba-cho, Ukyo-ku</td></tr>
+    <tr><td>Inoda Coffee</td><td>140 Donocho, Nakagyo-ku</td></tr>
+    <tr><td>Ishimaru Shoten</td><td>13 Kiyamachi-Dori Shijo-Agaru, Nakagyo-ku</td></tr>
+    <tr><td>Bee's Knees</td><td>434-2 Tachibanacho, Shimogyo Ward</td></tr>
+    <tr><td>L'Escamoteur</td><td>15 Benzaitencho, Higashiyama Ward</td></tr>
+  </table>
+
+</div>
+</section>
+
+<!-- TRAVEL AGENT -->
+<section style="background: linear-gradient(135deg, var(--vermillion) 0%, var(--deep-red) 100%); padding: 3rem 0;">
+<div class="container">
+  <div style="background: rgba(255,255,255,0.95); border-radius: 4px; padding: 2.5rem 2rem; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+    <h3 style="font-family: 'IM Fell English', serif; font-size: 1.75rem; color: var(--ink); margin-bottom: 1rem;">Need Additional Help or Recommendations?</h3>
+    <p style="font-size: 1.05rem; color: var(--ink-soft); line-height: 1.7; max-width: 600px; margin: 0 auto;">
+      Have your handsome husband ask the Claude travel agent he built using your itinerary.<br>
+      <span style="font-size: 0.85rem; color: var(--tatami); font-style: italic; display: block; margin-top: 0.75rem;">(He knows you won't download it.)</span>
+    </p>
+  </div>
+</div>
+</section>
+
+<footer>
+  <span>嵐山</span> · Suiran Luxury Collection · June 3–6, 2026 · <span>京都</span>
+</footer>
+
+</body>
+</html>

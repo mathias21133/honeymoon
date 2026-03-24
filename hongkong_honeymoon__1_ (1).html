@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hong Kong Honeymoon · May–June 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --jade:        #1A6B4A;
+    --jade-deep:   #0E4730;
+    --gold:        #B8962E;
+    --gold-light:  #D4AF5A;
+    --ink:         #141A1C;
+    --ink-soft:    #2E3A3D;
+    --paper:       #F2EDE0;
+    --paper-dark:  #E5DEC9;
+    --paper-mid:   #EBE4D3;
+    --stone:       #A8B5AF;
+    --crimson:     #B83232;
+    --crimson-deep:#7A1A1A;
+    --harbor:      #1B3548;
+    --cream:       #FAF7F0;
+    --teal:        #1E6E72;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.6;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--ink);
+    border-bottom: 2px solid var(--jade);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  nav::-webkit-scrollbar { display: none; }
+
+  .nav-logo {
+    font-family: 'Shippori Mincho', serif;
+    color: var(--gold-light);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0.9rem 1.5rem 0.9rem 0;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    margin-right: 1rem;
+  }
+
+  nav a {
+    color: rgba(242,237,224,0.6);
+    text-decoration: none;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.9rem 1rem;
+    white-space: nowrap;
+    transition: color 0.2s;
+    font-weight: 400;
+  }
+  nav a:hover { color: var(--gold-light); }
+
+  /* HERO */
+  .hero {
+    background: var(--ink);
+    color: var(--paper);
+    text-align: center;
+    padding: 5rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '香港';
+    position: absolute;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 20rem;
+    color: rgba(26,107,74,0.07);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    line-height: 1;
+  }
+
+  .hero-kana {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.4em;
+    color: var(--jade);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
+  .hero h1 {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-subtitle {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--stone);
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-meta-item {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(242,237,224,0.5);
+  }
+  .hero-meta-item strong {
+    display: block;
+    color: var(--gold-light);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    margin-top: 0.15rem;
+  }
+
+  /* MAIN LAYOUT */
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  section { padding: 3.5rem 0 2rem; }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--stone);
+  }
+
+  .section-num {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.7rem;
+    color: var(--jade);
+    letter-spacing: 0.2em;
+  }
+
+  .section-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+  }
+
+  /* OVERVIEW TABLE */
+  .overview-grid {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+  }
+  .overview-grid thead tr { background: var(--ink); }
+  .overview-grid thead th {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    padding: 0.6rem 0.9rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  .overview-grid tbody tr { border-bottom: 1px solid var(--paper-dark); }
+  .overview-grid tbody tr:hover td { background: var(--paper-mid); }
+  .overview-grid td {
+    padding: 0.7rem 0.9rem;
+    vertical-align: top;
+    color: var(--ink-soft);
+  }
+  .overview-grid td:first-child {
+    font-family: 'Shippori Mincho', serif;
+    color: var(--jade);
+    font-weight: 700;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+  .overview-grid td:nth-child(2) {
+    color: var(--stone);
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+  .overview-grid td:nth-child(3) {
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  /* BOOKINGS */
+  .bookings-grid { display: grid; gap: 0.75rem; }
+
+  .booking-card {
+    background: var(--cream);
+    border: 1px solid var(--paper-dark);
+    border-left: 3px solid var(--jade);
+    padding: 1rem 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.25rem 1rem;
+    align-items: start;
+  }
+  .booking-card.buy-now { border-left-color: var(--crimson); background: #FFF8F7; }
+  .booking-card.moderate { border-left-color: var(--gold); }
+
+  .booking-name {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .booking-badge {
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .badge-urgent { background: var(--crimson); color: white; }
+  .badge-moderate { background: var(--gold); color: white; }
+  .badge-now { background: var(--crimson-deep); color: white; }
+  .badge-jade { background: var(--jade); color: white; }
+
+  .booking-detail {
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    grid-column: 1 / -1;
+    margin-top: 0.1rem;
+  }
+  .booking-link {
+    font-size: 0.75rem;
+    color: var(--jade);
+    letter-spacing: 0.05em;
+    grid-column: 1 / -1;
+  }
+
+  /* DAY CARDS */
+  .day-card {
+    margin-bottom: 3rem;
+    background: var(--cream);
+    border: 1px solid var(--paper-dark);
+    overflow: hidden;
+  }
+
+  .day-header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 1.25rem 1.75rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .day-number {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--jade);
+  }
+
+  .day-title {
+    font-family: 'IM Fell English', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    flex: 1;
+  }
+
+  .day-date {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: rgba(242,237,224,0.4);
+    text-transform: uppercase;
+  }
+
+  /* TIMELINE */
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    border-bottom: 1px solid var(--paper-dark);
+    transition: background 0.15s;
+  }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-item:hover { background: var(--paper-mid); }
+
+  .timeline-time {
+    padding: 1rem 1rem 1rem 1.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    color: var(--stone);
+    font-weight: 500;
+    border-right: 1px solid var(--paper-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-top: 1.1rem;
+  }
+
+  .item-icon { font-size: 1.1rem; line-height: 1; }
+
+  .timeline-content { padding: 1rem 1.5rem 1rem 1.25rem; }
+
+  .item-type {
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+  }
+
+  .type-coffee  { color: #7A5C14; }
+  .type-food    { color: var(--crimson); }
+  .type-market  { color: var(--jade); }
+  .type-activity{ color: var(--harbor); }
+  .type-bar     { color: #6B3E7A; }
+  .type-transit { color: var(--stone); }
+  .type-note    { color: var(--stone); }
+  .type-wander  { color: var(--teal); }
+
+  .item-name {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .star-badge {
+    font-size: 0.55rem;
+    background: var(--crimson);
+    color: white;
+    padding: 0.15rem 0.4rem;
+    letter-spacing: 0.1em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .cha-chaan-badge {
+    font-size: 0.55rem;
+    background: #7A5C14;
+    color: white;
+    padding: 0.15rem 0.4rem;
+    letter-spacing: 0.1em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .new-badge {
+    font-size: 0.55rem;
+    background: var(--jade);
+    color: white;
+    padding: 0.15rem 0.4rem;
+    letter-spacing: 0.1em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .book-badge {
+    font-size: 0.55rem;
+    background: var(--crimson-deep);
+    color: white;
+    padding: 0.15rem 0.4rem;
+    letter-spacing: 0.1em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .michelin-badge {
+    font-size: 0.55rem;
+    background: var(--harbor);
+    color: white;
+    padding: 0.15rem 0.4rem;
+    letter-spacing: 0.1em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .item-desc {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  .item-detail {
+    font-size: 0.75rem;
+    color: var(--stone);
+    margin-top: 0.4rem;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .item-note {
+    font-size: 0.75rem;
+    background: var(--paper-dark);
+    border-left: 2px solid var(--gold);
+    padding: 0.4rem 0.7rem;
+    margin-top: 0.5rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  .timeline-item.bar-item {
+    background: linear-gradient(to right, rgba(107,62,122,0.04), transparent);
+  }
+  .timeline-item.coffee-item {
+    background: linear-gradient(to right, rgba(122,92,20,0.04), transparent);
+  }
+  .timeline-item.market-item {
+    background: linear-gradient(to right, rgba(26,107,74,0.04), transparent);
+  }
+  .timeline-item.wander-item {
+    background: linear-gradient(to right, rgba(30,110,114,0.04), transparent);
+  }
+
+  /* SECTION BAND */
+  .time-band {
+    background: var(--paper-dark);
+    padding: 0.4rem 1.5rem;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--stone);
+    border-bottom: 1px solid var(--paper-dark);
+  }
+
+  /* HOTEL NOTE */
+  .hotel-note {
+    background: var(--cream);
+    border: 1px solid var(--paper-dark);
+    border-top: 3px solid var(--gold);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .hotel-note h4 {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .hotel-option {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--paper-dark);
+  }
+  .hotel-option:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .hotel-option strong {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.95rem;
+    color: var(--ink);
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+  .hotel-option p { font-size: 0.82rem; color: var(--ink-soft); }
+
+  /* FLAGS BLOCK */
+  .flags-block {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 1.5rem 1.75rem;
+    margin: 1.5rem 0;
+  }
+  .flags-block h4 {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    color: var(--gold-light);
+    margin-bottom: 0.75rem;
+  }
+  .flags-list { list-style: none; display: grid; gap: 0.5rem; }
+  .flags-list li {
+    font-size: 0.8rem;
+    color: rgba(242,237,224,0.75);
+    padding-left: 1rem;
+    position: relative;
+    line-height: 1.5;
+  }
+  .flags-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--jade);
+    font-size: 0.7rem;
+  }
+
+  /* RAIN NOTE */
+  .rain-note {
+    background: var(--paper-dark);
+    border: 1px solid var(--stone);
+    border-left: 3px solid var(--gold);
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    margin: 1rem 0;
+  }
+
+  /* REFERENCE TABLES */
+  .ref-section { margin-bottom: 2.5rem; }
+  .ref-section h3 {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--paper-dark);
+  }
+
+  .ref-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    margin: 0.5rem 0;
+  }
+  .ref-table th {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--stone);
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--paper-dark);
+    font-weight: 600;
+  }
+  .ref-table td {
+    padding: 0.65rem 0.75rem;
+    border-bottom: 1px solid var(--paper-dark);
+    color: var(--ink-soft);
+    vertical-align: top;
+  }
+  .ref-table tr:last-child td { border-bottom: none; }
+  .ref-table tr:hover td { background: var(--paper-mid); }
+  .ref-table td:first-child {
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  /* TRACKER TABLES */
+  .tracker-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    margin-bottom: 1rem;
+  }
+  .tracker-table thead tr { background: var(--ink); }
+  .tracker-table thead th {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    padding: 0.6rem 0.9rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  .tracker-table td {
+    padding: 0.7rem 0.9rem;
+    border-bottom: 1px solid var(--paper-dark);
+    vertical-align: top;
+    color: var(--ink-soft);
+  }
+  .tracker-table tr:last-child td { border-bottom: none; }
+  .tracker-table tr:hover td { background: var(--paper-mid); }
+  .tracker-table td:first-child {
+    font-family: 'Shippori Mincho', serif;
+    color: var(--jade);
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  /* MACAU TABLE */
+  .macau-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+  }
+  .macau-table thead tr { background: var(--harbor); }
+  .macau-table thead th {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    padding: 0.6rem 0.9rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  .macau-table td {
+    padding: 0.7rem 0.9rem;
+    border-bottom: 1px solid var(--paper-dark);
+    vertical-align: top;
+    color: var(--ink-soft);
+  }
+  .macau-table tr:hover td { background: var(--paper-mid); }
+  .macau-table td:first-child { font-weight: 500; color: var(--ink); }
+
+  /* DIVIDER */
+  .mon-divider {
+    text-align: center;
+    margin: 2rem 0;
+    position: relative;
+  }
+  .mon-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--paper-dark);
+  }
+  .mon-divider span {
+    position: relative;
+    background: var(--paper);
+    padding: 0 1rem;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.2rem;
+    color: var(--stone);
+  }
+
+  footer {
+    background: var(--ink);
+    color: rgba(242,237,224,0.4);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    margin-top: 3rem;
+  }
+  footer span { color: var(--jade); }
+
+  @media (max-width: 600px) {
+    .timeline-item { grid-template-columns: 60px 1fr; }
+    .timeline-time { padding: 1rem 0.5rem 1rem 0.75rem; }
+    .hero::before { font-size: 10rem; }
+    .day-header { gap: 0.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">香港 · Honeymoon</div>
+  <a href="#bookings">Book Now</a>
+  <a href="#day1">May 29</a>
+  <a href="#day2">May 30</a>
+  <a href="#day3">May 31</a>
+  <a href="#day4">Jun 1</a>
+  <a href="#day5">Jun 2</a>
+  <a href="#day6">Jun 3</a>
+  <a href="#trackers">Trackers</a>
+  <a href="#reference">Reference</a>
+  <a href="#priorities">Priorities</a>
+</nav>
+
+<div class="hero">
+  <span class="hero-kana">香港 蜜月旅行 · Honeymoon</span>
+  <h1>Hong Kong, May–June 2026</h1>
+  <p class="hero-subtitle">Island Shangri-La · Admiralty · 5 Days · Arriving from Phuket</p>
+  <div class="hero-meta">
+    <div class="hero-meta-item">Arrival<strong>May 29, ~4pm</strong></div>
+    <div class="hero-meta-item">From<strong>Phuket</strong></div>
+    <div class="hero-meta-item">Base<strong>Admiralty / Central</strong></div>
+    <div class="hero-meta-item">Departure<strong>Jun 3 · 10:55am → Kyoto</strong></div>
+    <div class="hero-meta-item">Style<strong>Markets · Stalls · Streets</strong></div>
+  </div>
+</div>
+
+<!-- HOTEL -->
+<section id="hotel">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○〇</span>
+    <h2 class="section-title">Base — Island Shangri-La</h2>
+  </div>
+
+  <div class="hotel-note">
+    <h4>Island Shangri-La · Supreme Court Rd, Admiralty · HK Island</h4>
+    <div class="hotel-option">
+      <strong>Location + Why It's Right</strong>
+      <p>Admiralty is one of the best possible bases on HK Island — directly above Admiralty MTR, between Central and Wan Chai, with Pacific Place shopping and dining at your feet. Everything on HK Island is close: Bakehouse (Wan Chai) is 10 min walk, Halfway Coffee (Sheung Wan) is 2 MTR stops, Bar Leone and Tai Kwun (Central) are 5 min by MTR or a pleasant 15-min walk downhill. For the Kowloon days — Temple Street, Mong Kok markets, Moonzen Brewery — you cross under the harbor on the MTR (10–15 min) or take the Star Ferry from Central Pier (7 min, HK$3.40). The hotel sits above the park with harbor views from upper floors and feels removed from the tourist scrum of TST while keeping you connected to everything.</p>
+    </div>
+    <div class="hotel-option">
+      <strong>Coffee Note</strong>
+      <p>Halfway Coffee (your top specialty pick) is 2 MTR stops in Sheung Wan — 10 min door to door. Bakehouse egg tarts are a 10-min walk through Wan Chai. 18 Grams has a Central branch that's essentially walkable. Lan Fong Yuen (original, 2 Gage St) is 10 min by MTR or 20-min walk through the park. Knockbox is one stop east in Wan Chai. You're well positioned for every coffee and morning stop on this trip — no ferry needed to start most days.</p>
+    </div>
+    <div class="hotel-option">
+      <strong>Getting Around</strong>
+      <p>Octopus card (pick up at any MTR station on arrival) handles all transit. Admiralty MTR sits directly below the hotel — Island Line west to Central/Sheung Wan, east to Wan Chai/Causeway Bay. For Kowloon days: MTR through the harbor tunnel (10–15 min to Jordan/Mong Kok) or Star Ferry from Central Pier (7 min, HK$3.40) — take the ferry whenever time allows. Taxis are cheap — most HK Island cross-town trips HK$40–60. Airport Express from Hong Kong Station (Central, 2 stops west, 5 min) — 24 min to HKG.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- BOOKINGS -->
+<section id="bookings">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○一</span>
+    <h2 class="section-title">Reservations — Book Before You Land</h2>
+  </div>
+
+  <div class="bookings-grid">
+
+    <div class="booking-card buy-now">
+      <div class="booking-name">Hutong — Day 4 Dinner (Peking Duck + Harbor Views)</div>
+      <span class="booking-badge badge-now">Book Now · 4–6 Weeks</span>
+      <div class="booking-detail">One Peking Duck Street, Tsim Sha Tsui — 28th floor, floor-to-ceiling harbor views. Northern Chinese fine dining. The signature is whole Peking duck, carved tableside. This is your one big-ticket dinner. Book via their website or OpenTable. Mention honeymoon. ~HK$800–1,200/person.</div>
+      <div class="booking-link">hutong.com.hk · OpenTable · Mention honeymoon</div>
+    </div>
+
+    <div class="booking-card buy-now">
+      <div class="booking-name">Aqua Luna Harbor Cruise — Day 1 Evening</div>
+      <span class="booking-badge badge-now">Book Month-Of</span>
+      <div class="booking-detail">Traditional red junk sail during the Symphony of Lights harbor show (8pm nightly). 7:30 or 7:45pm sailing from Tsim Sha Tsui Pier. Pre-book via Klook — sells out on weekends. HK$220/person. Cocktails on deck while the skyline lights up. The right way to arrive in Hong Kong.</div>
+      <div class="booking-link">klook.com/activity/659-aqualuna-evening-sail-hong-kong · Book 1–2 weeks out</div>
+    </div>
+
+    <div class="booking-card buy-now">
+      <div class="booking-name">Ho Lee Fook — Day 1 Late Dinner</div>
+      <span class="booking-badge badge-now">Book Now</span>
+      <div class="booking-detail">Modern Cantonese, Central. The best "elevated Cantonese" restaurant in HK right now — char siu, whole suckling pig, technically pristine. Book via their website. This is the late dinner after the Aqua Luna cruise.</div>
+      <div class="booking-link">holeefook.com.hk · 1–2 weeks out</div>
+    </div>
+
+    <div class="booking-card moderate">
+      <div class="booking-name">Peak Tram — Day 2 Morning</div>
+      <span class="booking-badge badge-moderate">Buy Ahead</span>
+      <div class="booking-detail">Buy Peak Tram tickets online to skip the queue — the walk-up line can be 45–90 min. Go early morning (before 9:30am) for the clearest views and fewest people. Round-trip + Sky Terrace combo is the move.</div>
+      <div class="booking-link">thepeak.com.hk — buy online, skip the queue</div>
+    </div>
+
+    <div class="booking-card moderate">
+      <div class="booking-name">Macau Ferry — Day 4 (Jun 1)</div>
+      <span class="booking-badge badge-moderate">Book 1 Week Out</span>
+      <div class="booking-detail">Turbojet or Cotai Water Jet from the Macau Ferry Terminal on HK Island (Sheung Wan) — closer from Admiralty than the TST terminal. Depart ~9am, return ~5pm. ~1 hour each way, HK$170–200 each direction. Buy ahead — can sell out on weekends, though Jun 1 is Monday so more flexible. See the Macau section for the day plan.</div>
+      <div class="booking-link">turbojet.com.hk · Cotai Water Jet · Buy round-trip together · Depart from Macau Ferry Terminal, Sheung Wan</div>
+    </div>
+
+    <div class="booking-card moderate">
+      <div class="booking-name">Bar Leone — Day 5 Evening</div>
+      <span class="booking-badge badge-moderate">Walk In or Reserve</span>
+      <div class="booking-detail">Asia's #1 bar (2024 Asia's 50 Best). Central. Small, designed like a Milanese apothecary. Walk-in is possible earlier in the evening — or book via their website for a guaranteed seat. Go at opening (6pm) to be safe.</div>
+      <div class="booking-link">barleone.hk · Walk in at 6pm or book online</div>
+    </div>
+
+  </div>
+
+  <div class="rain-note">
+    ☔ <strong>Weather note:</strong> Late May–early June is late spring in HK — warm (27–32°C), occasionally rainy, very humid. Not rainy season yet but afternoon showers possible. The city runs fully in rain. Indoor cha chaan tengs, covered markets, and the MTR make it a non-issue. Pack a small umbrella or buy one at 7-Eleven on arrival.
+  </div>
+</div>
+</section>
+
+<!-- AT A GLANCE -->
+<section id="itinerary">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○二</span>
+    <h2 class="section-title">At a Glance</h2>
+  </div>
+
+  <table class="overview-grid">
+    <thead>
+      <tr><th>Day</th><th>Date</th><th>Anchor</th><th>Vibe</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Day 1</td><td>Thu May 29</td><td>Arrive → Admiralty → Central Waterfront</td><td>Milk tea landing, Central waterfront walk, Aqua Luna cruise from Central Pier, Ho Lee Fook late dinner</td></tr>
+      <tr><td>Day 2</td><td>Fri May 30</td><td>Peak → Sheung Wan → Wan Chai</td><td>Halfway Coffee, Peak Tram early, Bakehouse egg tarts, Sheung Wan antique streets, typhoon shelter seafood or Wan Chai stall dinner</td></tr>
+      <tr><td>Day 3</td><td>Sat May 31</td><td>Mong Kok markets → Temple Street Night Market → Moonzen Brewery</td><td>Lan Fong Yuen breakfast, Yat Lok roast goose lunch, Ladies Market / flower market, M+ Museum, Temple Street Night Market dinner, Moonzen Brewery late night</td></tr>
+      <tr><td>Day 4</td><td>Sun Jun 1</td><td>Macau Day Trip → Hutong Dinner</td><td>Ferry, UNESCO old town, Senado Square, Portuguese egg tarts, African chicken, back by evening, Hutong Peking duck dinner</td></tr>
+      <tr><td>Day 5</td><td>Mon Jun 2</td><td>Central → Sheung Wan → Bar Leone</td><td>18 Grams coffee, Mak's Noodles, Pottinger St, Tai Kwun, Monster Building, Kams/Chukfo roast dinner, Bar Leone, Victoria Peak at night</td></tr>
+      <tr><td>Day 6</td><td>Tue Jun 3</td><td>Departure → Kyoto</td><td>Quick cha chaan teng breakfast, airport by 8:30am for 10:55am flight</td></tr>
+    </tbody>
+  </table>
+</div>
+</section>
+
+<!-- DAY BY DAY -->
+<section id="days">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○三</span>
+    <h2 class="section-title">Day-by-Day</h2>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="day-card" id="day1">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day One · Thursday</div>
+        <div class="day-title">Arrival · First Taste of Kowloon</div>
+      </div>
+      <div class="day-date">May 29</div>
+    </div>
+    <div class="day-body">
+
+      <div class="time-band">Afternoon — Arrive ~4pm</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">✈️</span>4:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Arrival</div>
+          <div class="item-name">Land at HKIA → Island Shangri-La Check-In</div>
+          <div class="item-desc">Airport Express from HKG to Hong Kong Station in Central (24 min, HK$100) — then a short cab up to Admiralty (5 min, HK$30) or one MTR stop east on the Island Line. Drop bags, freshen up. You have a packed evening ahead so don't linger too long.</div>
+          <div class="item-detail">Airport Express from arrivals hall · HK$100/person · Hong Kong Station, Central · In-town check-in available at Hong Kong Station</div>
+        </div>
+      </div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">🧋</span>5:15pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">First Drink · Milk Tea Landing</div>
+          <div class="item-name">Lan Fong Yuen — Central <span class="cha-chaan-badge">Cha Chaan Teng</span></div>
+          <div class="item-desc">Your first proper HK move. Pantyhose milk tea — the original. Strong, silky, hot or iced. The original location on Gage St, Central is a 10-min cab from the hotel — or walk down through the park. Order it before anything else. This is what HK tastes like.</div>
+          <div class="item-detail">2 Gage St, Central (original) · No reservation needed · 10 min cab or 20 min walk from hotel</div>
+        </div>
+      </div>
+
+      <div class="timeline-item wander-item">
+        <div class="timeline-time"><span class="item-icon">🚢</span>5:45pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-wander">Walk · Harbor</div>
+          <div class="item-name">Central Waterfront + Pier Walk <span class="star-badge">★</span></div>
+          <div class="item-desc">Walk down from Central toward the waterfront before the cruise. The Central harbourfront promenade gives you the full Kowloon skyline across the water — the reverse of the TST view, and equally dramatic. Scout the Central Ferry Piers (Pier 9 area is where Aqua Luna boards). The light changes fast at dusk — be here for it.</div>
+          <div class="item-detail">Free · Central Harbourfront · 15 min walk from hotel downhill through HK Park</div>
+        </div>
+      </div>
+
+      <div class="time-band">Evening</div>
+
+      <div class="timeline-item bar-item">
+        <div class="timeline-time"><span class="item-icon">⛵</span>7:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-bar">Experience · Book Ahead</div>
+          <div class="item-name">Aqua Luna — Symphony of Lights Cruise <span class="star-badge">★★</span> <span class="book-badge">Book Ahead</span></div>
+          <div class="item-desc">Board the traditional red junk at Central Pier 9. The Symphony of Lights show runs at 8pm every night — synchronized light and sound across 44 buildings on both sides of the harbor. From the water it's a completely different experience than from the promenade. Order a drink, find a bow position, let the city do its thing. ~1 hour. The right way to arrive in Hong Kong.</div>
+          <div class="item-detail">Central Ferry Pier 9 · 7:30 or 7:45pm sailing · HK$220/person · Book via Klook · 15 min walk from hotel</div>
+          <div class="item-note">Book via Klook before you leave: klook.com/activity/659-aqualuna-evening-sail-hong-kong</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍖</span>9:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Late Dinner · Fine Cantonese</div>
+          <div class="item-name">Ho Lee Fook <span class="star-badge">★★</span> <span class="book-badge">Book Ahead</span></div>
+          <div class="item-desc">Modern Cantonese at its best right now — not dusty traditional, not fusion for fusion's sake. Char siu that's as good as any you'll find, excellent whole suckling pig, clean and technically precise. Book ahead. This is the late dinner after the cruise — you're already on HK Island, so a short cab from Central Pier (~HK$30, 5 min) to Causeway Bay. Worth it as your first real HK meal.</div>
+          <div class="item-detail">G/F, 1 Leighton Rd, Causeway Bay · ~5 min cab from Central Pier · Book via their website</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day-card" id="day2">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Two · Friday</div>
+        <div class="day-title">Peak → Sheung Wan → Wan Chai → Hutong</div>
+      </div>
+      <div class="day-date">May 30</div>
+    </div>
+    <div class="day-body">
+
+      <div class="time-band">Morning — Early Start</div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>8:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · Specialty #1</div>
+          <div class="item-name">Halfway Coffee <span class="star-badge">★ Top Pick</span></div>
+          <div class="item-desc">Your best specialty coffee in HK. Sheung Wan. Small, serious, pour-over focused. The right first specialty coffee of the trip — clean, no theatrics. From Admiralty it's 2 MTR stops west on the Island Line to Sheung Wan station, then a short walk up Hollywood Rd. Door to door in under 15 minutes.</div>
+          <div class="item-detail">204 Hollywood Rd, Sheung Wan · Opens 8am · MTR: Admiralty → Sheung Wan (Island Line, 2 stops)</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🚡</span>9:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Signature</div>
+          <div class="item-name">Peak Tram to Victoria Peak <span class="star-badge">★★</span> <span class="book-badge">Pre-Buy Ticket</span></div>
+          <div class="item-desc">Go early — before 10am the queues and crowds are manageable. The tram itself is half the experience — a near-vertical funicular with terraced views of the city opening up below you. At the top, walk past the Sky Terrace to the quieter back trails (Lugard Road lookout) for the panoramic harbor view without the tourist scrum. Clear mornings in late May are your best bet.</div>
+          <div class="item-detail">Lower Terminus, Garden Rd, Central · Buy online at thepeak.com.hk to skip queue · Return HK$118</div>
+          <div class="item-note">Buy tickets online before you go — walk-up queue can be 45–90 min. Go on the early side.</div>
+        </div>
+      </div>
+
+      <div class="time-band">Mid-Morning — Back Down the Hill</div>
+
+      <div class="timeline-item market-item">
+        <div class="timeline-time"><span class="item-icon">🥚</span>10:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-market">Bakery · Must-Eat</div>
+          <div class="item-name">Bakehouse — Egg Tarts <span class="star-badge">★ Must</span></div>
+          <div class="item-desc">The egg tart in HK. Buttery Portuguese-style pastry, silky wobble, fresh out of the oven. The Wan Chai location is the original and best. Go straight from the Peak — tram down then quick MTR or cab. Grab 3–4 to eat on the street. Don't wait until they cool.</div>
+          <div class="item-detail">18 Mallory St, Wan Chai (original) · Also in Sheung Wan · Opens 8am, sells out by 11am on busy days</div>
+        </div>
+      </div>
+
+      <div class="timeline-item wander-item">
+        <div class="timeline-time"><span class="item-icon">🏺</span>11:15am</div>
+        <div class="timeline-content">
+          <div class="item-type type-wander">Wander · Old HK Streets</div>
+          <div class="item-name">Sheung Wan — Antique Row + Cat Street <span class="star-badge">★</span></div>
+          <div class="item-desc">Hollywood Road and Cat Street (Upper Lascar Row) are the antique district. Porcelain, jade, old maps, colonial-era curios. No need to buy anything — just wander. The architecture here is old HK, not glassy Central. Linger in the narrow lanes, look up at the signage. This is the most atmospheric neighborhood in the city.</div>
+          <div class="item-detail">Hollywood Rd + Upper Lascar Row, Sheung Wan · 15 min walk from Bakehouse Wan Chai (or short cab)</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍱</span>12:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Lunch · Stall / Street</div>
+          <div class="item-name">Wan Chai Market Stalls — Graze <span class="star-badge">★</span></div>
+          <div class="item-desc">The Wan Chai wet market area spills out onto the surrounding streets with cooked-food stalls. This is where local HK workers eat lunch — cheap, fast, Cantonese. Get BBQ pork on rice (char siu fan), wonton noodle soup, or a clay pot rice if they're running one. No menu, point and order. Exactly the kind of eating you want more of.</div>
+          <div class="item-detail">Wan Chai Market area, around Queen's Rd East + Spring Garden Ln · Cash only · ~HK$50–80/person</div>
+        </div>
+      </div>
+
+      <div class="timeline-item wander-item">
+        <div class="timeline-time"><span class="item-icon">🏛</span>2:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-wander">Architecture · Neighbourhood</div>
+          <div class="item-name">PMQ + Central Mid-Levels Escalator</div>
+          <div class="item-desc">PMQ is a converted colonial police married quarters — now independent design studios, concept stores, and cafes. Worth 30–45 min. Then hop on the Central–Mid-Levels Escalator — the longest outdoor covered escalator in the world, stretching 800m uphill through Soho. Rides uphill after 10am, downhill until 10am. The streets around it (Elgin, Shelley, Staunton) are dense with cafes, hole-in-the-wall restaurants, and some of the best people-watching in HK.</div>
+          <div class="item-detail">PMQ: 35 Aberdeen St, Central · Escalator: Central to Mid-Levels, runs 10:30am–midnight uphill</div>
+        </div>
+      </div>
+
+      <div class="timeline-item wander-item">
+        <div class="timeline-time"><span class="item-icon">🚶</span>3:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-wander">No Agenda · Just Walk</div>
+          <div class="item-name">Tai Ping Shan Street — Unstructured Wander <span class="star-badge">★</span></div>
+          <div class="item-desc">Put the phone away. Walk back toward Sheung Wan from PMQ and find Tai Ping Shan Street — one of the oldest streets in HK, lined with incense shops, small ancestral temples with offerings burning out front, dried seafood merchants with sacks of scallops and abalone spilling onto the pavement, paper goods shops making ritual objects. It smells like sandalwood and brine. Walk slowly. Turn down whatever alleyways look interesting. The wet market lanes off Possession Street are worth finding. Buy something from whoever is selling it. This is the Sheung Wan that exists between the specialty coffee shops — it's been here for 150 years and is still completely itself.</div>
+          <div class="item-detail">Tai Ping Shan St, Sheung Wan · No map needed · Walk south from Hollywood Rd or west from PMQ · Just wander</div>
+        </div>
+      </div>
+
+      <div class="time-band">Evening — Street Dinner</div>
+
+      <div class="timeline-item market-item">
+        <div class="timeline-time"><span class="item-icon">🦪</span>7:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-market">Dinner · Street · No Reservation</div>
+          <div class="item-name">Wan Chai Typhoon Shelter Seafood or Cooked Food Stalls <span class="star-badge">★</span></div>
+          <div class="item-desc">You've spent the day in Wan Chai and Sheung Wan — stay in the neighborhood for dinner. Two options: the typhoon shelter seafood boats in Causeway Bay (floating dai pai dong style, fishermen cook fresh seafood on the water — crab, clams, wok-fried with black bean and chili) or the cooked food stalls around the Wan Chai Market area and Johnston Rd (BBQ pork on rice, wonton noodle, clay pot, roast duck). Either way you're eating on the street or at a plastic table, it costs next to nothing, and it's exactly the right follow to a day built around neighborhood wandering. Save the fine dining for later in the trip when you've earned it.</div>
+          <div class="item-detail">Typhoon shelter: Causeway Bay typhoon shelter, off Gloucester Rd · Cooked food stalls: Johnston Rd / Wan Chai Market area · Cash only · ~HK$150–300/person</div>
+          <div class="item-note">The typhoon shelter boats are the more unique experience — ask your hotel concierge to point you to the current operators. The stalls off Johnston Rd are always running and need no guidance.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item bar-item">
+        <div class="timeline-time"><span class="item-icon">🚃</span>9:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-wander">Transit · Do Not Cab This</div>
+          <div class="item-name">Ding Ding Tram Home — Upper Deck <span class="star-badge">★</span></div>
+          <div class="item-desc">Do not take a cab back to the hotel. Catch the Ding Ding tram on Johnston Rd or Hennessy Rd — HK$3, upper deck, front seat if you can get it. The double-decker rattles west through Wan Chai and Admiralty, close enough to the neon signs to touch them, past open shop fronts and wet markets shutting down for the night. Ride it to Admiralty or Central and walk up from there. 20 minutes. This is one of the best things you can do in HK and it requires zero planning — just don't call a Grab.</div>
+          <div class="item-detail">Any tram stop on Johnston Rd or Hennessy Rd, Wan Chai · Westbound toward Kennedy Town · HK$3 · Upper deck front seat</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day-card" id="day3">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Three · Saturday</div>
+        <div class="day-title">Mong Kok Markets → Temple Street Night Market</div>
+      </div>
+      <div class="day-date">May 31</div>
+    </div>
+    <div class="day-body">
+
+      <div class="time-band">Morning — Optional: Dim Sum Breakfast First</div>
+
+      <div class="timeline-item market-item">
+        <div class="timeline-time"><span class="item-icon">🥟</span>7:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-market">Breakfast · Optional · Push-Cart Dim Sum</div>
+          <div class="item-name">Lin Heung Kui — Traditional Dim Sum Hall <span class="new-badge">Optional</span> <span class="star-badge">★★ Disappearing</span></div>
+          <div class="item-desc">The last traditional push-cart dim sum hall in Hong Kong. 7:30am opening, immediately packed with locals — families, retirees, people who've been coming here every Saturday morning for decades. Women push steel trolleys through the room calling out what's on them in Cantonese; you flag them down, they stamp your card. No English menu, no pictures, just point at the bamboo steamers going past. Har gow, siu mai, cheung fun, lo mai gai, egg tarts from the trolley. It's loud, chaotic, and completely alive. This experience is dying — the push-cart tradition is nearly gone in HK. If you can get up for it, do it. If not, cha chaan teng is the backup and is equally good in its own way.</div>
+          <div class="item-detail">160–164 Wellington St, Sheung Wan · MTR: Sheung Wan · Opens 7:30am Sat · Cash only · Arrive at opening — fills within 20 min · ~HK$100–150/person</div>
+          <div class="item-note">Optional but recommended. If you go: arrive at 7:30am, find a table, wait for the trolleys to come to you. Don't overthink the ordering — just point at whatever looks good as it passes. You can't really make a wrong choice.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">🧋</span>9:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Breakfast · Cha Chaan Teng</div>
+          <div class="item-name">Lan Fong Yuen or Capital Cafe <span class="cha-chaan-badge">Cha Chaan Teng</span> <span class="new-badge">If Skipping Lin Heung Kui</span></div>
+          <div class="item-desc">If you didn't do the dim sum breakfast, start here instead: pantyhose milk tea, pineapple bun with butter, scrambled eggs on toast. Lan Fong Yuen is a 10-min MTR or 20-min walk from the hotel. Capital Cafe in Causeway Bay is one stop east — even closer.</div>
+          <div class="item-detail">Lan Fong Yuen: 2 Gage St, Central · Capital Cafe: 6 Leighton Rd, Causeway Bay (1 MTR stop east)</div>
+        </div>
+      </div>
+
+      <div class="timeline-item market-item">
+        <div class="timeline-time"><span class="item-icon">🌸</span>9:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-market">Market · Walk</div>
+          <div class="item-name">Mong Kok — Flower Market + Bird Garden <span class="star-badge">★</span></div>
+          <div class="item-desc">The Flower Market on Flower Market Road is one of the great sensory experiences in HK — hundreds of stalls, whole orchids, tropical blooms, buckets of cut flowers, locals buying for shrines and homes. Walk it end to end. Two minutes away, the Bird Garden is a covered arcade of twittering songbirds in ornate bamboo cages and old men playing cards. This is old HK — not a tourist attraction, just life. Budget 45–60 min total.</div>
+          <div class="item-detail">Flower Market Rd, Mong Kok · Bird Garden: Yuen Po St, Mong Kok · MTR: Mong Kok or Prince Edward</div>
+        </div>
+      </div>
+
+      <div class="timeline-item market-item">
+        <div class="timeline-time"><span class="item-icon">👗</span>10:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-market">Market · Wander</div>
+          <div class="item-name">Ladies Market — Tung Choi St <span class="star-badge">★</span></div>
+          <div class="item-desc">Stretches 10+ blocks through Mong Kok — clothes, knock-off bags, electronics, toys, street food carts weaving through everything. Not a shopping destination — an experience. The density and chaos of it is the point. Snack as you walk: egg waffles (gai daan jai) from any cart, skewers, fried tofu with hoisin. This is the street-eating HK you came for.</div>
+          <div class="item-detail">Tung Choi St, Mong Kok · Open from ~noon but 10am stalls are already setting up · Cash for everything</div>
+          <div class="item-note">Egg waffles: buy them hot, eat immediately. The cart outside the MTR station is fine — this isn't about finding the "best" one, it's about eating it on the street.</div>
+        </div>
+      </div>
+
+      <div class="time-band">Afternoon</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🦢</span>12:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Lunch · Michelin Roast</div>
+          <div class="item-name">Yat Lok Roast Goose <span class="michelin-badge">Michelin Star</span> <span class="star-badge">★★ Must</span></div>
+          <div class="item-desc">Michelin-starred roast goose — cash only, no frills, communal tables, you might queue 15 min. The goose is the reason: crackling lacquered skin, intensely savory, served over rice with the pan drippings. This is the single most essential HK dish you can eat on this trip. Order roast goose on rice. Full stop. Don't skip it because it looks humble — that's the point.</div>
+          <div class="item-detail">34–38 Stanley St, Central · Cash only · MTR Central · Queue ~10–20 min · Closes ~7pm · ~HK$100/person</div>
+          <div class="item-note">⚠ Cash only. Bring HK$200–300 cash for this. Worth it. Go at opening (noon) or expect a wait.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🏛</span>2:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Museum</div>
+          <div class="item-name">M+ Museum <span class="star-badge">★</span></div>
+          <div class="item-desc">Asia's leading contemporary visual culture museum — opened 2021, world-class building on the West Kowloon waterfront. The collection is genuinely excellent: design, architecture, moving image, and visual art from Hong Kong, China, and Asia. The building itself by Herzog & de Meuron is worth seeing. Budget 2 hours minimum. The harbor-facing facade view from inside is one of the best architectural moments in HK.</div>
+          <div class="item-detail">38 Museum Dr, West Kowloon · HK$120 · MTR: West Kowloon · Opens 10am · Allow 2 hrs</div>
+        </div>
+      </div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>4:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · Specialty #2</div>
+          <div class="item-name">Knockbox Coffee — Wan Chai</div>
+          <div class="item-desc">Your second specialty coffee of the trip. Serious pour-over, precise extraction, not trendy. The Wan Chai location feels like it belongs in the neighborhood — not performative. Good afternoon stop before heading to Temple Street.</div>
+          <div class="item-detail">Wan Chai location · Walk in · Closes ~6pm</div>
+        </div>
+      </div>
+
+      <div class="time-band">Evening — The Night Market</div>
+
+      <div class="timeline-item market-item">
+        <div class="timeline-time"><span class="item-icon">🔮</span>7:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-market">Night Market · Signature Experience</div>
+          <div class="item-name">Temple Street Night Market <span class="star-badge">★★</span></div>
+          <div class="item-desc">One of the great night markets in Asia — not just a shopping arcade, a full neighborhood experience. Enter from Jordan MTR end. The first section is stalls: watches, jade, clothing, souvenirs. Then it opens into the outdoor dai pai dong (cooked food stalls) section in the middle — plastic stools on the street, steaming clay pots, fresh seafood in tanks, locals eating shoulder-to-shoulder. End of the market: Cantonese opera performers, fortune tellers with caged birds (pai kua — the birds pick a card for your fortune), mahjong games spilling out of open doorways. Stay at least 90 minutes. Eat here — it's the meal, not just the snack.</div>
+          <div class="item-detail">Temple St, Jordan/Yau Ma Tei · MTR: Jordan · Opens dusk, best 8–10pm · Mostly cash · Free to wander</div>
+          <div class="item-note">Eat at the outdoor dai pai dong stalls in the middle section: seafood hotpot, clay pot rice, stir-fried clams in black bean sauce. Point at what others are eating. Bring HK$300–400 cash for dinner here.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🦪</span>8:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Dinner · Street Stalls</div>
+          <div class="item-name">Dai Pai Dong — Temple Street Stalls</div>
+          <div class="item-desc">Sit down at one of the outdoor stall tables mid-market. Order by pointing or using the laminated picture menus. The move: typhoon shelter crab or clams (if budget allows), stir-fried beef ho fun (flat rice noodles), steamed silken tofu, clay pot rice if they have it, chilled Tsingtao. This is the meal of the trip — it looks like nothing, costs almost nothing, and tastes like the city.</div>
+          <div class="item-detail">Mid-section of Temple St, Jordan · ~HK$200–350/person including drinks · Cash only</div>
+        </div>
+      </div>
+
+      <div class="timeline-item bar-item">
+        <div class="timeline-time"><span class="item-icon">🍺</span>10:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-bar">Brewery · Late Night</div>
+          <div class="item-name">Moonzen Brewery — Saturday Free-Flow <span class="star-badge">★★ Brewery Visit</span></div>
+          <div class="item-desc">HK's most characterful craft brewery — family-run, beers named after Chinese mythology (Thunder God Pale Ale, Jade Emperor IPA, Moon Goddess Chocolate Stout). The Saturday session runs until 10pm: HK$268/person gets you free-flow self-pour from 8 taps plus a brewery tour. Hidden in an industrial estate in Kwun Tong — take a goods lift to the 2nd floor, red doors on your left. The crowd is local and expat, the vibe is low-key and genuinely cool. You're coming from Temple Street (Jordan MTR) — Kwun Tong is 3 stops on the Kwun Tong Line, ~8 min. The perfect late cap to Day 3.</div>
+          <div class="item-detail">2A, 2/F New East Sun Building, 18 Shing Yip St, Kwun Tong · Sat 6–10pm (last call 9:30pm) · HK$268/person free-flow · Book via moonzenbrewery.com · Cash / PayMe · No food served — bring snacks or order delivery</div>
+          <div class="item-note">Book ahead via their website — sessions fill up. Goods lift to 2/F, turn left, ring doorbell. Bring cash or PayMe app.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY 4 - MACAU -->
+  <div class="day-card" id="day4">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Four · Sunday</div>
+        <div class="day-title">Macau Day Trip — UNESCO Old Town + Egg Tarts</div>
+      </div>
+      <div class="day-date">June 1</div>
+    </div>
+    <div class="day-body">
+
+      <div class="time-band">Early Morning — Ferry Departure</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">⛴</span>8:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Transit · Book Ahead</div>
+          <div class="item-name">Ferry from China Ferry Terminal → Macau Outer Harbor</div>
+          <div class="item-desc">The Turbojet or Cotai Water Jet from the Macau Ferry Terminal in Sheung Wan to Macau takes ~1 hour — and Sheung Wan is just 2 MTR stops from Admiralty, making this your most convenient terminal. Buy round-trip in advance — the 9am sailings can fill up. You'll clear immigration on both ends (have passports ready). Take a cab from Macau Outer Harbor to the old town (Senado Square) — ~10 min, MOP$60. Do NOT book the casino hotel transfer buses unless you want to be sucked into the casino strip.</div>
+          <div class="item-detail">Macau Ferry Terminal, Shun Tak Centre, 200 Connaught Rd, Sheung Wan · MTR: Sheung Wan · Depart 9am · HK$170–200 each way · Book turbojet.com.hk</div>
+          <div class="item-note">Passports required — Macau is a separate SAR, you clear immigration. Keep passports accessible.</div>
+        </div>
+      </div>
+
+      <div class="time-band">Macau — Old Town (Your Real Destination)</div>
+
+      <div class="timeline-item wander-item">
+        <div class="timeline-time"><span class="item-icon">🏛</span>10:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-wander">UNESCO · Architecture</div>
+          <div class="item-name">Senado Square + Ruins of St. Paul's <span class="star-badge">★★</span></div>
+          <div class="item-desc">Senado Square is the center of the historic zone — Portuguese mosaic-paved plaza surrounded by pastel colonial buildings. Zero resemblance to anywhere else in Asia. Walk the alleys radiating off it: Rua da Felicidade (Happiness Street, old brothel district, now noodle shops and old-HK storefronts), Rua dos Ervanários. Then up to the Ruins of St. Paul's — the 17th-century Jesuit cathedral facade. Behind it, the Fortaleza do Monte (old fort) gives the best elevated view of the old town. Budget 60–90 minutes to wander this whole area.</div>
+          <div class="item-detail">Senado Square: Largo do Senado, Macau · Walk from Outer Harbor Pier ~15 min or cab MOP$60</div>
+        </div>
+      </div>
+
+      <div class="timeline-item market-item">
+        <div class="timeline-time"><span class="item-icon">🥐</span>11:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-market">Must-Eat · Pastry</div>
+          <div class="item-name">Lord Stow's Bakery — Portuguese Egg Tarts <span class="star-badge">★★ Original</span></div>
+          <div class="item-desc">The original Macau Portuguese egg tart — invented by Andrew Stow in 1989. Flaky pastry shell, creamy caramelized custard, slightly charred top. Completely different from the HK-style (which is Cantonese and uses shortcrust). The Macau version is what the Bakehouse in HK was inspired by. Eat them hot, standing outside. Get 3–4 each. The Coloane Village location (a short cab ride, the original) is quieter than the Senado Square branch — either is fine.</div>
+          <div class="item-detail">Rua do Tassara 1, Coloane Village (original) OR Largo do Senado branch · Opens 7am · ~MOP$12 each</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍗</span>1:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Lunch · Macanese</div>
+          <div class="item-name">African Chicken + Macanese Lunch</div>
+          <div class="item-desc">African chicken (galinha à africana) is the signature Macanese dish — a Portuguese-Mozambican hybrid, the chicken marinated in coconut, chili, and spice, then roasted. It doesn't exist anywhere else in this form. Restaurante Litoral near Senado Square is the standard-bearer — homey, Macanese family recipes, excellent. Order the African chicken, minchi (Macanese ground beef and potato, like a deconstructed shepherd's pie), and a glass of vinho verde. This is the flavor that justifies the day trip.</div>
+          <div class="item-detail">Restaurante Litoral: 261 Rua do Almirante Sérgio · Or ask at Lord Stow's for current rec · ~MOP$200–300/person</div>
+        </div>
+      </div>
+
+      <div class="timeline-item wander-item">
+        <div class="timeline-time"><span class="item-icon">🎰</span>2:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-wander">Optional · Casinos</div>
+          <div class="item-name">The Venetian or Grand Lisboa — Brief Wander</div>
+          <div class="item-desc">You don't need to gamble to visit. The Venetian Macau is 3x the size of the Las Vegas Venetian — the sheer scale is absurd. The Grand Lisboa is genuinely wild architecturally — a golden lotus flower skyscraper. Worth 30 min of walking through the main floor for the spectacle. The casino strip (Cotai) is a ~10 min cab from the old town. Optional — skip if you want more time in the historic zone.</div>
+          <div class="item-detail">The Venetian: Cotai Strip · Grand Lisboa: Avenida de Lisboa, central Macau · Free to enter</div>
+        </div>
+      </div>
+
+      <div class="time-band">Return to Hong Kong</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">⛴</span>4:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Return Ferry</div>
+          <div class="item-name">Macau → Hong Kong · Back for the Evening</div>
+          <div class="item-desc">Return ferry departs Macau Outer Harbor ~5pm, back at Sheung Wan ~6pm. Two MTR stops back to Admiralty. Go back to the hotel, clean up — you have Hutong tonight. The Macau day sets you up perfectly: you've been eating Portuguese and Cantonese street food all day, so the Peking duck dinner lands with full contrast and full appetite.</div>
+          <div class="item-detail">Book return ticket before departing HK · Macau Outer Harbor → Sheung Wan Macau Ferry Terminal · ~1 hr</div>
+        </div>
+      </div>
+
+      <div class="time-band">Evening — The Anchor Dinner</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🦆</span>7:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Dinner · Fine Dining · Peking Duck</div>
+          <div class="item-name">Hutong <span class="star-badge">★★ Peking Duck</span> <span class="book-badge">Book 4–6 Weeks</span></div>
+          <div class="item-desc">The honeymoon dinner. You're back from Macau, cleaned up, and ready for the best table in Kowloon. 28th floor, One Peking Road, TST — floor-to-ceiling windows with the full HK Island skyline lit up across the harbor. Northern Chinese cuisine: the whole Peking duck is carved tableside over three courses — crispy skin with pancakes and hoisin first, meat stir-fried second, bones made into a soup third. Order the Crispy De-boned Lamb Ribs as a starter. Day 4 is the right slot: you've had two street evenings already (Wan Chai stalls Day 2, Temple Street Day 3), Macau Portuguese lunch today — the fine dining lands here with proper weight.</div>
+          <div class="item-detail">28/F, One Peking Rd, Tsim Sha Tsui · hutong.com.hk · Book 4–6 weeks ahead · ~HK$800–1,200/person · Mention honeymoon</div>
+          <div class="item-note">Cross to Kowloon via Star Ferry from Central Pier (7 min, HK$3.40) — you arrive on the TST waterfront with the skyline behind you, walk straight to One Peking Rd. The crossing is part of the evening.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item bar-item">
+        <div class="timeline-time"><span class="item-icon">🌃</span>10:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-bar">Night Cap · Optional</div>
+          <div class="item-name">Ozone — World's Highest Bar (Optional) or Star Ferry Back</div>
+          <div class="item-desc">Ozone is the world's highest bar (118th floor, ICC Tower, West Kowloon). Walk-in, dress code. The cocktails are fine, the view is the point — at night you look down on all of HK Island. Optional extra if you want to extend the evening. Or take the Star Ferry back from TST Pier to Central (last sailing ~11:30pm) — 7 min across the harbor at night, skyline receding behind you. The perfect end to the best evening of the trip.</div>
+          <div class="item-detail">118/F ICC Tower, Austin Rd West, West Kowloon · Walk in · Dress code · Star Ferry TST → Central last ~11:30pm</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="day-card" id="day5">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Five · Monday</div>
+        <div class="day-title">Central Wander → Sheung Wan → Bar Leone</div>
+      </div>
+      <div class="day-date">June 2</div>
+    </div>
+    <div class="day-body">
+
+      <div class="time-band">Morning</div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>8:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · Specialty #1</div>
+          <div class="item-name">18 Grams — Specialty Coffee</div>
+          <div class="item-desc">Your third specialty roaster in HK. The Central branch is the natural choice — walkable from the hotel downhill, or one MTR stop. Single-origin filter, precise, unpretentious. Start here before heading into the streets.</div>
+          <div class="item-detail">Multiple locations including Central and Wan Chai · Opens 8am · MTR: Admiralty → Central (1 stop) or 15-min walk</div>
+        </div>
+      </div>
+
+      <div class="timeline-item market-item">
+        <div class="timeline-time"><span class="item-icon">🍜</span>9:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-market">Breakfast · Classic</div>
+          <div class="item-name">Mak's Noodles <span class="star-badge">★ Must</span></div>
+          <div class="item-desc">The best wonton noodle soup in Hong Kong — and one of the most specific food experiences on the trip. The wontons are smaller than any you've had before, made with a fine shrimp paste filling, in a delicate clear broth. The noodles are springy and thin. A bowl is HK$50. The magic is in the broth. Order the wonton noodle soup. Nothing else, just that. Eat it all, including the broth. This is a Michelin Bib Gourmand — it looks like a lunch counter and is one of the city's treasured institutions.</div>
+          <div class="item-detail">77 Wellington St, Central · Opens 11am (confirm hours) · ~HK$50–70/person · Walk-in · No frills</div>
+          <div class="item-note">Order early — the kitchen sometimes runs out of the best wontons by early afternoon. Go at or just after opening.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item wander-item">
+        <div class="timeline-time"><span class="item-icon">🏯</span>10:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-wander">Heritage · Wander</div>
+          <div class="item-name">Tai Kwun — Former Central Police Station <span class="star-badge">★</span></div>
+          <div class="item-desc">The former Central Police Station, magistracy, and Victoria Prison — now a heritage and arts center. The restoration by Herzog & de Meuron (same architects as M+) is immaculate. The stone colonial buildings are among the best-preserved in HK. Walk the prison yard, look into the cells. Free to enter most areas. The courtyard has a good coffee setup if you need one. The contrast between the colonial stone walls and the contemporary glass additions is striking — this is the best architecture in Central.</div>
+          <div class="item-detail">10 Hollywood Rd, Central · Free entry to main areas · Opens 10am · ~45 min</div>
+        </div>
+      </div>
+
+      <div class="timeline-item wander-item">
+        <div class="timeline-time"><span class="item-icon">🪨</span>11:30am</div>
+        <div class="timeline-content">
+          <div class="item-type type-wander">Street · Old HK</div>
+          <div class="item-name">Pottinger Street — Stone Slab Steps <span class="star-badge">★</span></div>
+          <div class="item-desc">One of the most photographed and genuinely atmospheric streets in HK — granite-cobbled steps climbing steeply from Queen's Rd Central up to Hollywood Rd. Flanked by tiny stalls selling buttons, ribbons, haberdashery, phone cases, incense. Old ladies selling dried goods from folding tables. The scale is human — narrow, steep, layered. Walk it slowly. This is what HK looked like before the glass towers.</div>
+          <div class="item-detail">Pottinger St, Central · 5 min walk from Tai Kwun · Free · Always open</div>
+        </div>
+      </div>
+
+      <div class="time-band">Afternoon</div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🥟</span>12:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Lunch · Dim Sum</div>
+          <div class="item-name">Dim Dim Sum <span class="star-badge">★</span></div>
+          <div class="item-desc">Excellent dim sum at a price that doesn't hurt — not a tourist dim sum hall, not a business lunch at the Four Seasons. Har gow (shrimp dumplings), cheung fun (rice noodle rolls), char siu bao (BBQ pork buns), lo mai gai (sticky rice in lotus leaf). Order 6–8 dishes between two people. This is the XLB / dim sum checklist meal of the trip, done properly.</div>
+          <div class="item-detail">Multiple locations including Prince Edward and Mong Kok · ~HK$150–200/person · Walk-in before 12:30pm</div>
+        </div>
+      </div>
+
+      <div class="timeline-item wander-item">
+        <div class="timeline-time"><span class="item-icon">🏙</span>2:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-wander">Architecture · Oddity</div>
+          <div class="item-name">Yick Cheong Building (Monster Building) — Quarry Bay</div>
+          <div class="item-desc">Five massive housing blocks from the 1960s arranged in a U-shape — when you stand in the inner courtyard and look straight up, you get one of the most vertiginous, cinematic urban views anywhere in Asia. Used in Transformers 4 and countless Hong Kong films. This is not a tourist attraction — people live here. Walk in, stand in the middle, look up. Then leave. 20 minutes, completely worth it.</div>
+          <div class="item-detail">Yick Cheong Bldg, Quarry Bay · MTR: Quarry Bay (Island Line) · Free · Just walk in from King's Rd</div>
+        </div>
+      </div>
+
+      <div class="timeline-item wander-item">
+        <div class="timeline-time"><span class="item-icon">🚃</span>3:15pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-wander">Transit · Do Not Cab This</div>
+          <div class="item-name">Ding Ding Tram West — Quarry Bay → Wan Chai <span class="star-badge">★</span></div>
+          <div class="item-desc">You're in Quarry Bay on the Island Line — instead of the MTR back, walk one block north to King's Rd and catch the westbound tram. Ride it all the way back through Causeway Bay and Wan Chai toward Central. Upper deck, front seat. The tram moves slowly enough that the city is readable — dai pak dongs setting up for dinner service, laundry strung between buildings, wet market vendors packing down, the neon starting to flicker on. Costs HK$3. This is the best 30 minutes of transport on the trip.</div>
+          <div class="item-detail">Any tram stop on King's Rd / Hennessy Rd, Quarry Bay · Westbound · HK$3 · Ride to Wan Chai or Admiralty</div>
+        </div>
+      </div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>4:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · Specialty #2 or Café Stop</div>
+          <div class="item-name">Café Match Box or Zombie Specialty Coffee</div>
+          <div class="item-desc">Hop off the tram in Wan Chai or Central and get a coffee before heading back toward Admiralty. Café Match Box has a design sensibility that feels distinctly local — not the third-wave minimalist template. Good moment to sit down and rest feet before the evening starts.</div>
+          <div class="item-detail">Café Match Box: Central area · Zombie Specialty: multiple locations</div>
+        </div>
+      </div>
+
+      <div class="time-band">Evening — Roast Meat Dinner → Bar Leone → Peak</div>
+
+      <div class="timeline-item market-item">
+        <div class="timeline-time"><span class="item-icon">🦢</span>5:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Dinner · Roast Meat · Street</div>
+          <div class="item-name">Kams Roast Goose or Chukfo Taipan Char Siu <span class="star-badge">★</span></div>
+          <div class="item-desc">Proper dinner before Bar Leone — roast meat, rice, no fuss. Kams Roast Goose (Michelin, Wan Chai) is the second roast goose of the trip if you want to compare against Yat Lok — same lacquered crackling skin, slightly different house style. Chukfo Taipan is char siu done right — caramelized, fatty BBQ pork that's closer to candy than meat. Both are in Wan Chai, close to the hotel. Eat early, eat well, then Bar Leone is the drink — not both dinner and drinks in one go.</div>
+          <div class="item-detail">Kams: 226 Hennessy Rd, Wan Chai · Chukfo Taipan: Wan Chai area · Both ~HK$100–150/person · Walk-in</div>
+        </div>
+      </div>
+
+      <div class="timeline-item bar-item">
+        <div class="timeline-time"><span class="item-icon">🍸</span>6:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-bar">Bar · Asia's Best</div>
+          <div class="item-name">Bar Leone <span class="star-badge">★★ Asia's #1</span></div>
+          <div class="item-desc">Asia's best bar (Asia's 50 Best 2024) — designed to feel like a Milanese apothecary, small and precise. Lorenzo Antinori's cocktails are ingredient-led and restrained — nothing showy, everything deliberate. The negroni variations are the move. Arrive at 6pm when they open to guarantee a seat. This is a drink-two-things-and-savour-them bar, not a high-volume evening.</div>
+          <div class="item-detail">G/F, 6 Bridges St, Central · Opens 6pm · barleone.hk · Walk in at opening or book online</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🌆</span>8:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Night View · Final HK Moment</div>
+          <div class="item-name">Victoria Peak at Night <span class="star-badge">★★</span></div>
+          <div class="item-desc">Go up after Bar Leone for the night view. The Peak at night is a fundamentally different experience from the morning visit: the harbor is lit, Kowloon glows across the water, the city looks like a circuit board on fire. Take the Lugard Road loop for the 360° panorama without the Sky Terrace crowds. The last tram runs until midnight. This is the last big HK visual of the trip.</div>
+          <div class="item-detail">Peak Tram Lower Terminus, Garden Rd, Central · Last tram midnight · Pre-buy tickets at thepeak.com.hk</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="day-card" id="day6">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Six · Tuesday</div>
+        <div class="day-title">Final Morning · Departure for Kyoto</div>
+      </div>
+      <div class="day-date">June 3</div>
+    </div>
+    <div class="day-body">
+
+      <div class="time-band">Morning · Hard Deadline</div>
+
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">🧋</span>7:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Final Coffee · Cha Chaan Teng Farewell</div>
+          <div class="item-name">Kam Wah Cafe or Capital Cafe <span class="cha-chaan-badge">Cha Chaan Teng</span></div>
+          <div class="item-desc">Last Hong Kong breakfast — cha chaan teng style, quick. Yuenyeung (coffee-tea blend) or silk stocking milk tea, pineapple bun with butter, scrambled eggs. The way every local starts the day. Kam Wah is in Mong Kok (famous for their baked buns), Capital Cafe is in Causeway Bay — pick the nearest. This is the goodbye.</div>
+          <div class="item-detail">Kam Wah: 47 Bute St, Mong Kok · Capital Cafe: 6 Leighton Rd, Causeway Bay · Opens 7am · ~30 min max</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🧳</span>7:45am</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Checkout</div>
+          <div class="item-name">Hotel Checkout + Airport Transfer</div>
+          <div class="item-desc">Check out and take the Airport Express from Hong Kong Station in Central (one MTR stop from Admiralty, or 15-min walk downhill). The Airport Express to HKG takes 24 minutes — fast and reliable. Allow 2 hours at the airport for international check-in. Leave the hotel no later than 8:15am. You can do Airport Express in-town check-in at Hong Kong Station (open 5:30am–11pm) — drop bags there, get boarding pass, walk the terminal with nothing.</div>
+          <div class="item-detail">Airport Express from Hong Kong Station, Central · 24 min to HKG · HK$100 · ⚠ Leave hotel by 8:15am latest for 10:55am flight</div>
+          <div class="item-note">⚠ 10:55am flight. Leave hotel no later than 8:15am. Airport Express from Hong Kong Station is the only reliable option. In-town baggage check at Hong Kong Station from 5:30am — drop bags the night before if you want a completely hands-free departure morning.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- TRACKERS -->
+<section id="trackers">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○四</span>
+    <h2 class="section-title">Trackers</h2>
+  </div>
+
+  <div class="ref-section">
+    <h3>☕ Coffee Tracker — 2 Specialty/Day · Cha Chaan Teng Every Day</h3>
+    <table class="tracker-table">
+      <thead>
+        <tr><th>Day</th><th>Morning</th><th>Afternoon</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Lan Fong Yuen — milk tea landing</td><td>—</td><td>Short day. Milk tea is the arrival drink.</td></tr>
+        <tr><td>2</td><td>Halfway Coffee ★ — Sheung Wan specialty #1</td><td>—</td><td>Early start for Peak Tram. Coffee before the tram.</td></tr>
+        <tr><td>3</td><td>Lan Fong Yuen / Capital Cafe — full cha chaan teng breakfast</td><td>Knockbox — Wan Chai</td><td>Day 3 is the most local eating day. Cha chaan teng over specialty in the morning.</td></tr>
+        <tr><td>4</td><td>Lord Stow's Bakery egg tart (coffee optional alongside)</td><td>—</td><td>Macau day — eat, don't coffee-tour.</td></tr>
+        <tr><td>5</td><td>18 Grams — Central/Sheung Wan</td><td>Café Match Box or Zombie Specialty</td><td>Last full day — hit both specialty options.</td></tr>
+        <tr><td>6</td><td>Kam Wah / Capital Cafe — cha chaan teng farewell</td><td>—</td><td>Departure day. Quick and local.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🥢 Must-Eat Checklist — Core HK Dishes</h3>
+    <table class="tracker-table">
+      <thead>
+        <tr><th>Dish</th><th>Where</th><th>Day</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Pantyhose Milk Tea</td><td>Lan Fong Yuen</td><td>Day 1 + Day 3</td><td>The defining HK drink. Silk-stocking brewed. Non-negotiable first drink.</td></tr>
+        <tr><td>Egg Tart (HK style)</td><td>Bakehouse, Wan Chai</td><td>Day 2</td><td>Go before 11am. Hot, buttery, wobbling custard. Buy 3–4.</td></tr>
+        <tr><td>Peking Duck (whole)</td><td>Hutong, TST</td><td>Day 4 dinner</td><td>Three courses: skin, meat, bone broth. Book 4–6 weeks ahead.</td></tr>
+        <tr><td>Roast Goose</td><td>Yat Lok, Central</td><td>Day 3 lunch</td><td>Michelin star. Cash only. Queue worth it. The essential HK roast meat.</td></tr>
+        <tr><td>Wonton Noodle Soup</td><td>Mak's Noodles, Central</td><td>Day 5</td><td>The shrimp wontons are tiny and perfect. Just order the soup. ~HK$50.</td></tr>
+        <tr><td>Dim Sum (full spread)</td><td>Dim Dim Sum</td><td>Day 5</td><td>Har gow, siu mai, cheung fun, char siu bao, lo mai gai. 6–8 dishes.</td></tr>
+        <tr><td>XLB / Soup Dumplings</td><td>Cheung Hing Kee or Tim Ho Wan</td><td>Day 4 evening</td><td>Light dinner after Macau. Check the must-eat box.</td></tr>
+        <tr><td>Temple Street Stall Dinner</td><td>Dai Pai Dong, Temple St</td><td>Day 3 evening</td><td>Clams, beef ho fun, clay pot rice. Plastic stools on the street.</td></tr>
+        <tr><td>Egg Waffles (Gai Daan Jai)</td><td>Any Mong Kok street cart</td><td>Day 3 morning</td><td>Buy from a cart. Eat immediately. No "best" one — just grab one.</td></tr>
+        <tr><td>Char Siu (BBQ Pork)</td><td>Chukfo Taipan / Wan Chai stalls</td><td>Day 2 lunch or Day 5 late</td><td>Get it on rice at a stall, or from Chukfo Taipan on Day 5 night.</td></tr>
+        <tr><td>Macanese Egg Tart (Portuguese)</td><td>Lord Stow's, Macau</td><td>Day 4</td><td>Different from HK style — flaky, caramelized, the original. Eat hot.</td></tr>
+        <tr><td>African Chicken</td><td>Restaurante Litoral, Macau</td><td>Day 4</td><td>Unique to Macau — doesn't exist anywhere else. The reason to go.</td></tr>
+        <tr><td>Pineapple Bun + Butter</td><td>Any cha chaan teng</td><td>Day 3 or Day 6</td><td>Bo lo bao with a thick cold butter slab. Classic HK breakfast snack.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🗺 Market + Street Tracker — Don't Miss These</h3>
+    <table class="tracker-table">
+      <thead>
+        <tr><th>Market/Street</th><th>Day</th><th>Best For</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Temple Street Night Market ★★</td><td>Day 3 evening</td><td>Dai pai dong dinner, fortune tellers, opera, atmosphere</td><td>Go after 7:30pm. Eat here — it's the meal. Cash only.</td></tr>
+        <tr><td>Mong Kok Flower Market ★</td><td>Day 3 morning</td><td>Sensory experience, old HK life</td><td>Best visited 9–11am. Morning regulars are local.</td></tr>
+        <tr><td>Ladies Market (Tung Choi St) ★</td><td>Day 3 morning</td><td>Street food, chaos, egg waffles, energy</td><td>Don't shop — eat and wander.</td></tr>
+        <tr><td>Wan Chai Market Stalls</td><td>Day 2 lunch</td><td>Char siu fan, wonton noodle, local workers lunch</td><td>Around Queen's Rd East, Spring Garden Lane. Cash, point-and-order.</td></tr>
+        <tr><td>Sheung Wan Antique Row ★</td><td>Day 2 afternoon</td><td>Architecture, old HK browsing, jade and porcelain</td><td>Hollywood Rd + Cat Street. Just wander, no pressure to buy.</td></tr>
+        <tr><td>Pottinger Street ★</td><td>Day 5</td><td>Cobblestone steps, old street stalls, colonial atmosphere</td><td>5 min walk from Tai Kwun. The most cinematic street in HK.</td></tr>
+        <tr><td>Central Market</td><td>Day 5 flex</td><td>Restored 1st wet market in HK, now food and retail</td><td>Des Voeux Rd Central. Worth 20 min if passing by.</td></tr>
+        <tr><td>Mong Kok Bird Garden ★</td><td>Day 3 morning</td><td>Old HK culture, songbirds, elderly men and card games</td><td>Nothing like it anywhere. 15 min, deeply strange and wonderful.</td></tr>
+        <tr><td>Senado Square, Macau ★★</td><td>Day 4</td><td>UNESCO architecture, Portuguese colonial streets, egg tarts</td><td>The whole point of the day trip.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</section>
+
+<!-- OPEN QUESTIONS -->
+<section id="flags">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○五</span>
+    <h2 class="section-title">Open Questions + Decisions Still Needed</h2>
+  </div>
+
+  <div class="flags-block">
+    <h4>Things That Still Need a Decision</h4>
+    <ul class="flags-list">
+      <li><strong>Char Siu Restaurant vs Stall</strong> — Chukfo Taipan is the recommendation for dedicated char siu (whole roasted BBQ pork, not just pork on rice). Fits Day 5 late night or a Wan Chai lunch. If you want it as a standalone experience rather than a stall grab, slot it on Day 2 lunch instead of the market stalls.</li>
+      <li><strong>Kwan Kee Claypot Rice</strong> — On your spreadsheet. Clay pot rice (claypot with a charred crust) is a classic HK winter dish but runs year-round at Kwan Kee. Fits Day 3 or Day 5 as an afternoon/early dinner detour. Worth it if you want to check it off.</li>
+      <li><strong>Ding Ding Tram</strong> — You flagged it. The old double-decker electric tram runs the length of HK Island for HK$3. Best at night through Wan Chai and Causeway Bay — hop on, ride for 20 min, hop off. Fits into Day 2 or Day 5 evening as a transport-as-experience move. Not a dedicated stop, just take it instead of a cab.</li>
+      <li><strong>Traditional Foot Massage</strong> — On your spreadsheet. Wan Chai and Mong Kok have excellent reflexology parlors — ~HK$250 for 45 min. Good on Day 3 afternoon after all the walking, before M+. No booking needed at most places.</li>
+      <li><strong>Typhoon Shelter Seafood</strong> — A unique HK experience (floating cooking boats in Causeway Bay typhoon shelter) — not in the current itinerary. Could replace the Ho Lee Fook dinner on Day 1 for something more local, or add as a Day 3 late dinner alternative. More chaotic and stall-forward than Ho Lee Fook but very HK.</li>
+      <li><strong>Star Ferry — Take It Every Time</strong> — Not a one-time experience. The Star Ferry should be your default crossing whenever you have 7 extra minutes. Every ride across the harbor is different. MTR is faster; Star Ferry is better.</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!-- REFERENCE -->
+<section id="reference">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○六</span>
+    <h2 class="section-title">Complete Reference</h2>
+  </div>
+
+  <div class="ref-section">
+    <h3>☕ Coffee & Cha Chaan Teng</h3>
+    <table class="ref-table">
+      <tr><td>Halfway Coffee ★ · Sheung Wan</td><td>Best specialty coffee in HK. Pour-over focused, precise. 204 Hollywood Rd. Opens 8am.</td></tr>
+      <tr><td>18 Grams ★ · Multiple</td><td>Specialty roaster. Multiple locations — Central and Wan Chai branches most useful.</td></tr>
+      <tr><td>Knockbox Coffee · Wan Chai</td><td>Serious specialty, unpretentious. Good afternoon stop. Walk in.</td></tr>
+      <tr><td>Zombie Specialty Coffee · Multiple</td><td>Third-wave specialty. Good option if 18 Grams is crowded.</td></tr>
+      <tr><td>Café Match Box · Central</td><td>Retro-chic HK aesthetic, local feel. Different from the minimalist specialty template.</td></tr>
+      <tr><td>Lan Fong Yuen ★ Cha Chaan Teng · Central</td><td>Invented pantyhose milk tea. 2 Gage St, Central. Opens early. Also TST branch.</td></tr>
+      <tr><td>Capital Cafe ★ Cha Chaan Teng · Causeway Bay</td><td>Full sit-down cha chaan teng breakfast — peanut butter toast, condensed milk toast, yuenyeung. 6 Leighton Rd.</td></tr>
+      <tr><td>Kam Wah Cafe · Mong Kok</td><td>Famous baked buns + milk tea. 47 Bute St, Mong Kok. Departure day option.</td></tr>
+      <tr><td>Australia Dairy Company · Jordan</td><td>Canteen-style scrambled eggs (silky and very fast), milk tea. Famous for its chaos. 47 Parkes St.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🦢 Roast Meats — The HK Obsession</h3>
+    <table class="ref-table">
+      <tr><td>Yat Lok ★★ Michelin · Central</td><td>Roast goose and BBQ pork. 1 Michelin star. Cash only. 34–38 Stanley St. The essential HK roast.</td></tr>
+      <tr><td>Kams Roast Goose ★ Michelin · Wan Chai</td><td>1 Michelin star. 226 Hennessy Rd. Good alternative or comparison to Yat Lok. Later hours.</td></tr>
+      <tr><td>Chukfo Taipan ★ · Wan Chai</td><td>Best char siu (BBQ pork). Rich, caramelized, fatty. Wan Chai area. On your spreadsheet.</td></tr>
+      <tr><td>Po Kee BBQ · Multiple</td><td>Michelin Guide roast meats. Good local option across the city.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🥟 Dim Sum & Dumplings</h3>
+    <table class="ref-table">
+      <tr><td>Tim Ho Wan ★ Michelin · Multiple</td><td>World's most affordable Michelin restaurant. Excellent har gow, baked BBQ pork buns. Multiple locations.</td></tr>
+      <tr><td>Dim Dim Sum ★ · Multiple</td><td>Your sit-down dim sum lunch. Prince Edward or Mong Kok location. Day 5.</td></tr>
+      <tr><td>Lin Heung Kui ★ · Sheung Wan</td><td>Old-school push-cart dim sum — traditional, loud, no English menu. 160–164 Wellington St. Best for the experience.</td></tr>
+      <tr><td>Cheung Hing Kee ★ · Central</td><td>Soup dumplings (XLB). 83 Wellington St. Good post-Macau light dinner option.</td></tr>
+      <tr><td>Din Tai Fung · Silvercord, TST</td><td>Reliable XLB chain. No anxiety version if you want to check the box simply.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍜 Noodles & Bowls</h3>
+    <table class="ref-table">
+      <tr><td>Mak's Noodles ★★ · Central</td><td>The best wonton noodle soup in HK. 77 Wellington St. Opens 11am. ~HK$50–70. Just order the soup.</td></tr>
+      <tr><td>Tsim Chai Kee Noodle · Wellington St</td><td>Alternative wonton noodle stop — slightly more casual than Mak's. Same street.</td></tr>
+      <tr><td>Kwan Kee Claypot Rice · Sham Shui Po</td><td>Clay pot rice with charred crust. Signature HK cooler-weather dish, runs year-round. Worth a detour.</td></tr>
+      <tr><td>Mak Man Kee · Jordan</td><td>Michelin Guide wonton noodle. 51 Parkes St, Jordan. Good Kowloon-side option.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍱 Fine Dining & Signature</h3>
+    <table class="ref-table">
+      <tr><td>Hutong ★★ BOOK · TST</td><td>Peking duck, Northern Chinese fine dining. 28/F, One Peking Rd. Book 4–6 weeks out. Day 4 dinner — the anchor of the trip.</td></tr>
+      <tr><td>Ho Lee Fook ★★ BOOK · Causeway Bay</td><td>Modern Cantonese. G/F, 1 Leighton Rd. Day 1 late dinner. Book now.</td></tr>
+      <tr><td>Forum ★★★ Michelin · Wan Chai</td><td>3 Michelin star Cantonese lunch. If you want the full prestige Cantonese experience. Ask concierge to book — expensive but extraordinary.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🥐 Bakeries & Sweets</h3>
+    <table class="ref-table">
+      <tr><td>Bakehouse ★★ · Wan Chai (original)</td><td>The egg tart. 18 Mallory St. Opens 8am, sells out by 11am on busy days. Get there early. Buy 3–4.</td></tr>
+      <tr><td>Lord Stow's Bakery ★★ · Macau</td><td>Original Portuguese egg tart. Coloane Village (original) or Senado Square branch. MOP$12 each.</td></tr>
+      <tr><td>Milkfill · Sheung Wan</td><td>Stuffed pastry — uniquely HK. Walk-in.</td></tr>
+      <tr><td>Sun Wah Bakery · Multiple</td><td>Classic HK egg tarts (Cantonese style). On your spreadsheet.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍸 Bars & Nightlife</h3>
+    <table class="ref-table">
+      <thead><tr><th>Venue</th><th>Notes</th></tr></thead>
+      <tr><td>Bar Leone ★★ Asia's #1 · Central</td><td>Asia's best bar 2024. Milanese apothecary design, ingredient-led cocktails. 6 Bridges St. Open from 6pm. The anchor drink of the trip.</td></tr>
+      <tr><td>Aqua Luna Cruise ★★ · TST Pier</td><td>Symphony of Lights from the water. Book via Klook. 7:30–7:45pm sailing. HK$220/person. Day 1.</td></tr>
+      <tr><td>Ozone · West Kowloon (ICC Tower)</td><td>World's highest bar, 118/F. Walk-in. Dress code. The view is the drink. Optional Day 2 late night.</td></tr>
+      <tr><td>Kinsman · Sheung Wan</td><td>Retro cocktail bar. Good Sheung Wan evening option. Your spreadsheet pick.</td></tr>
+      <tr><td>The Green Room · Central</td><td>Elevated cocktails, upscale setting. Good Bar Leone alternative or add-on.</td></tr>
+      <tr><td>Iron Fairies · Wan Chai</td><td>Live jazz on Sundays. Fairy-tale industrial décor. On your spreadsheet. Good Day 3 add if skipping Moonzen.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍺 Brewery</h3>
+    <table class="ref-table">
+      <tr><td>Moonzen Brewery ★★ · Kwun Tong</td><td>THE brewery visit. Family-run, Chinese mythology-themed beers (Thunder God Pale Ale, Jade Emperor IPA, Moon Goddess Chocolate Stout) — all unpasteurized and unfiltered. Open to public Fri 6–10pm + Sat sessions. HK$268/person free-flow from 8 taps + brewery tour. Hidden in an industrial estate — goods lift to 2/F, ring doorbell. Book via moonzenbrewery.com. 2A, 2/F New East Sun Building, 18 Shing Yip St, Kwun Tong. Slotted Day 3 Saturday night after Temple Street.</td></tr>
+      <tr><td>Young Master Brewery / TAP: The Ale Project · Multiple</td><td>HK's most awarded craft brewery. TAP taprooms in TST and around Kowloon carry the full Young Master range plus guest taps. Good walk-in alternative if Moonzen is full. Wan Chai and Central branches most convenient from Admiralty.</td></tr>
+      <tr><td>Carbon Brews · Wyndham St, Central</td><td>One of HK's largest craft breweries, first taproom on Wyndham St (former Solas space). Club-like interior, extensive tap list. Good Day 5 pre-drinks alternative.</td></tr>
+      <tr><td>Ho Lan Jeng · Lan Kwai Fong</td><td>Cantonese gastropub showcasing local craft beer — Citibrew, Moonzen, Yardley Brothers, Black Kite, Mak's Brewery. HK-themed cocktails alongside. Great local craft beer bar if you want to try multiple HK breweries in one spot.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🚪 Speakeasies + Hidden Bars</h3>
+    <table class="ref-table">
+      <tr><td>Foxglove ★★ · Central</td><td>Colonial umbrella boutique facade — find the right umbrella, door slides open. 1900s English drinking den interior. Live music Wed–Sat. Happy hour 5–8pm. Then find the velvet curtain in the back for Frank's Library (speakeasy within the speakeasy — Japan-themed, push the right elevator button). Duddell St, Central. Day 5 first stop at 5pm.</td></tr>
+      <tr><td>001 ★ · Tai Kwun, Central</td><td>HK's original speakeasy, now inside Tai Kwun police station. Vintage doorbell entrance, no signage. Jazz Age interior — blue, green, gold. Serious whisky list. You're already at Tai Kwun on Day 5 — come back at night. 10 Hollywood Rd.</td></tr>
+      <tr><td>Ping Pong 129 · Sai Ying Pun</td><td>Old ping pong hall down a red-doored staircase in Sai Ying Pun. Spanish gin and tonic bar — huge gin selection, tapas, industrial HK nostalgia aesthetic. 129 Second St. Good Day 2 evening option if passing through Sheung Wan / Sai Ying Pun.</td></tr>
+      <tr><td>Lockdown · Central</td><td>Entrance disguised as a toilet, next door to sibling bar Penicillin. Prohibition-era concept, 30 seats. By the team behind Penicillin. 27 Hollywood Rd, Central.</td></tr>
+      <tr><td>Artifact · Jardine House, Central</td><td>Sci-fi speakeasy buried in Basehall 2 food hall basement. Structural ribs, minimalist palette, surrealist underground reservoir design. LG/F Basehall 02, Jardine House, 1 Connaught Place.</td></tr>
+      <tr><td>Maggie Choo's · Hollywood Rd</td><td>Behind an antique shop, directly across from Tai Kwun — 1930s Shanghai bank interior, iron spiral staircases, vault doors, live blues and jazz + cabaret performances. The most theatrical option on the list.</td></tr>
+      <tr><td>Please Don't Tell (PDT) · Landmark Mandarin Oriental</td><td>Collaboration with NYC's PDT — enter via vintage phone booth on mezzanine of MO Bar. 25 seats. Classic NYC cocktails + HK twists. The Wonka's Tonic is the signature. 15 Queen's Rd Central.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🛍 Shopping</h3>
+    <table class="ref-table">
+      <tr><td>K11 MUSEA · TST</td><td>The best-designed mall in HK — art museum meets retail. On the waterfront, worth a wander.</td></tr>
+      <tr><td>PMQ · Central</td><td>Independent design studios in a converted colonial building. Not a normal mall.</td></tr>
+      <tr><td>Loveramics · Multiple</td><td>HK ceramics brand. Well-designed cups, coffee accessories, local.</td></tr>
+      <tr><td>REstore · Multiple</td><td>On your spreadsheet — streetwear and design goods, HK-based curation.</td></tr>
+      <tr><td>Hak Dei · Multiple</td><td>On your spreadsheet — local HK brand.</td></tr>
+      <tr><td>Causeway Bay · Streetwear</td><td>Supreme, Palace, local brands. Good sneaker and hat hunting. Your spreadsheet notes this.</td></tr>
+      <tr><td>Mong Kok Sneaker Street · Mong Kok</td><td>Fa Yuen St — dedicated sneaker street. Especially good for Japanese and Asian-market releases.</td></tr>
+      <tr><td>Tailored Suits · Multiple (Central/TST)</td><td>Sam's Tailor, W.W. Chan — 2–3 day turnaround custom suit. Classic HK move. Book day 1 or 2 for day 4 or 5 collection.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🏛 Architecture & Attractions</h3>
+    <table class="ref-table">
+      <tr><td>M+ Museum ★ · West Kowloon</td><td>Asia's leading contemporary visual culture museum. 38 Museum Dr. HK$120. Allow 2 hrs. Day 3.</td></tr>
+      <tr><td>Tai Kwun ★ · Central</td><td>Former police station and prison restored by Herzog & de Meuron. Free entry. 10 Hollywood Rd. Day 5.</td></tr>
+      <tr><td>Victoria Peak ★★ · Central</td><td>Go morning AND night for two different views. Pre-buy tram tickets. Lugard Rd loop for the panorama.</td></tr>
+      <tr><td>Yick Cheong Building (Monster Building) ★ · Quarry Bay</td><td>Five connected housing blocks — look up from the inner courtyard. MTR Quarry Bay. 20 min detour.</td></tr>
+      <tr><td>Nan Lian Garden · Diamond Hill</td><td>Tang dynasty-style classical garden in the middle of Kowloon. Incongruously tranquil. Free.</td></tr>
+      <tr><td>Chi Lin Nunnery · Diamond Hill</td><td>Adjacent to Nan Lian — wooden Tang architecture, koi ponds. Combine with the garden.</td></tr>
+      <tr><td>Kowloon Walled City Park · Kowloon City</td><td>Site of the former lawless Walled City (demolished 1994), now a park with historical display.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>📋 Practical Notes</h3>
+    <table class="ref-table">
+      <tr><td>Money</td><td>Withdraw HK$3,000–5,000 cash on arrival (HSBC or Hang Seng ATM). Markets, cha chaan tengs, Yat Lok, Temple Street stalls — cash only. Cards work everywhere upscale.</td></tr>
+      <tr><td>Octopus Card</td><td>Pick up at any MTR customer service center on arrival. Load HK$200–300. Works on MTR, buses, Star Ferry, 7-Eleven, McDonald's, some taxis. Admiralty MTR is directly below the hotel.</td></tr>
+      <tr><td>Star Ferry</td><td>HK$3.40 (lower deck) / HK$4.60 (upper deck). Central Pier ↔ TST Pier. 7 min crossing. Use it for Kowloon crossings whenever time allows — most scenic commute in Asia. Last sailing ~11:30pm.</td></tr>
+      <tr><td>Getting from HKIA</td><td>Airport Express to Hong Kong Station, Central: 24 min, HK$100/person. Then 1 MTR stop east to Admiralty, or 15-min walk uphill. Fastest option — skip the taxi queue at arrivals.</td></tr>
+      <tr><td>eSIM / Data</td><td>Buy an eSIM before departure — Airalo or Nomad (~$5–8 for HK data only). HK SIMs also available at 7-Eleven in the airport for ~HK$50.</td></tr>
+      <tr><td>Departure Jun 3</td><td>10:55am flight. Leave hotel no later than 8:15am. Airport Express from Hong Kong Station (Central) — 1 MTR stop west from Admiralty, 24 min to HKG. In-town baggage check at HK Station from 5:30am — use it to walk the terminal hands-free.</td></tr>
+      <tr><td>Language</td><td>Cantonese is the local language. English is widely spoken in restaurants, hotels, and MTR. In cha chaan tengs and markets: point, smile, "this one" in any language works fine.</td></tr>
+      <tr><td>Weather</td><td>27–32°C, humid, possible afternoon showers. Light layers only. Pack a small foldable umbrella or buy at 7-Eleven for HK$20.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>📍 Address Cheat Sheet</h3>
+    <table class="ref-table">
+      <thead><tr><th>Venue</th><th>Address</th></tr></thead>
+      <tr><td>Island Shangri-La</td><td>Supreme Court Rd, Admiralty, Hong Kong Island · MTR: Admiralty</td></tr>
+      <tr><td>Hutong</td><td>28/F, One Peking Rd, Tsim Sha Tsui</td></tr>
+      <tr><td>Ho Lee Fook</td><td>G/F, 1 Leighton Rd, Causeway Bay</td></tr>
+      <tr><td>Halfway Coffee</td><td>204 Hollywood Rd, Sheung Wan</td></tr>
+      <tr><td>Lan Fong Yuen (original)</td><td>2 Gage St, Central</td></tr>
+      <tr><td>Bakehouse (Wan Chai)</td><td>18 Mallory St, Wan Chai</td></tr>
+      <tr><td>Yat Lok</td><td>34–38 Stanley St, Central (Cash only)</td></tr>
+      <tr><td>Mak's Noodles</td><td>77 Wellington St, Central</td></tr>
+      <tr><td>Bar Leone</td><td>G/F, 6 Bridges St, Central</td></tr>
+      <tr><td>Tai Kwun</td><td>10 Hollywood Rd, Central</td></tr>
+      <tr><td>M+ Museum</td><td>38 Museum Dr, West Kowloon</td></tr>
+      <tr><td>Temple Street Night Market</td><td>Temple St, Jordan / Yau Ma Tei (MTR: Jordan)</td></tr>
+      <tr><td>Yick Cheong Building</td><td>960 King's Rd, Quarry Bay (MTR: Quarry Bay)</td></tr>
+      <tr><td>Pottinger Street</td><td>Pottinger St, Central (off Queen's Rd Central)</td></tr>
+      <tr><td>Macau Ferry Terminal (HK Island)</td><td>Shun Tak Centre, 200 Connaught Rd Central, Sheung Wan · MTR: Sheung Wan</td></tr>
+      <tr><td>HKIA Airport Express (HK Island)</td><td>Hong Kong Station, Central · 1 MTR stop west of Admiralty · 24 min to HKG</td></tr>
+    </table>
+  </div>
+
+</div>
+</section>
+
+<section id="priorities">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○七</span>
+    <h2 class="section-title">Priority Flags — Book Before You Land</h2>
+  </div>
+
+  <div class="flags-block">
+    <h4>🔴 Book Immediately</h4>
+    <ul class="flags-list">
+      <li><strong>Hutong (Day 4 dinner)</strong> — hutong.com.hk or OpenTable. 4–6 weeks out. Mention honeymoon. The Peking duck experience. The anchor dinner.</li>
+      <li><strong>Ho Lee Fook (Day 1 dinner)</strong> — holeefook.com.hk. 1–2 weeks out. Modern Cantonese, Causeway Bay. First real HK meal after the cruise.</li>
+      <li><strong>Aqua Luna Cruise (Day 1 evening)</strong> — Klook. 1–2 weeks out. Book both seats, 7:30 or 7:45pm sailing. Sells out on weekends.</li>
+    </ul>
+  </div>
+
+  <div class="flags-block" style="margin-top:1rem;">
+    <h4>🟡 Book 1–2 Weeks Out</h4>
+    <ul class="flags-list">
+      <li><strong>Peak Tram (Day 2 morning)</strong> — thepeak.com.hk. Buy online to skip the queue. Round-trip + Sky Terrace combo.</li>
+      <li><strong>Macau Ferry (Day 4)</strong> — turbojet.com.hk. Round-trip, 9am departure. Jun 1 is Monday so less packed — still book ahead.</li>
+      <li><strong>Bar Leone (Day 5 evening)</strong> — Walk in at 6pm (recommended) or book via barleone.hk. Arrive at opening to guarantee a seat.</li>
+    </ul>
+  </div>
+
+  <div class="flags-block" style="margin-top:1rem;">
+    <h4>🟢 No Booking Needed · Just Show Up</h4>
+    <ul class="flags-list">
+      <li><strong>Yat Lok (Day 3 lunch)</strong> — Cash only. Arrive at noon for shortest queue. No reservation taken.</li>
+      <li><strong>Mak's Noodles (Day 5)</strong> — Walk in. Opens 11am. Get there early.</li>
+      <li><strong>Bakehouse (Day 2)</strong> — Walk in. Go before 11am. Cash or card.</li>
+      <li><strong>Temple Street Night Market (Day 3)</strong> — Just show up after 7:30pm. Eat at the stalls. Cash only. Bring HK$300–400.</li>
+      <li><strong>Halfway Coffee, Knockbox, 18 Grams</strong> — All walk-in. No reservation needed.</li>
+      <li><strong>Lan Fong Yuen, Capital Cafe, Kam Wah</strong> — Walk in. May queue 10 min at busy times.</li>
+      <li><strong>Star Ferry</strong> — HK$3.40. Just walk on.</li>
+    </ul>
+  </div>
+
+  <div class="flags-block" style="margin-top:1rem;">
+    <h4>⚠ Hard Deadlines</h4>
+    <ul class="flags-list">
+      <li><strong>Jun 3 departure: Leave hotel no later than 8:15am.</strong> Airport Express from Hong Kong Station (Central), 24 min to HKG. 10:55am flight. In-town baggage check at HK Station from 5:30am — do this to walk the terminal hands-free.</li>
+      <li><strong>Bakehouse egg tarts sell out by 11am on busy days</strong> — Go before 11am on Day 2. Not negotiable.</li>
+      <li><strong>Bar Leone fills up fast</strong> — Arrive at 6pm on the dot on Day 5. Or book online.</li>
+    </ul>
+  </div>
+
+</div>
+</section>
+
+<!-- TRAVEL AGENT -->
+<section style="background: linear-gradient(135deg, var(--jade) 0%, var(--jade-deep) 100%); padding: 3rem 0;">
+<div class="container">
+  <div style="background: rgba(255,255,255,0.95); border-radius: 4px; padding: 2.5rem 2rem; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+    <h3 style="font-family: 'IM Fell English', serif; font-size: 1.75rem; color: var(--ink); margin-bottom: 1rem;">Need Additional Help or Recommendations?</h3>
+    <p style="font-size: 1.05rem; color: var(--ink-soft); line-height: 1.7; max-width: 600px; margin: 0 auto;">
+      Have your handsome husband ask the Claude travel agent he built using your itinerary.<br>
+      <span style="font-size: 0.85rem; color: var(--stone); font-style: italic; display: block; margin-top: 0.75rem;">(He knows you won't download it.)</span>
+    </p>
+  </div>
+</div>
+</section>
+
+<footer>
+  <span>香港</span> · Honeymoon Itinerary · May 29 – June 3, 2026 · Island Shangri-La, Admiralty · <span>蜜月</span>
+</footer>
+
+</body>
+</html>

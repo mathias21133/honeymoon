@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phuket Honeymoon · May 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --jade:        #1A6B4A;
+    --jade-deep:   #0E4730;
+    --gold:        #B8962E;
+    --gold-light:  #D4AF5A;
+    --ink:         #141A1C;
+    --ink-soft:    #2E3A3D;
+    --paper:       #F2EDE0;
+    --paper-dark:  #E5DEC9;
+    --paper-mid:   #EBE4D3;
+    --stone:       #A8B5AF;
+    --crimson:     #B83232;
+    --crimson-deep:#7A1A1A;
+    --harbor:      #1B3548;
+    --cream:       #FAF7F0;
+    --teal:        #1E6E72;
+    --sand:        #C2A46E;
+    --palm:        #2D6A2D;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.6;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--ink);
+    border-bottom: 2px solid var(--sand);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  nav::-webkit-scrollbar { display: none; }
+
+  .nav-logo {
+    font-family: 'Shippori Mincho', serif;
+    color: var(--gold-light);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0.9rem 1.5rem 0.9rem 0;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    margin-right: 1rem;
+  }
+
+  nav a {
+    color: rgba(242,237,224,0.6);
+    text-decoration: none;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.9rem 1rem;
+    white-space: nowrap;
+    transition: color 0.2s;
+    font-weight: 400;
+  }
+  nav a:hover { color: var(--gold-light); }
+
+  .hero {
+    background: var(--ink);
+    color: var(--paper);
+    text-align: center;
+    padding: 5rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: 'ภูเก็ต';
+    position: absolute;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 16rem;
+    color: rgba(194,164,110,0.06);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .hero-kana {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.4em;
+    color: var(--sand);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  .hero h1 {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+  .hero-subtitle {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--stone);
+    margin-bottom: 2.5rem;
+  }
+  .hero-meta { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; }
+  .hero-meta-item { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(242,237,224,0.5); }
+  .hero-meta-item strong { display: block; color: var(--gold-light); font-size: 0.85rem; letter-spacing: 0.05em; font-weight: 400; margin-top: 0.15rem; }
+
+  .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+  section { padding: 3.5rem 0 2rem; }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--stone);
+  }
+  .section-num { font-family: 'Shippori Mincho', serif; font-size: 0.7rem; color: var(--sand); letter-spacing: 0.2em; }
+  .section-title { font-family: 'Shippori Mincho', serif; font-size: 1.3rem; font-weight: 600; letter-spacing: 0.04em; color: var(--ink); }
+
+  .overview-grid { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .overview-grid thead tr { background: var(--ink); }
+  .overview-grid thead th { font-family: 'Shippori Mincho', serif; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold-light); padding: 0.6rem 0.9rem; text-align: left; font-weight: 600; }
+  .overview-grid tbody tr { border-bottom: 1px solid var(--paper-dark); }
+  .overview-grid tbody tr:hover td { background: var(--paper-mid); }
+  .overview-grid td { padding: 0.7rem 0.9rem; vertical-align: top; color: var(--ink-soft); }
+  .overview-grid td:first-child { font-family: 'Shippori Mincho', serif; color: var(--sand); font-weight: 700; font-size: 0.8rem; white-space: nowrap; }
+  .overview-grid td:nth-child(2) { color: var(--stone); font-size: 0.78rem; white-space: nowrap; }
+  .overview-grid td:nth-child(3) { font-weight: 500; color: var(--ink); }
+
+  .bookings-grid { display: grid; gap: 0.75rem; }
+  .booking-card { background: var(--cream); border: 1px solid var(--paper-dark); border-left: 3px solid var(--sand); padding: 1rem 1.25rem; display: grid; grid-template-columns: 1fr auto; gap: 0.25rem 1rem; align-items: start; }
+  .booking-card.buy-now { border-left-color: var(--crimson); background: #FFF8F7; }
+  .booking-card.moderate { border-left-color: var(--gold); }
+  .booking-name { font-family: 'Shippori Mincho', serif; font-size: 1rem; font-weight: 600; color: var(--ink); }
+  .booking-badge { font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.2rem 0.5rem; font-weight: 500; white-space: nowrap; }
+  .badge-now      { background: var(--crimson-deep); color: white; }
+  .badge-moderate { background: var(--gold);         color: white; }
+  .badge-sand     { background: var(--sand);         color: white; }
+  .booking-detail { font-size: 0.8rem; color: var(--ink-soft); grid-column: 1 / -1; margin-top: 0.1rem; }
+  .booking-link   { font-size: 0.75rem; color: var(--jade); letter-spacing: 0.05em; grid-column: 1 / -1; }
+
+  .day-card { margin-bottom: 3rem; background: var(--cream); border: 1px solid var(--paper-dark); overflow: hidden; }
+  .day-header { background: var(--ink); color: var(--paper); padding: 1.25rem 1.75rem; display: flex; align-items: baseline; gap: 1rem; justify-content: space-between; flex-wrap: wrap; }
+  .day-number { font-family: 'Shippori Mincho', serif; font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--sand); }
+  .day-title  { font-family: 'IM Fell English', serif; font-size: 1.3rem; font-weight: 400; flex: 1; }
+  .day-date   { font-size: 0.7rem; letter-spacing: 0.1em; color: rgba(242,237,224,0.4); text-transform: uppercase; }
+
+  .timeline-item { display: grid; grid-template-columns: 80px 1fr; border-bottom: 1px solid var(--paper-dark); transition: background 0.15s; }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-item:hover { background: var(--paper-mid); }
+  .timeline-time { padding: 1.1rem 1rem 1rem 1.5rem; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--stone); font-weight: 500; border-right: 1px solid var(--paper-dark); display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .item-icon { font-size: 1.1rem; line-height: 1; }
+  .timeline-content { padding: 1rem 1.5rem 1rem 1.25rem; }
+  .item-type { font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 0.25rem; font-weight: 500; }
+
+  .type-spa      { color: #7A5C14; }
+  .type-food     { color: var(--crimson); }
+  .type-resort   { color: var(--sand); }
+  .type-activity { color: var(--harbor); }
+  .type-bar      { color: #6B3E7A; }
+  .type-transit  { color: var(--stone); }
+  .type-nature   { color: var(--palm); }
+  .type-wander   { color: var(--teal); }
+  .type-coffee   { color: #7A5C14; }
+  .type-market   { color: var(--jade); }
+
+  .item-name { font-family: 'Shippori Mincho', serif; font-size: 1.05rem; font-weight: 600; color: var(--ink); margin-bottom: 0.3rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+  .star-badge    { font-size: 0.55rem; background: var(--crimson);      color: white; padding: 0.15rem 0.4rem; letter-spacing: 0.1em; font-family: 'Jost', sans-serif; font-weight: 500; text-transform: uppercase; }
+  .spa-badge     { font-size: 0.55rem; background: #7A5C14;             color: white; padding: 0.15rem 0.4rem; letter-spacing: 0.1em; font-family: 'Jost', sans-serif; font-weight: 500; text-transform: uppercase; }
+  .resort-badge  { font-size: 0.55rem; background: var(--sand);         color: white; padding: 0.15rem 0.4rem; letter-spacing: 0.1em; font-family: 'Jost', sans-serif; font-weight: 500; text-transform: uppercase; }
+  .nature-badge  { font-size: 0.55rem; background: var(--palm);         color: white; padding: 0.15rem 0.4rem; letter-spacing: 0.1em; font-family: 'Jost', sans-serif; font-weight: 500; text-transform: uppercase; }
+  .book-badge    { font-size: 0.55rem; background: var(--crimson-deep); color: white; padding: 0.15rem 0.4rem; letter-spacing: 0.1em; font-family: 'Jost', sans-serif; font-weight: 500; text-transform: uppercase; }
+  .michelin-badge{ font-size: 0.55rem; background: var(--harbor);       color: white; padding: 0.15rem 0.4rem; letter-spacing: 0.1em; font-family: 'Jost', sans-serif; font-weight: 500; text-transform: uppercase; }
+
+  .item-desc   { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.6; }
+  .item-detail { font-size: 0.75rem; color: var(--stone); margin-top: 0.4rem; font-style: italic; line-height: 1.5; }
+  .item-note   { font-size: 0.75rem; background: var(--paper-dark); border-left: 2px solid var(--gold); padding: 0.4rem 0.7rem; margin-top: 0.5rem; color: var(--ink-soft); line-height: 1.5; }
+
+  .timeline-item.spa-item    { background: linear-gradient(to right, rgba(122,92,20,0.04), transparent); }
+  .timeline-item.resort-item { background: linear-gradient(to right, rgba(194,164,110,0.05), transparent); }
+  .timeline-item.nature-item { background: linear-gradient(to right, rgba(45,106,45,0.04), transparent); }
+  .timeline-item.wander-item { background: linear-gradient(to right, rgba(30,110,114,0.04), transparent); }
+  .timeline-item.coffee-item { background: linear-gradient(to right, rgba(122,92,20,0.04), transparent); }
+  .timeline-item.market-item { background: linear-gradient(to right, rgba(26,107,74,0.04), transparent); }
+
+  .time-band { background: var(--paper-dark); padding: 0.4rem 1.5rem; font-family: 'Shippori Mincho', serif; font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--stone); border-bottom: 1px solid var(--paper-dark); }
+
+  .hotel-note { background: var(--cream); border: 1px solid var(--paper-dark); border-top: 3px solid var(--sand); padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+  .hotel-note h4 { font-family: 'Shippori Mincho', serif; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--sand); text-transform: uppercase; margin-bottom: 0.75rem; }
+  .hotel-option { margin-bottom: 0.75rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--paper-dark); }
+  .hotel-option:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .hotel-option strong { font-family: 'Shippori Mincho', serif; font-size: 0.95rem; color: var(--ink); display: block; margin-bottom: 0.2rem; }
+  .hotel-option p { font-size: 0.82rem; color: var(--ink-soft); }
+
+  .flags-block { background: var(--ink); color: var(--paper); padding: 1.5rem 1.75rem; margin: 1.5rem 0; }
+  .flags-block h4 { font-family: 'Shippori Mincho', serif; font-size: 0.9rem; letter-spacing: 0.1em; color: var(--gold-light); margin-bottom: 0.75rem; }
+  .flags-list { list-style: none; display: grid; gap: 0.5rem; }
+  .flags-list li { font-size: 0.8rem; color: rgba(242,237,224,0.75); padding-left: 1rem; position: relative; line-height: 1.5; }
+  .flags-list li::before { content: '—'; position: absolute; left: 0; color: var(--sand); font-size: 0.7rem; }
+
+  .rain-note { background: var(--paper-dark); border: 1px solid var(--stone); border-left: 3px solid var(--sand); padding: 0.75rem 1rem; font-size: 0.8rem; color: var(--ink-soft); margin: 1rem 0; }
+
+  .ref-section { margin-bottom: 2.5rem; }
+  .ref-section h3 { font-family: 'Shippori Mincho', serif; font-size: 1rem; letter-spacing: 0.1em; color: var(--ink); margin-bottom: 0.75rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--paper-dark); }
+  .ref-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin: 0.5rem 0; }
+  .ref-table th { font-family: 'Shippori Mincho', serif; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--stone); text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--paper-dark); font-weight: 600; }
+  .ref-table td { padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--paper-dark); color: var(--ink-soft); vertical-align: top; }
+  .ref-table tr:last-child td { border-bottom: none; }
+  .ref-table tr:hover td { background: var(--paper-mid); }
+  .ref-table td:first-child { font-weight: 500; color: var(--ink); }
+
+  .tracker-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin-bottom: 1rem; }
+  .tracker-table thead tr { background: var(--ink); }
+  .tracker-table thead th { font-family: 'Shippori Mincho', serif; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold-light); padding: 0.6rem 0.9rem; text-align: left; font-weight: 600; }
+  .tracker-table td { padding: 0.7rem 0.9rem; border-bottom: 1px solid var(--paper-dark); vertical-align: top; color: var(--ink-soft); }
+  .tracker-table tr:last-child td { border-bottom: none; }
+  .tracker-table tr:hover td { background: var(--paper-mid); }
+  .tracker-table td:first-child { font-family: 'Shippori Mincho', serif; color: var(--sand); font-weight: 700; font-size: 0.9rem; }
+
+  footer { background: var(--ink); color: rgba(242,237,224,0.4); text-align: center; padding: 2rem; font-size: 0.75rem; letter-spacing: 0.1em; margin-top: 3rem; }
+  footer span { color: var(--sand); }
+
+  @media (max-width: 600px) {
+    .timeline-item { grid-template-columns: 60px 1fr; }
+    .timeline-time { padding: 1rem 0.5rem 1rem 0.75rem; }
+    .hero::before { font-size: 8rem; }
+    .day-header { gap: 0.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">ภูเก็ต · Honeymoon</div>
+  <a href="#bookings">Book Now</a>
+  <a href="#day1">May 24</a>
+  <a href="#day2">May 25</a>
+  <a href="#day3">May 26</a>
+  <a href="#day4">May 27</a>
+  <a href="#day5">May 28</a>
+  <a href="#day6">May 29</a>
+  <a href="#trackers">Trackers</a>
+  <a href="#reference">Reference</a>
+</nav>
+
+<div class="hero">
+  <span class="hero-kana">ภูเก็ต · Phuket · Slow Down</span>
+  <h1>Phuket, May 2026</h1>
+  <p class="hero-subtitle">The Shore at Katathani · Kata Noi · 5 Nights · Arriving from New York</p>
+  <div class="hero-meta">
+    <div class="hero-meta-item">Arrival<strong>May 24, ~7:30pm</strong></div>
+    <div class="hero-meta-item">From<strong>New York via EWR</strong></div>
+    <div class="hero-meta-item">Base<strong>The Shore at Katathani</strong></div>
+    <div class="hero-meta-item">Departure<strong>May 29 · Morning → Hong Kong</strong></div>
+    <div class="hero-meta-item">Style<strong>Resort · Spa · Slow</strong></div>
+  </div>
+</div>
+
+<!-- HOTEL -->
+<section id="hotel">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○〇</span>
+    <h2 class="section-title">Base — The Shore at Katathani</h2>
+  </div>
+  <div class="hotel-note">
+    <h4>The Shore at Katathani · Kata Noi Beach · Phuket</h4>
+    <div class="hotel-option">
+      <strong>Why This Resort</strong>
+      <p>The Shore is the adults-only boutique wing of the Katathani resort, sitting at the quieter southern end of Kata Noi beach — one of the most beautiful bays in Phuket and far less crowded than Patong or Kata Yai. The villas have private infinity pools facing the Andaman. This is exactly the right base for a honeymoon built around recovery and luxury — you're not here to sightsee, you're here to be still. Three full resort days bookend two excursions. The pacing is deliberate.</p>
+    </div>
+    <div class="hotel-option">
+      <strong>Dining Hours — Confirmed</strong>
+      <p>Orora Restaurant (The Shore Beach Club, beachside) serves dinner 6pm–11pm, last order 10:30pm. Param Para (the resort's signature romantic Thai restaurant) serves dinner 6:30pm–midnight, last order 10:30pm. Both are open when you arrive on Day 1 at 7:30pm — no rush, no scramble. The Harbor restaurant serves breakfast and all-day dining. Room service runs 24 hours.</p>
+    </div>
+    <div class="hotel-option">
+      <strong>Spa — Serenity Spa at The Shore</strong>
+      <p>Book both spa sessions at check-in before they fill up. Session 1 on Day 2 (traditional Thai massage — right after the long-haul flight). Session 2 on Day 5 (couples' treatment — the luxury counterpoint to sleeping in a jungle bungalow the night before). Mention it's your honeymoon at booking; the team often adds gestures. Two sessions minimum — a third on Day 3 morning is easy to slot if you want it.</p>
+    </div>
+    <div class="hotel-option">
+      <strong>Getting Around</strong>
+      <p>Grab works everywhere in Phuket. The resort can also arrange private drivers for the night market (Day 3, ~20–30 min), Old Town (Day 5, ~30 min), and the Khao Sok transfer (operator-arranged as part of the package). For everything else you don't need a car — you're at the beach.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- BOOKINGS -->
+<section id="bookings">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○一</span>
+    <h2 class="section-title">Reservations — Book Before You Land</h2>
+  </div>
+  <div class="bookings-grid">
+
+    <div class="booking-card buy-now">
+      <div class="booking-name">Khao Sok Overnight — Floating Bungalow (May 27–28)</div>
+      <span class="booking-badge badge-now">Book Now · 4–6 Weeks Out</span>
+      <div class="booking-detail">Floating raft house bungalows on Cheow Lan Lake — wooden huts over glassy emerald water, surrounded by 400-million-year-old karst limestone towers. Book the full 2D/1N package: transfer from Phuket, boat to the lake, all meals, overnight bungalow, and return transfer the next morning. Elephant Hills is the premium operator (~$500–600/person, private villa tents, higher service level). Our Jungle House covers the mid-range well (~$200–350/person). Confirm the package includes Cheow Lan Lake specifically — not just the river section of the park.</div>
+      <div class="booking-link">elephanthills.com · ourjunglehouse.com · khaosok.com · Book 2D/1N all-inclusive with transfer from Phuket</div>
+    </div>
+
+    <div class="booking-card buy-now">
+      <div class="booking-name">Serenity Spa — Two Sessions (Book at Check-In Day 1)</div>
+      <span class="booking-badge badge-now">Book on Arrival</span>
+      <div class="booking-detail">Session 1: Day 2 afternoon — Traditional Thai massage, 90 min. Best treatment for long-haul recovery: pressure-based, therapeutic, works out the tension of 20+ hours of travel. Session 2: Day 5 afternoon — Couples' treatment. Side-by-side in the couples' room. Herbal compress massage or body scrub + massage. Book both at the spa desk the moment you check in. Mention honeymoon.</div>
+      <div class="booking-link">Serenity Spa desk at check-in · katathani.com · Mention honeymoon at booking</div>
+    </div>
+
+    <div class="booking-card moderate">
+      <div class="booking-name">Param Para — Dinner (Any Evening at Resort)</div>
+      <span class="booking-badge badge-moderate">Reserve Same Day</span>
+      <div class="booking-detail">The Shore's signature restaurant — ancient Thai recipes refined with modern technique, inspired by the mythological Himmapan Forest. Dinner only, 6:30pm–midnight (last order 10:30pm). Small and romantic. Reserve at the front desk the same day you want to go — this is for one of your three resort evenings (Day 1 arrival dinner is covered by Orora; Days 2 and 4 are the natural slots for Param Para).</div>
+      <div class="booking-link">theshorephuket.com · Reserve at front desk same day · Adults-only resort, outside guests not admitted</div>
+    </div>
+
+    <div class="booking-card moderate">
+      <div class="booking-name">Chillva Market or Bang Niang Night Market — Day 3 Evening</div>
+      <span class="booking-badge badge-moderate">No Booking · Just Go</span>
+      <div class="booking-detail">No reservation needed for either market — just a Grab and cash. Chillva Market (Phuket Town, ~20 min from resort) is the more contained local option: 80+ vendors, string lights, manageable. Bang Niang Night Market (~35 min north) is larger and more sprawling — 200+ stalls, deeper food variety. Both open around 5pm, best from 6–9pm. Bring ฿500–800 cash between you for a full dinner-on-foot.</div>
+      <div class="booking-link">Chillva: Yaowarat Rd, Phuket Town · Bang Niang: Route 4, Khok Kloi · Grab both ways · Cash only at stalls</div>
+    </div>
+
+  </div>
+  <div class="rain-note">
+    ☔ <strong>Weather note:</strong> Late May is the start of the southwest monsoon. Mornings are typically clear and beach-friendly; afternoon rain is likely, usually heavy and brief. Plan outdoor and beach time for mornings. Khao Sok in the rain is atmospheric and green, not a reason to cancel. Pack a small foldable umbrella — or buy one at any 7-Eleven for ฿60.
+  </div>
+</div>
+</section>
+
+<!-- AT A GLANCE -->
+<section id="itinerary">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○二</span>
+    <h2 class="section-title">At a Glance</h2>
+  </div>
+  <table class="overview-grid">
+    <thead>
+      <tr><th>Day</th><th>Date</th><th>Anchor</th><th>Vibe</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Day 1</td><td>Sat May 24</td><td>Arrive ~7:30pm → The Shore</td><td>Transfer, check in, dinner at Orora or Param Para (both open until 10:30pm last order). Nothing else required.</td></tr>
+      <tr><td>Day 2</td><td>Sun May 25</td><td>Full Resort Day + Spa #1</td><td>Beach or pool all morning, Spa Session 1 (Thai massage) mid-afternoon, sunset cocktails, dinner at Param Para.</td></tr>
+      <tr><td>Day 3</td><td>Mon May 26</td><td>Resort Morning → Night Market Evening</td><td>Slow resort morning, beach, pool. Grab to Chillva or Bang Niang night market for dinner. Back by 10pm.</td></tr>
+      <tr><td>Day 4</td><td>Tue May 27</td><td>Khao Sok Overnight</td><td>Depart 8am, drive north, boat to floating bungalow on Cheow Lan Lake. Kayak, swim, eat on the water, sleep under jungle stars.</td></tr>
+      <tr><td>Day 5</td><td>Wed May 28</td><td>Return from Khao Sok → Spa #2 → Old Town</td><td>Back at resort by noon. Spa Session 2 (couples' treatment). Old Town Phuket afternoon — coffee, architecture, food, shopping. Back for resort dinner.</td></tr>
+      <tr><td>Day 6</td><td>Thu May 29</td><td>Final Morning → Airport → Hong Kong</td><td>Last beach breakfast. Airport transfer. Morning flight to HKG.</td></tr>
+    </tbody>
+  </table>
+</div>
+</section>
+
+<!-- DAY BY DAY -->
+<section id="days">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○三</span>
+    <h2 class="section-title">Day-by-Day</h2>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="day-card" id="day1">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day One · Saturday</div>
+        <div class="day-title">Arrival · The Shore · First Breath</div>
+      </div>
+      <div class="day-date">May 24</div>
+    </div>
+    <div class="day-body">
+      <div class="time-band">Evening — Arrive ~7:30pm</div>
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">✈️</span>7:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Arrival</div>
+          <div class="item-name">Land at HKT → The Shore at Katathani</div>
+          <div class="item-desc">Phuket International Airport is about 45 minutes north of Kata Noi. Private transfer arranged through the resort or your Khao Sok operator — or Grab from arrivals. You've been traveling since New York. The drive down the west coast at dusk, hills dropping toward the sea, is a good first image of Phuket. Check in, open the room, let it settle.</div>
+          <div class="item-detail">HKT Airport → The Shore at Katathani, 14 Kata Noi Rd · Private transfer ~45 min · Arrange with resort or book Grab from arrivals hall</div>
+          <div class="item-note">Book Spa Sessions 1 and 2 tonight or first thing tomorrow morning — call the spa desk or ask at check-in. Best slots: Session 1 on Day 2 at 3pm; Session 2 on Day 5 at 3pm. Mention honeymoon at both bookings.</div>
+        </div>
+      </div>
+      <div class="timeline-item resort-item">
+        <div class="timeline-time"><span class="item-icon">🍽</span>9:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-resort">Arrival Dinner</div>
+          <div class="item-name">Orora Restaurant or Param Para <span class="resort-badge">Both Open Until 10:30pm Last Order</span></div>
+          <div class="item-desc">Both restaurants are open when you arrive. Orora (The Shore Beach Club, beachside, international and Asian-inspired) is the easier landing — relaxed, no dress code pressure, open until 11pm with last order at 10:30pm. Param Para (the resort's romantic Thai fine dining, open until midnight) is the more special option if you have the energy. Either is right for the first night. Order a mai tai. Walk to the beach after. This is what you came for.</div>
+          <div class="item-detail">Orora: The Shore Beach Club · Dinner 6pm–11pm, last order 10:30pm · Param Para: Dinner 6:30pm–midnight, last order 10:30pm · Both in-resort, no outside transfer needed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day-card" id="day2">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Two · Sunday</div>
+        <div class="day-title">Full Resort Day · Spa Session One</div>
+      </div>
+      <div class="day-date">May 25</div>
+    </div>
+    <div class="day-body">
+      <div class="time-band">Morning — No Alarm</div>
+      <div class="timeline-item resort-item">
+        <div class="timeline-time"><span class="item-icon">🌅</span>Late</div>
+        <div class="timeline-content">
+          <div class="item-type type-resort">Morning · Completely Unstructured</div>
+          <div class="item-name">Resort Breakfast + Beach or Pool <span class="resort-badge">No Plans</span></div>
+          <div class="item-desc">Wake up when you wake up. Breakfast on the terrace or in the villa. Then beach or pool — Kata Noi faces west so mornings are shaded and cool before the sun climbs. The pool is quieter in the morning. Bring a book. Put your phone face-down. This is the whole plan for the morning.</div>
+          <div class="item-detail">Resort breakfast included · Kata Noi beach or resort pool · Nothing scheduled until the spa at 3pm</div>
+        </div>
+      </div>
+      <div class="time-band">Afternoon — Spa</div>
+      <div class="timeline-item spa-item">
+        <div class="timeline-time"><span class="item-icon">🌿</span>3:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-spa">Spa · Session One</div>
+          <div class="item-name">Serenity Spa — Traditional Thai Massage <span class="spa-badge">Spa Visit #1</span> <span class="book-badge">Book at Check-In</span></div>
+          <div class="item-desc">The traditional Thai massage is the right first treatment — pressure-based, therapeutic, designed to work out the stiffness of long-haul flying. 90 minutes. The therapists at the Serenity Spa work with real technique, not a diluted hotel-spa version. Come hydrated. Schedule it mid-afternoon when the heat of the day peaks and the beach is uncomfortable anyway.</div>
+          <div class="item-detail">Serenity Spa, The Shore at Katathani · 90-min traditional Thai massage · Book at spa desk on arrival · ~฿2,500–3,500 · Mention honeymoon</div>
+        </div>
+      </div>
+      <div class="time-band">Evening</div>
+      <div class="timeline-item resort-item">
+        <div class="timeline-time"><span class="item-icon">🌇</span>6:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-resort">Sundowner · Every Evening Ritual</div>
+          <div class="item-name">Sunset Cocktails — Orora Terrace or Beach Bar <span class="star-badge">★ The Ritual</span></div>
+          <div class="item-desc">Kata Noi faces west. Every evening at 6pm the sky goes through amber and rose over the Andaman. Order a mai tai or gin and tonic with Thai basil. Sit with it. This is the thing you protect every evening you're at the resort. The Orora terrace is elevated with unobstructed sea views; the beach bar puts your feet closer to the water. Either is correct.</div>
+          <div class="item-detail">Orora Restaurant terrace or resort beach bar · In-resort · No reservation · Protect this time every evening</div>
+        </div>
+      </div>
+      <div class="timeline-item resort-item">
+        <div class="timeline-time"><span class="item-icon">🍽</span>8:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Dinner · Signature Restaurant</div>
+          <div class="item-name">Param Para — Ancient Thai Fine Dining <span class="star-badge">★★</span></div>
+          <div class="item-desc">The Shore's most romantic restaurant — dishes inspired by Thai mythology and the Himmapan Forest, ancient recipes refined with modern technique. The setting is unlike anything else on the resort: candlelit, lush, completely removed from the world. This is the right slot for Param Para — you've just had a spa treatment, you've watched the sunset, you've recovered from the flight. Let the evening be long and unhurried.</div>
+          <div class="item-detail">Param Para, The Shore at Katathani · Dinner 6:30pm–midnight, last order 10:30pm · Reserve at front desk same day · Adults-only, in-resort guests only</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day-card" id="day3">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Three · Monday</div>
+        <div class="day-title">Resort Morning → Night Market Evening</div>
+      </div>
+      <div class="day-date">May 26</div>
+    </div>
+    <div class="day-body">
+      <div class="time-band">Morning & Afternoon — Still at the Resort</div>
+      <div class="timeline-item resort-item">
+        <div class="timeline-time"><span class="item-icon">🏖</span>Morning</div>
+        <div class="timeline-content">
+          <div class="item-type type-resort">Morning · Resort</div>
+          <div class="item-name">Beach, Pool, Villa — Full Resort Morning <span class="resort-badge">No Plans</span></div>
+          <div class="item-desc">You leave tonight for the night market, which means today is a full resort morning and afternoon. Use it. This is the last full-day stretch at Kata Noi before Khao Sok tomorrow. Swim, read, order lunch by the pool, nap in the villa. Pack your Khao Sok bag this afternoon — you leave early tomorrow.</div>
+          <div class="item-detail">Full resort access · Pool, beach, villa · Lunch at Orora or room service · Pack for Khao Sok: light clothes, swimwear, sandals that can get wet, insect repellent, one small dry bag</div>
+          <div class="item-note">Khao Sok packing list: one change of clothes for the bungalow, swimwear, sandals or flip-flops that can get wet, insect repellent (essential), headlamp or phone torch, small dry bag for the boat crossing. The operator provides most gear. Travel light — you're back the next afternoon.</div>
+        </div>
+      </div>
+      <div class="time-band">Evening — Night Market</div>
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🚕</span>5:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Transfer</div>
+          <div class="item-name">Grab to Chillva Market or Bang Niang Night Market</div>
+          <div class="item-desc">Chillva Market in Phuket Town is the closer and more contained option — 20 min by Grab, 80+ vendors, local crowd, string lights, manageable size. Bang Niang Night Market is larger (200+ stalls), 35 min north, more sprawling. Chillva is the easier call for a weeknight; Bang Niang is worth the extra distance if you want more scale. Both open around 5pm and peak from 6–9pm. Book your Grab return before you eat — it's harder to get a car at 9pm when everyone leaves at once.</div>
+          <div class="item-detail">Chillva: Yaowarat Rd, Phuket Town · ~20 min, ~฿250 by Grab · Bang Niang: Route 4, Khok Kloi · ~35 min, ~฿400 · Cash for stalls · Book return Grab before sitting down</div>
+        </div>
+      </div>
+      <div class="timeline-item market-item">
+        <div class="timeline-time"><span class="item-icon">🏮</span>6:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-market">Night Market · Dinner on Foot</div>
+          <div class="item-name">Night Market Dinner — Walk the Whole Thing First <span class="star-badge">★★</span></div>
+          <div class="item-desc">The move at any Thai night market: don't order at the first stall you see. Walk the entire market once, identify the four or five things you want, then circle back. What to eat: pad thai from a wok cart (fresh, never from a pan sitting on low heat — watch for the flames), moo ping (grilled pork skewers with sticky rice), grilled corn in coconut milk, kanom jeen (rice noodles in fish curry broth — Phuket's local specialty), mango sticky rice last. Wash it down with fresh sugarcane juice or a Singha from the corner vendor. Bring ฿500–800 cash between you — you won't spend all of it but you'll want options.</div>
+          <div class="item-detail">Walk full market first · Cash only · ฿500–800 between two for a full dinner · Mango sticky rice is always the last thing, not the first</div>
+          <div class="item-note">Cha yen (Thai iced tea — orange, sweet, with condensed milk in a bag with a straw) is mandatory. One each, at any cart. It costs ฿25 and tastes exactly like Thailand.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🚕</span>9:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Return</div>
+          <div class="item-name">Grab Back to The Shore — Early Night</div>
+          <div class="item-desc">Back to the resort by 9:30–10pm. Early night — you leave for Khao Sok at 8am tomorrow. Last drink at the beach bar if you want it, then sleep.</div>
+          <div class="item-detail">Grab from market entrance · ~฿250–400 back to Kata Noi · Book from app before leaving the market</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day-card" id="day4">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Four · Tuesday</div>
+        <div class="day-title">Khao Sok — Floating Bungalow on Cheow Lan Lake</div>
+      </div>
+      <div class="day-date">May 27</div>
+    </div>
+    <div class="day-body">
+      <div class="time-band">Morning — Depart for the Jungle</div>
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🚐</span>8:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Departure · Operator Transfer</div>
+          <div class="item-name">Transfer: The Shore → Cheow Lan Lake (~2.5 hrs)</div>
+          <div class="item-desc">Your operator arranges pickup from the resort as part of the package — confirm this at booking. The drive goes north along the coast then inland through rubber and palm plantations. The landscape changes completely as you gain elevation into Khao Sok National Park. Arrive at Ratchaprapha Dam for boat embarkation onto the lake.</div>
+          <div class="item-detail">Pickup from The Shore at Katathani · 8:00am · ~2.5 hr drive · All included in package · Confirm pickup time with operator 48 hrs before</div>
+        </div>
+      </div>
+      <div class="time-band">Cheow Lan Lake</div>
+      <div class="timeline-item nature-item">
+        <div class="timeline-time"><span class="item-icon">⛵</span>11:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-nature">Arrival</div>
+          <div class="item-name">Boat Transfer to Floating Bungalow <span class="star-badge">★★ The Arrival</span></div>
+          <div class="item-desc">The boat ride across Cheow Lan Lake is one of the best arrivals of the trip. The lake is emerald-green — man-made, flooded for a dam in 1982 — and surrounded by 400-million-year-old karst limestone towers rising straight from the water, taller and more dramatic than Halong Bay. Almost no tourists. The raft houses sit at anchor mid-lake. No road access. No wifi signal. No escape. This is the point. The contrast with Kata Noi is total.</div>
+          <div class="item-detail">Boat departs from Ratchaprapha Dam pier · 30–45 min across the lake · Keep phones in dry bags for the crossing · All included in operator package</div>
+        </div>
+      </div>
+      <div class="timeline-item nature-item">
+        <div class="timeline-time"><span class="item-icon">🛶</span>Afternoon</div>
+        <div class="timeline-content">
+          <div class="item-type type-nature">Afternoon · No Agenda</div>
+          <div class="item-name">Float, Swim, Kayak — Completely Unstructured <span class="resort-badge">No Plans</span></div>
+          <div class="item-desc">Lunch is served at the bungalow (included). After that: do as much or as little as you want. Kayaks are available — paddling toward the karst cliffs is worth doing once, some have partially flooded caves you can drift into. The lake water is warm, deep, and clear enough to swim in. Or just lie in the hammock on the deck. Afternoon rain may come and go — it's fine, you're already in swimwear.</div>
+          <div class="item-detail">Kayaks included · No guide required for casual paddling · Swim directly off the bungalow deck · Hammocks on the platform · Afternoon is the freest time of the stay</div>
+        </div>
+      </div>
+      <div class="timeline-item nature-item">
+        <div class="timeline-time"><span class="item-icon">🌌</span>7:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-nature">Evening · The Reason You Came</div>
+          <div class="item-name">Dinner on the Lake + Night Under Stars <span class="star-badge">★★</span></div>
+          <div class="item-desc">Dinner is served at the raft house — simple Thai food, fresh fish, rice. It tastes extraordinary because of where you are. After dark, go back to the deck. The limestone cliffs hold the starlight. There is zero light pollution within 50 kilometers. You'll hear gibbons, nightjars, occasional splashing in the water below you. This is the dark and quiet neither of you has had in a long time. Stay out as late as you can. If your operator offers a guided night kayak, take it — bioluminescent fungi, fireflies over the water, the guides know where to look.</div>
+          <div class="item-detail">All meals included · Generator powers lights until ~10pm · Night kayak optional — ask operator · No phones needed, no internet available</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="day-card" id="day5">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Five · Wednesday</div>
+        <div class="day-title">Khao Sok Sunrise → Return → Spa #2 → Old Town</div>
+      </div>
+      <div class="day-date">May 28</div>
+    </div>
+    <div class="day-body">
+      <div class="time-band">Dawn — Do Not Sleep Through This</div>
+      <div class="timeline-item nature-item">
+        <div class="timeline-time"><span class="item-icon">🌄</span>6:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-nature">Sunrise on the Lake</div>
+          <div class="item-name">Cheow Lan Lake at Dawn <span class="star-badge">★★ Must</span></div>
+          <div class="item-desc">Set an alarm. Sunrise over the karst cliffs is the finest visual moment of the Khao Sok stay. Mist sits low on the water before the sun burns it off; the cliffs shift from grey to gold to green; the gibbons that have been calling since 5am change their song as the light arrives. Stand on the dock or take a kayak out onto the still water. This is the photograph and the memory. Don't sleep through it.</div>
+          <div class="item-detail">Raft house deck or kayak · Dawn ~6:15am in late May · No agenda beyond being outside with a coffee</div>
+        </div>
+      </div>
+      <div class="time-band">Morning — Return Transfer</div>
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🚐</span>10:00am</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Return</div>
+          <div class="item-name">Boat Off the Lake → Transfer Back to The Shore (~2.5 hrs)</div>
+          <div class="item-desc">Breakfast on the water, then boat back to the dam pier and van south to Phuket. Arrive at the resort around noon–1pm. Go straight to the room, shower, and transition back to resort mode. The contrast after two days of jungle simplicity makes the villa feel genuinely luxurious again. Use it. The spa is booked for this afternoon.</div>
+          <div class="item-detail">Operator-arranged return · Arrive at The Shore ~noon–1pm · Confirm return departure time with operator at booking</div>
+        </div>
+      </div>
+      <div class="time-band">Afternoon — Spa then Old Town</div>
+      <div class="timeline-item spa-item">
+        <div class="timeline-time"><span class="item-icon">🌿</span>2:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-spa">Spa · Session Two</div>
+          <div class="item-name">Serenity Spa — Couples' Treatment <span class="spa-badge">Spa Visit #2</span></div>
+          <div class="item-desc">The second session is the couples' treatment — side-by-side in the couples' room. The herbal compress massage (hot botanical pouches pressed into muscles) or a traditional body scrub followed by oil massage are both excellent choices. This is the luxury counterpoint to sleeping in a wooden bungalow over a jungle lake. The sequencing is intentional: jungle first, then this. Tell them you're on your honeymoon.</div>
+          <div class="item-detail">Serenity Spa, The Shore at Katathani · Couples' room · 90 min · ~฿3,500–5,000/couple · Book before departing for Khao Sok</div>
+        </div>
+      </div>
+      <div class="timeline-item wander-item">
+        <div class="timeline-time"><span class="item-icon">🚕</span>4:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-wander">Transfer</div>
+          <div class="item-name">Grab → Old Town Phuket (~30 min) · Arrive by 5pm</div>
+          <div class="item-desc">A focused 2–3 hour Old Town afternoon — enough time for one coffee stop, a proper wander of the best streets, and one sit-down dinner. Drop at Thalang Road. Book your return Grab for 8–8:30pm before you leave the resort.</div>
+          <div class="item-detail">Grab from The Shore → Thalang Rd, Old Town · ~30 min · ~฿300–400 · Book return Grab in advance for 8–8:30pm</div>
+        </div>
+      </div>
+      <div class="timeline-item coffee-item">
+        <div class="timeline-time"><span class="item-icon">☕</span>5:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-coffee">Coffee · Old Town Specialty</div>
+          <div class="item-name">Bookhemian or Campus Coffee Roaster <span class="star-badge">★ Start Here</span></div>
+          <div class="item-desc">Two excellent options within a short walk of each other on Thalang Road. Bookhemian (45/1 Thalang Rd) occupies a beautifully decayed Sino-Portuguese shophouse — wooden tables, art-covered walls, photography books, a hidden upstairs gallery that often has local exhibitions. Order the iced latte with coconut milk and a slice of banana cake. Time slows down here, which is the point. Campus Coffee Roaster is one of Phuket's first specialty roasters, in a Sino-Portuguese building, sourcing single-origin beans from northern Thailand (Doi Saket, Doi Chang) — ask for the pour-over. Either one is the right opening move. Graph Coffee, also on Thalang Rd, is a third option with excellent canelé pastries alongside serious espresso.</div>
+          <div class="item-detail">Bookhemian: 45/1 Thalang Rd · Campus Coffee Roaster: Thalang Rd area · Graph Coffee: Thalang Rd · All walk-in · Opens from 8:30am (still serving at 5pm)</div>
+        </div>
+      </div>
+      <div class="timeline-item wander-item">
+        <div class="timeline-time"><span class="item-icon">🏛</span>5:45pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-wander">Architecture · The Walk</div>
+          <div class="item-name">Thalang Rd → Soi Romanee → Dibuk Rd → Phang Nga Rd <span class="star-badge">★★</span></div>
+          <div class="item-desc">The Phuket Old Town is one of the best-preserved Sino-Portuguese towns in Southeast Asia — 19th-century shophouses built by Hokkien Chinese and Straits Malay merchants: five-foot covered walkways, tiled facades, shuttered windows, interior courtyards. Walk it without a map. Thalang Road is the spine — dense with cafes, shrines, and old storefronts. Soi Romanee is the most atmospheric lane: narrow, pastel-painted, lined with murals depicting old Phuket life (look for the large-format Joe Boys street art on building walls). Dibuk Road has the grandest old merchant houses, including the Blue Elephant mansion — the former governor's residence, now a restaurant, but you can walk the grounds and browse the souvenir shop freely. Phang Nga Road has the Thai Hua Museum (30 min, tells the story of how Phuket became Phuket — housed in a gorgeous old Chinese-school building). Oasis Walking Street is a narrow covered passage connecting Thalang and Phang Nga — full of local craft stalls and snack vendors, a good escape from afternoon heat or rain. Walk slowly. Turn down alleys that look interesting. Look up at the signage and facade tiles.</div>
+          <div class="item-detail">Thalang Rd → Soi Romanee (off Thalang) → Dibuk Rd → Phang Nga Rd · On foot, 30–40 min end to end at a wandering pace · Thai Hua Museum: Krabi Rd, ~฿200 entry · Blue Elephant grounds: free to enter</div>
+          <div class="item-note">China Inn on Thalang Rd is worth stepping into: simultaneously a restaurant with excellent pork dishes, a café, and a shop selling vintage furniture and Peranakan antiques. You don't have to eat there — the space itself is worth seeing. The interior courtyard is one of the most beautiful rooms in Old Town.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🍽</span>7:00pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-food">Dinner · Old Town</div>
+          <div class="item-name">Suay Restaurant or Raya Restaurant or Kopitiam <span class="star-badge">★★</span></div>
+          <div class="item-desc">Three options at different registers. Suay (contemporary Thai, Dibuk Rd, book ahead) is the best sit-down dinner in the Old Town — refined, locally-sourced, the most accomplished cooking in the neighborhood. Raya Restaurant (century-old mosaic-tiled floors, Michelin-recognized) is the old-school institution — their yellow crab curry is the signature, order it. Kopitiam (Thalang Rd, walk-in, affordable) is the most local and casual — excellent everyday Thai-Chinese dishes that workers in the neighborhood have been eating for generations. Any of these is the right dinner for the evening. If the queue at Raya is too long, Kopitiam next door will not disappoint.</div>
+          <div class="item-detail">Suay: 50/2 Takua Pa Rd · Book 1 week ahead · ~฿600–900/person · Raya: Dibuk Rd · Walk-in or call ahead · Michelin · Yellow crab curry · Kopitiam: Thalang Rd · Walk-in · ~฿150–250/person</div>
+          <div class="item-note">If you want street food instead of a sit-down: the vendors on Thalang Rd and the surrounding lanes do kanom jeen (Phuket's signature rice noodle in fish curry broth), moo hong (slow-braised pork belly, intensely savory), and fried oyster omelette. Point at whatever is coming off the wok. Cash only, ~฿80–120 per dish.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🛍</span>Post-dinner</div>
+        <div class="timeline-content">
+          <div class="item-type type-activity">Shopping · After Dinner</div>
+          <div class="item-name">Old Town Shops — While It's Still Light Enough</div>
+          <div class="item-desc">The Old Town shops stay open until 7–9pm. After dinner, browse what's still open. The best boutiques for local goods: Southwind Books (secondhand books, maps, Phuket history texts), the craft stalls in Oasis Walking Street (handmade jewelry, batik fabric, Peranakan ceramics), and the antique shops on Phang Nga Road (old tin-mining memorabilia, vintage Straits-era porcelain, colonial maps). Loveramics and local ceramics shops are worth checking for coffee cups and small objects to carry into the rest of the trip. The shopping here is genuinely local — not the souvenir-market version you get in Patong.</div>
+          <div class="item-detail">Oasis Walking Street: between Thalang and Phang Nga Rd · Southwind Books: Thalang Rd area · Most shops open until 8–9pm · Cash or card depending on vendor</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🚕</span>8:30pm</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Return</div>
+          <div class="item-name">Grab Back to The Shore — Last Resort Evening</div>
+          <div class="item-desc">Back at the resort by 9pm. Last swim in the villa pool if you want it. Final sunset cocktail at the beach bar or just a quiet drink on the villa terrace. You fly to Hong Kong tomorrow morning. The Shore has been the decompression chamber. After tonight everything accelerates — Hong Kong, Kyoto, Tokyo. Leave well rested.</div>
+          <div class="item-detail">Grab from Old Town → The Shore · ~฿300–400 · ~30 min · Book in advance from Old Town</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="day-card" id="day6">
+    <div class="day-header">
+      <div>
+        <div class="day-number">Day Six · Thursday</div>
+        <div class="day-title">Final Morning · Departure for Hong Kong</div>
+      </div>
+      <div class="day-date">May 29</div>
+    </div>
+    <div class="day-body">
+      <div class="time-band">Morning · Last Hours at Kata Noi</div>
+      <div class="timeline-item resort-item">
+        <div class="timeline-time"><span class="item-icon">🌅</span>Early</div>
+        <div class="timeline-content">
+          <div class="item-type type-resort">Final Morning</div>
+          <div class="item-name">Last Breakfast at The Shore + Beach Walk</div>
+          <div class="item-desc">Breakfast on the terrace one last time. Then a walk on Kata Noi before you pack — the beach is quietest and most beautiful in the early morning before the sun climbs. The sand, the palms, the Andaman light. Remember it. You're flying to a city of 7 million people. The Shore was built for exactly this: to give you back to yourself before the world gets loud again.</div>
+          <div class="item-detail">Resort breakfast · Kata Noi beach final walk · Check out per resort policy · Luggage storage available if transfer is late morning</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time"><span class="item-icon">🧳</span>TBD</div>
+        <div class="timeline-content">
+          <div class="item-type type-transit">Departure</div>
+          <div class="item-name">Checkout → HKT Airport → Hong Kong</div>
+          <div class="item-desc">Private transfer to HKT Airport — arrange with the resort the evening before. Phuket International is ~45 min from Kata Noi. Allow 2.5 hours before departure for international check-in. You arrive in Hong Kong tonight — the Aqua Luna cruise and Ho Lee Fook dinner are waiting. The pace changes completely the moment you land.</div>
+          <div class="item-detail">Transfer: The Shore → HKT Airport · ~45 min · Arrange with resort evening before · Allow 2.5 hrs before flight · Morning departure</div>
+          <div class="item-note">⚠ Thailand TDAC (Digital Arrival Card) should already be completed before your inbound flight from New York. No equivalent required for Hong Kong — just a valid passport. Confirm TDAC is done before leaving New York.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- TRACKERS -->
+<section id="trackers">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○四</span>
+    <h2 class="section-title">Trackers</h2>
+  </div>
+
+  <div class="ref-section">
+    <h3>🌿 Spa Tracker — Two Sessions, Both Pre-Booked</h3>
+    <table class="tracker-table">
+      <thead><tr><th>Session</th><th>Day</th><th>Treatment</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Day 2 (May 25) · 3pm</td><td>Traditional Thai Massage — 90 min</td><td>Book at check-in. First treatment after long-haul. Therapeutic, pressure-based. Come hydrated.</td></tr>
+        <tr><td>2</td><td>Day 5 (May 28) · 2:30pm</td><td>Couples' Treatment — Herbal Compress or Body Scrub + Massage</td><td>Book before departing for Khao Sok. Luxury counterpoint to the jungle overnight. Mention honeymoon.</td></tr>
+        <tr><td>3 (optional)</td><td>Day 3 morning (May 26)</td><td>Facial or foot massage · 60 min</td><td>Easy to slot before the resort morning. Ask at spa desk on Day 2 if you want a third session.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍜 Must-Eat Checklist — Core Dishes This Leg</h3>
+    <table class="tracker-table">
+      <thead><tr><th>Dish</th><th>Where</th><th>Day</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Tom Kha Gai</td><td>Param Para or Orora, in-resort</td><td>Day 1 or 2</td><td>Coconut milk soup with galangal and lemongrass. Order it every time it's on the menu.</td></tr>
+        <tr><td>Pad Thai (street version)</td><td>Chillva / Bang Niang night market</td><td>Day 3</td><td>From a wok cart with visible flames. If the oil is cold, skip it and find another cart.</td></tr>
+        <tr><td>Mango Sticky Rice</td><td>Any night market stall</td><td>Day 3</td><td>Cold coconut milk on warm glutinous rice, ripe mango. Always the last thing. Never the first.</td></tr>
+        <tr><td>Cha Yen (Thai iced tea)</td><td>Any market cart</td><td>Day 3</td><td>Orange, sweet, condensed milk, in a bag with a straw. ฿25. Mandatory once.</td></tr>
+        <tr><td>Kanom Jeen</td><td>Old Town Thalang Rd street stalls</td><td>Day 5</td><td>Phuket's most local dish — rice noodles in fish curry broth. More everyday here than pad thai.</td></tr>
+        <tr><td>Yellow Crab Curry</td><td>Raya Restaurant, Old Town</td><td>Day 5 dinner</td><td>Raya's signature. Michelin-recognized. Order this specifically — not a substitute.</td></tr>
+        <tr><td>Moo Hong</td><td>Old Town street stalls or Kopitiam</td><td>Day 5</td><td>Slow-braised pork belly, intensely savory, Phuket-Hokkien origin. Unique to this town.</td></tr>
+        <tr><td>Moo Ping + Sticky Rice</td><td>Night market cart</td><td>Day 3</td><td>Grilled pork skewers with sticky rice in a bag. ฿20–30/skewer. Best with sweet chili sauce.</td></tr>
+        <tr><td>Khao Sok Bungalow Meals</td><td>Raft house, Cheow Lan Lake</td><td>Day 4</td><td>All included. Simple Thai — rice, fish, soup, vegetables. Tastes extraordinary because of where you are.</td></tr>
+        <tr><td>Grilled Whole Fish</td><td>Orora Restaurant or resort beach bar</td><td>Any resort evening</td><td>Fresh Andaman catch, lemongrass and lime. Order it for one of the resort dinners.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</section>
+
+<!-- REFERENCE -->
+<section id="reference">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○五</span>
+    <h2 class="section-title">Complete Reference</h2>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍽 Resort Dining — The Shore &amp; Katathani</h3>
+    <table class="ref-table">
+      <tr><td>Orora Restaurant ★ · The Shore Beach Club</td><td>All-day dining, international and Asian-inspired. Beachside. Dinner 6pm–11pm, last order 10:30pm. The casual resort anchor — good for arrival night and any evening you don't want Param Para's formality.</td></tr>
+      <tr><td>Param Para ★★ · The Shore</td><td>Ancient Thai fine dining, Himmapan Forest mythology theme. Dinner 6:30pm–midnight, last order 10:30pm. The most romantic setting on the property. Reserve same-day at front desk. In-resort guests only.</td></tr>
+      <tr><td>The Harbor · The Shore</td><td>Beachfront all-day dining — breakfast, lunch, afternoon. The morning anchor. Sea views, fresh Thai and international.</td></tr>
+      <tr><td>Room Service</td><td>24 hours. Use it for lazy mornings and the night you return from Khao Sok before the spa.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>☕ Coffee — Old Town Phuket</h3>
+    <table class="ref-table">
+      <tr><td>Bookhemian ★★ · Thalang Rd</td><td>Best atmosphere in Old Town. Sino-Portuguese shophouse, art gallery upstairs, photography books, coconut milk iced latte. 45/1 Thalang Rd. Opens 8:30am.</td></tr>
+      <tr><td>Campus Coffee Roaster ★ · Thalang Rd</td><td>Phuket's first specialty roaster. Sources Thai beans from Doi Saket and Doi Chang in northern Thailand. Roasts on-site. Pour-over is the move. Sino-Portuguese building, one of the most photographed facades in Old Town.</td></tr>
+      <tr><td>Graph Coffee ★ · Thalang Rd</td><td>Specialty espresso with excellent canelé pastries — crispy shell, custardy inside. Bangkok-origin chain with genuine coffee quality. Good wifi, tables for sitting.</td></tr>
+      <tr><td>Dou Brew · Soi Romanee</td><td>Craft coffee in a narrow alley off Soi Romanee. Handcrafted décor, locally-sourced beans. 15 Soi Romanee. Opens 8am.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🍽 Old Town Restaurants</h3>
+    <table class="ref-table">
+      <tr><td>Suay Restaurant ★★ · Dibuk Rd</td><td>Best sit-down dinner in Old Town. Contemporary Thai, locally-sourced. Book 1 week ahead. ~฿600–900/person. 50/2 Takua Pa Rd (Dibuk Rd area).</td></tr>
+      <tr><td>Raya Restaurant ★★ Michelin · Dibuk Rd</td><td>Century-old institution. Mosaic-tiled floors, vintage tea posters. Michelin-recognized. Yellow crab curry is the signature — order it. Walk-in or call ahead.</td></tr>
+      <tr><td>Kopitiam ★ · Thalang Rd</td><td>Local Thai-Chinese, affordable, the neighborhood workers' lunch spot. Excellent everyday Phuket cooking. Walk-in. ~฿150–250/person.</td></tr>
+      <tr><td>China Inn ★ · Thalang Rd</td><td>Beautiful interior courtyard, excellent slow-roasted pork. Also a vintage furniture and antique shop. Worth entering even if you don't eat. One of the finest interiors in Old Town.</td></tr>
+      <tr><td>Wilai · Thalang Rd</td><td>Small, local, affordable. Classic southern Thai dishes — fish curry, stir-fries. Eat here if Raya has a queue.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🏛 Old Town Architecture + Sights</h3>
+    <table class="ref-table">
+      <tr><td>Soi Romanee ★★</td><td>The most photographed lane in Phuket — narrow, pastel shophouses, murals by Joe Boys collective depicting old Phuket life. Off Thalang Rd. Always open, free.</td></tr>
+      <tr><td>Thai Hua Museum ★ · Krabi Rd</td><td>Tells the story of Phuket's tin-mining era and Hokkien Chinese heritage. Housed in a 1930s Chinese school building. ~฿200 entry. 28 Krabi Rd. Allow 30–45 min.</td></tr>
+      <tr><td>Blue Elephant Mansion · Phang Nga Rd</td><td>The former governor's residence — magnificent Colonial-Sino mansion in a private park. Now a restaurant and cooking school. Walk the grounds and souvenir shop freely.</td></tr>
+      <tr><td>Oasis Walking Street</td><td>Narrow covered passage connecting Thalang and Phang Nga Rd. Local craft stalls, snacks, shade from heat and rain. Good browse between streets.</td></tr>
+      <tr><td>Dibuk Road</td><td>The grandest merchant houses and mansion facades in Old Town. Walk the full length slowly and look up at the tile work and shuttered windows.</td></tr>
+      <tr><td>Wat Mongkol Nimit · Soi Romanee end</td><td>Active Buddhist temple at the end of Soi Romanee. Locals come regularly — ceremonies, offerings, monks. Enter quietly and respectfully. Free.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🛍 Old Town Shopping</h3>
+    <table class="ref-table">
+      <tr><td>Oasis Walking Street stalls</td><td>Handmade jewelry, batik fabric, Peranakan ceramics, local craft objects. Between Thalang and Phang Nga Rd. Best browsing in Old Town.</td></tr>
+      <tr><td>China Inn shop · Thalang Rd</td><td>Vintage furniture, Peranakan antiques, Straits-era objects. Inside the China Inn compound — even if you skip the restaurant, browse the shop.</td></tr>
+      <tr><td>Southwind Books · Thalang Rd area</td><td>Secondhand books, old maps, Phuket history texts, Southeast Asia travel writing. Good for a paperback to carry into the rest of the trip.</td></tr>
+      <tr><td>Antique shops · Phang Nga Rd</td><td>Tin-mining memorabilia, vintage Straits-era porcelain, colonial maps and prints. Phang Nga Rd has the best concentration.</td></tr>
+      <tr><td>Ceramics boutiques · Multiple</td><td>Locally-made Peranakan-style ceramics (hand-painted, bold colors) are unique to the Straits region. Good small objects to carry forward in the trip.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🏮 Night Markets</h3>
+    <table class="ref-table">
+      <tr><td>Chillva Market ★ · Phuket Town</td><td>Closest to Old Town and the resort. ~80 vendors, string lights, local crowd, contained and manageable. Yaowarat Rd. Opens ~5pm, best 6–9pm. ~฿500–800/couple for a full dinner. ~20 min by Grab from Kata Noi.</td></tr>
+      <tr><td>Bang Niang Night Market ★★ · Khok Kloi</td><td>Larger (200+ stalls), ~35 min north. More comprehensive food selection, more local feel. Mon/Thu traditional nights, Saturday is biggest. ~฿500–800/couple. Worth the extra drive for the scale.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🌿 Khao Sok Operators</h3>
+    <table class="ref-table">
+      <tr><td>Elephant Hills ★★ · Premium</td><td>Luxury tented camp and floating villa on Cheow Lan Lake. Best operator. All-inclusive, private accommodation, higher service level. elephanthills.com. ~$500–600/person for 2D/1N.</td></tr>
+      <tr><td>Our Jungle House ★ · Mid-range</td><td>Well-run floating bungalow camp. Includes pickup from Phuket, kayaking, all meals. ourjunglehouse.com. ~$200–350/person.</td></tr>
+      <tr><td>Khao Sok National Park Tours · Budget/Mid</td><td>Multiple verified operators at khaosok.com. Confirm package covers Cheow Lan Lake overnight specifically — not just the river section of the park.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>📋 Practical Notes</h3>
+    <table class="ref-table">
+      <tr><td>Currency</td><td>Thai Baht (฿). Withdraw ฿6,000–8,000 cash on arrival — night markets and street stalls are cash only. ATMs at the airport; Kasikorn Bank and Bangkok Bank ATMs have lowest fees. Always pay in Thai Baht at ATMs, never home currency (dynamic currency conversion is a scam).</td></tr>
+      <tr><td>Transport</td><td>Grab is the standard ride-hailing app and works well across Phuket. Always agree on a price before getting in unmetered taxis. Resort drivers for Khao Sok transfer included in your operator package — confirm pickup time 48 hrs before.</td></tr>
+      <tr><td>TDAC — Thailand Digital Arrival Card</td><td>Required for all non-Thai nationals entering Thailand by air. Fill out before flying from New York at thaiPass.go.th. One per traveler. Free. Do this before you leave home.</td></tr>
+      <tr><td>eSIM / Data</td><td>Buy an eSIM before departure (Airalo — Thailand plan ~$5–8) or pick up a True Move H or AIS tourist SIM at HKT airport arrivals (~฿300–400 for 30-day unlimited data). Note: there is no signal at Cheow Lan Lake — embrace it.</td></tr>
+      <tr><td>Weather</td><td>Late May: 30–34°C, humid, afternoon rain likely. Mornings are clear — beach and activity time before noon. Rain is brief and heavy, not a reason to cancel plans. Pack light rain gear or buy a poncho at 7-Eleven for ฿60.</td></tr>
+      <tr><td>HKT Airport</td><td>Phuket International Airport, ~45 min north of Kata Noi. Allow 2.5 hours before international departure. Arrange private transfer through the resort the evening before your flight.</td></tr>
+      <tr><td>Tipping</td><td>Restaurants: ฿20–50/person. Spa therapists: ฿100–200 each. Taxi: round up to nearest ฿20. Night market stalls: not expected.</td></tr>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>📍 Address Cheat Sheet</h3>
+    <table class="ref-table">
+      <thead><tr><th>Venue</th><th>Address</th></tr></thead>
+      <tr><td>The Shore at Katathani</td><td>14 Kata Noi Rd, Kata Noi Beach, Karon, Phuket 83100</td></tr>
+      <tr><td>Serenity Spa (The Shore)</td><td>In-resort · theshorephuket.com · Book at spa desk</td></tr>
+      <tr><td>Param Para</td><td>14 Kata Noi Rd (The Shore, in-resort) · Dinner 6:30pm–midnight</td></tr>
+      <tr><td>Orora Restaurant</td><td>The Shore Beach Club, Kata Noi · Dinner 6pm–11pm, last order 10:30pm</td></tr>
+      <tr><td>Bookhemian Café</td><td>45/1 Thalang Rd, Phuket Old Town</td></tr>
+      <tr><td>Campus Coffee Roaster</td><td>Thalang Rd, Phuket Old Town</td></tr>
+      <tr><td>Graph Coffee</td><td>Thalang Rd, Phuket Old Town</td></tr>
+      <tr><td>Suay Restaurant</td><td>50/2 Takua Pa Rd, Phuket Old Town · Book ahead</td></tr>
+      <tr><td>Raya Restaurant</td><td>Dibuk Rd, Phuket Old Town · Michelin · Yellow crab curry</td></tr>
+      <tr><td>China Inn</td><td>Thalang Rd, Phuket Old Town · Café + antique shop + restaurant</td></tr>
+      <tr><td>Thai Hua Museum</td><td>28 Krabi Rd, Phuket Old Town · ฿200 entry</td></tr>
+      <tr><td>Soi Romanee</td><td>Off Thalang Rd, Phuket Old Town · Street art + murals</td></tr>
+      <tr><td>Chillva Market</td><td>Yaowarat Rd, Phuket Town · ~20 min from Kata Noi</td></tr>
+      <tr><td>Bang Niang Night Market</td><td>Route 4, Khok Kloi, Phang-nga · ~35 min from Kata Noi</td></tr>
+      <tr><td>Cheow Lan Lake / Khao Sok</td><td>Ratchaprapha Dam, Ban Ta Khun, Surat Thani · ~2.5 hrs from Phuket</td></tr>
+      <tr><td>HKT Airport</td><td>Phuket International Airport · ~45 min from Kata Noi</td></tr>
+    </table>
+  </div>
+
+</div>
+</section>
+
+<!-- PRIORITIES -->
+<section id="priorities">
+<div class="container">
+  <div class="section-header">
+    <span class="section-num">○六</span>
+    <h2 class="section-title">Priority Flags — Book Before You Land</h2>
+  </div>
+
+  <div class="flags-block">
+    <h4>🔴 Book Immediately</h4>
+    <ul class="flags-list">
+      <li><strong>Khao Sok overnight package (May 27–28)</strong> — elephanthills.com or ourjunglehouse.com. 4–6 weeks out. Book the full 2D/1N package with transfer from Phuket. Confirm it includes Cheow Lan Lake (the lake experience — not just the river park). Confirm pickup from The Shore at Katathani at 8am on May 27.</li>
+    </ul>
+  </div>
+
+  <div class="flags-block" style="margin-top:1rem;">
+    <h4>🟡 Book / Arrange on Arrival — Day 1 Evening</h4>
+    <ul class="flags-list">
+      <li><strong>Spa Session 1 (Day 2, May 25 · 3pm)</strong> — Serenity Spa desk at check-in. 90-min traditional Thai massage. Mention honeymoon.</li>
+      <li><strong>Spa Session 2 (Day 5, May 28 · 2:30pm)</strong> — Book simultaneously with Session 1. Couples' treatment room. Herbal compress or body scrub + massage.</li>
+      <li><strong>Param Para dinner reservation (Day 2 or Day 4)</strong> — Front desk, same day. Small and romantic — fills up. Reserve before sunset cocktails.</li>
+    </ul>
+  </div>
+
+  <div class="flags-block" style="margin-top:1rem;">
+    <h4>🟡 Book 1 Week Out</h4>
+    <ul class="flags-list">
+      <li><strong>Suay Restaurant (Day 5 Old Town dinner, if that's the choice)</strong> — suayrestaurant.com or call ahead. Best sit-down dinner in Old Town. Worth reserving — it fills on weeknights too.</li>
+    </ul>
+  </div>
+
+  <div class="flags-block" style="margin-top:1rem;">
+    <h4>🟢 No Booking Needed · Just Show Up</h4>
+    <ul class="flags-list">
+      <li><strong>All beach and pool time</strong> — The resort beach is yours. No booking, no schedule.</li>
+      <li><strong>Night market (Day 3)</strong> — Walk in. Bring ฿500–800 cash. Best from 6–9pm.</li>
+      <li><strong>Old Town wander (Day 5)</strong> — No reservation. Arrive by 5pm. Walk Thalang Rd, Soi Romanee, Dibuk Rd. Coffee at Bookhemian or Campus Roaster. Eat from whoever is cooking.</li>
+      <li><strong>Raya Restaurant, Kopitiam, Wilai, China Inn</strong> — All walk-in. May queue briefly for Raya at peak times.</li>
+      <li><strong>All specialty coffee stops</strong> — Bookhemian, Campus Coffee Roaster, Graph Coffee. All walk-in.</li>
+    </ul>
+  </div>
+
+  <div class="flags-block" style="margin-top:1rem;">
+    <h4>⚠ Hard Deadlines</h4>
+    <ul class="flags-list">
+      <li><strong>May 29 departure: confirm airport transfer time with resort the night before.</strong> HKT is ~45 min away. Morning flight — allow 2.5 hours at airport for international check-in. Don't leave this to the morning.</li>
+      <li><strong>TDAC Thailand Digital Arrival Card — complete before flying from New York.</strong> thaiPass.go.th. One per traveler. Required on arrival in Thailand. Do this in New York, not in transit.</li>
+      <li><strong>Khao Sok pickup — confirm with operator 48 hours before (May 25).</strong> 8am pickup from The Shore on May 27. Be packed and in the lobby.</li>
+    </ul>
+  </div>
+
+</div>
+</section>
+
+<!-- TRAVEL AGENT -->
+<section style="background: linear-gradient(135deg, var(--sand) 0%, var(--palm) 100%); padding: 3rem 0;">
+<div class="container">
+  <div style="background: rgba(255,255,255,0.95); border-radius: 4px; padding: 2.5rem 2rem; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+    <h3 style="font-family: 'IM Fell English', serif; font-size: 1.75rem; color: var(--ink); margin-bottom: 1rem;">Need Additional Help or Recommendations?</h3>
+    <p style="font-size: 1.05rem; color: var(--ink-soft); line-height: 1.7; max-width: 600px; margin: 0 auto;">
+      Have your handsome husband ask the Claude travel agent he built using your itinerary.<br>
+      <span style="font-size: 0.85rem; color: var(--stone); font-style: italic; display: block; margin-top: 0.75rem;">(He knows you won't download it.)</span>
+    </p>
+  </div>
+</div>
+</section>
+
+<footer>
+  <span>ภูเก็ต</span> · Honeymoon Itinerary · May 24–29, 2026 · The Shore at Katathani, Kata Noi · <span>ช้าลง</span>
+</footer>
+
+</body>
+</html>
